@@ -1,4 +1,4 @@
-# Packetanalyse mit Wireshark – DE
+# Packetanalyse mit Wireshark
 
 Lerne Netzwerkanalyse so, wie sie im Betrieb wirklich gebraucht wird: strukturiert, nachvollziehbar und mit echten Wireshark-Workflows.
 

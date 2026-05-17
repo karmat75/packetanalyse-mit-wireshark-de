@@ -1,6 +1,6 @@
 site_name: Packetanalyse mit Wireshark
 site_description: Unabhängiger deutschsprachiger Selbstlernkurs zur Netzwerkanalyse und WCA-101-Vorbereitung
-site_author: Projektbeitragende
+site_author: Matthias Kargel
 site_url: https://karmat75.github.io/packetanalyse-mit-wireshark-de/
 
 repo_name: karmat75/packetanalyse-mit-wireshark-de
@@ -103,7 +103,7 @@ extra:
   build_date: !ENV [BUILD_DATE, "lokaler Build"]
 
 copyright: >
-  Packetanalyse mit Wireshark - DE ist ein unabhängiger deutschsprachiger Open-Source-Kurs.
+  Packetanalyse mit Wireshark ist ein unabhängiger deutschsprachiger Open-Source-Kurs.
   Wireshark und WCA sind Marken bzw. Bezeichnungen ihrer jeweiligen Rechteinhaber.
   Es besteht keine Verbindung, Förderung oder Zertifizierung durch die Wireshark Foundation.
 

@@ -1,4 +1,0 @@
-labs/wca-practice/.gitkeep
-tools/wwca/README.md
-tools/wwca/wwca
-tools/wwca/wwca.py
