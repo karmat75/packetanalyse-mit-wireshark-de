@@ -35,7 +35,7 @@ quizzes/exams/
 Fortschritt:
 
 ```text
-~/.local/share/wireshark-wca-de/progress.json
+~/.local/share/packet-analysis-course-de/progress.json
 ```
 
 ## Voraussetzung
@@ -79,7 +79,7 @@ python3 tools/wwca/wwca.py quiz validate
 python3 tools/wwca/wwca.py quiz run foundation
 python3 tools/wwca/wwca.py quiz run basic --limit 10 --shuffle
 python3 tools/wwca/wwca.py quiz run advanced --limit 10 --shuffle
-python3 tools/wwca/wwca.py quiz run wca-practice --shuffle
+python3 tools/wwca/wwca.py quiz run analysis-practice --shuffle
 ```
 
 ## Modulprüfungen auflisten
@@ -100,7 +100,7 @@ python3 tools/wwca/wwca.py exam validate
 python3 tools/wwca/wwca.py exam run foundation-check
 python3 tools/wwca/wwca.py exam run module-basic
 python3 tools/wwca/wwca.py exam run module-advanced
-python3 tools/wwca/wwca.py exam run wca-practice-exam-01
+python3 tools/wwca/wwca.py exam run analysis-practice-exam-01
 ```
 
 Im Exam-Modus werden Erklärungen erst am Ende angezeigt.
@@ -154,7 +154,7 @@ Bewertung:
 | Ergebnis | Bedeutung |
 |---:|---|
 | 90–100 % | sehr sicher |
-| 80–89 % | prüfungsnah gut |
+| 80–89 % | sehr gut für den Selbsttest |
 | 70–79 % | solide, Lücken prüfen |
 | 60–69 % | Grundlagen wiederholen |
 | unter 60 % | Thema erneut durcharbeiten |

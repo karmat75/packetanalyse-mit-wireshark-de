@@ -33,7 +33,7 @@ Wrapper:
 
 ```bash
 tools/wwca/wwca quiz list
-tools/wwca/wwca exam run wca-practice-exam-01
+tools/wwca/wwca exam run analysis-practice-exam-01
 ```
 
 ## Fortschritt
@@ -41,5 +41,5 @@ tools/wwca/wwca exam run wca-practice-exam-01
 Der Fortschritt wird lokal gespeichert:
 
 ```text
-~/.local/share/wireshark-wca-de/progress.json
+~/.local/share/packet-analysis-course-de/progress.json
 ```

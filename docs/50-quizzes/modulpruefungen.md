@@ -10,7 +10,7 @@ Modulprüfungen sollen helfen:
 
 - Kursabschnitte gezielt zu wiederholen
 - Wissenslücken sichtbar zu machen
-- prüfungsähnlicher zu üben
+- unter prüfungsähnlicherem Druck zu üben
 - Erklärungen erst am Ende zu sehen
 - Fortschritt lokal zu speichern
 - Fragen aus mehreren Pools zu mischen
@@ -28,7 +28,7 @@ quizzes/exams/foundation-check.yml
 quizzes/exams/module-basic.yml
 quizzes/exams/module-advanced.yml
 quizzes/exams/module-interface-counters.yml
-quizzes/exams/wca-practice-exam-01.yml
+quizzes/exams/analysis-practice-exam-01.yml
 ```
 
 ## Aktuelle Prüfungen
@@ -38,7 +38,7 @@ quizzes/exams/wca-practice-exam-01.yml
 | Foundation Check | 10 | 80 % | Foundation |
 | Basic Module | 20 | 80 % | Foundation + Basic |
 | Advanced Module | 20 | 80 % | Basic + Advanced |
-| WCA Practice Exam 01 | 30 | 80 % | gemischt |
+| Gemischter Analyse-Selbsttest 01 | 30 | 80 % | gemischt |
 | Interface Counter Module | 10 | 80 % | Interface Errors, Discards und Monitoring-Korrelation |
 
 ## Exam auflisten
@@ -88,18 +88,18 @@ sections:
 | gut zum Wiederholen | gut zum Prüfen |
 | meist ein Pool | mehrere Pools möglich |
 
-## Keine echte WCA-Simulation
+## Keine offizielle Prüfungssimulation
 
-Die Modulprüfungen sind prüfungsnah, aber noch keine vollständige WCA-Simulation.
+Die Modulprüfungen sind eigene Lern- und Selbsttestformate. Sie sind nicht offiziell, enthalten keine offiziellen Prüfungsfragen und bilden keine echte Zertifizierungsprüfung nach.
 
-Dafür fehlen noch:
+Für eine stärkere prüfungsnahe Übungswirkung fehlen noch:
 
 - mehr Fragen
 - PCAP-basierte Fragen
 - Zeitdruck mit hartem Timer
-- stärkere Objective-Abdeckung
+- stärkere Abdeckung der eigenen Kurskompetenzen
 - automatische Auswertung nach Lernziel
-- echte gemischte Probeprüfungen mit größerem Umfang
+- größere gemischte Selbsttests
 
 ## Empfehlung
 
@@ -118,4 +118,4 @@ Guter Ablauf:
 ## Merksatz
 
 > Ein Quiz erklärt dir, was du noch nicht verstanden hast.  
-> Eine Modulprüfung zeigt dir, ob du es unter prüfungsnäheren Bedingungen anwenden kannst.
+> Eine Modulprüfung zeigt dir, ob du es unter strengeren Selbsttest-Bedingungen anwenden kannst.

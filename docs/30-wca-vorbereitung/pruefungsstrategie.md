@@ -1,37 +1,35 @@
-# Prüfungsstrategie
+# Prüfungsnahe Lernstrategie
 
-Die WCA-101 prüft nicht nur, ob du Wireshark schon einmal geöffnet hast.
+Diese Seite beschreibt eine **unabhängige Lernstrategie** für diesen Kurs.
 
-Die Prüfung zielt auf praktische Analysefähigkeit:
+Sie soll helfen, die im Kurs trainierten Analysefähigkeiten strukturiert zu wiederholen und prüfungsnah zu üben. Sie ersetzt nicht die offiziellen Informationen zur WCA-101-Prüfung.
 
-- wichtige Wireshark-Funktionen nutzen
-- Captures sinnvoll erstellen und auswerten
-- Filter korrekt anwenden
-- Protokolle und Headerfelder erkennen
-- TCP-Verhalten verstehen
-- typische Netzwerk- und Anwendungsprobleme eingrenzen
+!!! warning "Unabhängige Vorbereitung"
+    Diese Seite enthält keine offiziellen Prüfungsfragen, keine Exam Dumps und keine verbindliche Beschreibung des Prüfungsablaufs.  
+    Für Anmeldung, Prüfungsdetails, Prüfungsziele, technische Anforderungen und aktuelle Regeln gelten ausschließlich die offiziellen Informationen der Wireshark Foundation.
 
 ## Vor der Prüfung offizielle Informationen prüfen
 
 Prüfungsdetails können sich ändern.
 
-Prüfe vor der Anmeldung immer die offiziellen Informationen:
+Prüfe vor einer Anmeldung immer die offiziellen Informationen:
 
-- offizielle WCA-Seite
+- offizielle WCA-Seite der Wireshark Foundation
 - offizielles WCA-101 Exam Objectives PDF
 - Preis
-- Zeit
+- Zeitrahmen
 - Anzahl und Typen der Fragen
 - technische Anforderungen für Online-Proctoring
 - Regeln zu Wiederholungsversuchen
+- gültige Zertifizierungs- und Prüfungsbedingungen
 
-Dieser Kurs kann darauf vorbereiten, ersetzt aber nicht den Blick in die offiziellen Prüfungsinformationen.
+Dieser Kurs kann die Vorbereitung unterstützen, ersetzt aber nicht den Blick in die offiziellen Prüfungsinformationen.
 
 ## Grundprinzip
 
 > Trainiere nicht Fragen. Trainiere Fähigkeiten.
 
-Die WCA ist besonders dann gut vorbereitet, wenn du mit unbekannten Captures arbeiten kannst.
+Eine sinnvolle Vorbereitung besteht nicht darin, mögliche Antworten auswendig zu lernen. Wichtiger ist, unbekannte Captures methodisch zu untersuchen und Aussagen sauber zu belegen.
 
 Du solltest nicht nur wissen:
 
@@ -90,23 +88,25 @@ Kapitel:
 
 Ziel:
 
-- Lernzielmatrix prüfen
+- Kursabdeckungs-Matrix prüfen
 - Lücken schließen
 - Labs bearbeiten
 - Quizfragen wiederholen
 - PCAP-Challenges lösen
-- Probeprüfung unter Zeitdruck durchführen
+- Selbsttest unter Zeitdruck durchführen
 
 ## Was du sicher können solltest
+
+Die folgende Liste ist eine **eigene Kurs-Checkliste**. Sie ist bewusst praktisch formuliert und bildet keine offizielle Objective-Liste nach.
 
 ### Wireshark-Funktionen
 
 Du solltest sicher umgehen können mit:
 
-- Datei öffnen und speichern
+- Dateien öffnen und speichern
 - pcap und pcapng grob unterscheiden
 - Packet List, Packet Details und Packet Bytes
-- Profile
+- Profilen
 - Spalten
 - Zeitdarstellung
 - Name Resolution
@@ -137,7 +137,7 @@ Du solltest sicher sein bei:
 
 ### TCP
 
-TCP ist besonders wichtig.
+TCP ist für viele Analyseaufgaben besonders wichtig.
 
 Du solltest sicher sein bei:
 
@@ -158,7 +158,7 @@ Du solltest sicher sein bei:
 
 ## Prüfungsnahe Denkweise
 
-Viele Fragen werden wahrscheinlich nicht nur Definitionen abfragen, sondern Zusammenhänge.
+Prüfungsnahe Übungen sollten nicht nur Definitionen abfragen, sondern Zusammenhänge trainieren.
 
 Beispielhafte Denkmuster:
 
@@ -198,7 +198,7 @@ AHA:
 
 > In Analysefragen ist oft die vorsichtigere, besser belegbare Antwort die richtige.
 
-## Typische Prüfungsfallen
+## Typische Analysefallen
 
 | Falle | Bessere Haltung |
 |---|---|
@@ -211,6 +211,8 @@ AHA:
 | RST immer als Fehler sehen | aktiver Abbruch, Kontext prüfen |
 
 ## Empfohlener Trainingsplan
+
+Der folgende Plan ist ein Vorschlag für diesen Kurs. Er ist keine offizielle Empfehlung der Wireshark Foundation.
 
 ### Woche 1: Foundation
 
@@ -237,18 +239,20 @@ AHA:
 - Retransmissions
 - Window-Themen
 
-### Woche 4: Analyse und Prüfung
+### Woche 4: Analyse und Wiederholung
 
 - Performanceanalyse
 - HTTP/TLS
 - Fehleranalyse-Methodik
 - Security-Basics
-- WCA-Matrix prüfen
-- Probeprüfung
+- Kursabdeckungs-Matrix prüfen
+- Selbsttest unter Zeitdruck
 
-## Mindest-Reife vor der Prüfung
+## Selbstcheck vor einer Prüfungsanmeldung
 
-Du solltest dich erst anmelden, wenn du:
+Vor einer Anmeldung solltest du einschätzen, ob du die zentralen Kurskompetenzen sicher anwenden kannst.
+
+Du solltest dich insbesondere sicher fühlen, wenn du:
 
 - unbekannte PCAPs strukturiert öffnen kannst
 - Conversations und Endpoints nutzen kannst
@@ -259,9 +263,28 @@ Du solltest dich erst anmelden, wenn du:
 - I/O Graphs und Zeitdarstellung einsetzen kannst
 - TShark für einfache Auswertungen nutzt
 - Analyseberichte mit Frame-Nummern schreiben kannst
-- die Lernzielmatrix größtenteils auf „Trainiert“ oder „Prüfungsnah“ hast
+- die Kursabdeckungs-Matrix größtenteils auf „Trainiert“ oder „Prüfungsnah“ hast
+
+## Redaktioneller Hinweis
+
+Diese Seite darf erweitert werden, soll aber weiterhin eine eigene Lernstrategie bleiben.
+
+Bitte vermeiden:
+
+- offizielle Prüfungsfragen oder erinnerte Prüfungsinhalte
+- Formulierungen, die wie verbindliche Aussagen zum aktuellen Prüfungsablauf wirken
+- vollständige oder sehr detaillierte Wiedergaben offizieller Exam Objectives
+- kopierte Abschnitte aus offiziellen Schulungsunterlagen, Büchern, Webseiten oder Videokursen
+
+Erlaubt und erwünscht sind:
+
+- eigene Lernempfehlungen
+- eigene Labs und Challenges
+- eigene Checklisten
+- Verweise auf offizielle Quellen
+- praktische Analysebeispiele aus selbst erzeugten oder frei lizenzierten Captures
 
 ## Merksatz
 
-> Die beste WCA-Vorbereitung ist nicht, Wireshark auswendig zu lernen.  
+> Die beste WCA-nahe Vorbereitung ist nicht, Wireshark auswendig zu lernen.  
 > Die beste Vorbereitung ist, unbekannte Captures methodisch zu untersuchen.

@@ -19,7 +19,7 @@ quizzes/
 
 Die Fragen sind eigene Kursfragen.
 
-Sie sind keine echten WCA-Prüfungsfragen und keine Exam Dumps.
+Sie sind keine offiziellen Prüfungsfragen, keine nachgestellten Prüfungsfragen und keine Exam Dumps.
 
 ## Spätere Nutzung
 

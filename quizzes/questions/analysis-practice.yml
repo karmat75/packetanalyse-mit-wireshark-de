@@ -1,9 +1,9 @@
-id: wca-practice
-title: "WCA Practice Quiz"
-description: "Gemischte, szenariobasierte Wiederholung über Foundation, Basis, Advanced, Labs und Methodik."
+id: analysis-practice
+title: "Gemischtes Analyse-Quiz"
+description: "Eigene, szenariobasierte Wiederholung über Foundation, Basis, Advanced, Labs und Methodik. Keine offiziellen Prüfungsfragen."
 version: "0.1.0"
 questions:
-  - id: q-wca-practice-001
+  - id: q-analysis-practice-001
     type: single-choice
     objective: capture-point
     question: "Ein Client-Capture zeigt SYN-Pakete zu 10.20.30.40:443, aber keine SYN/ACK-Antwort. Welche Aussage ist am besten belegbar?"
@@ -21,7 +21,7 @@ questions:
       - docs/10-basis-kurs/06-tcp-grundlagen.md
       - docs/20-advanced-kurs/04-fehleranalyse-methodik.md
 
-  - id: q-wca-practice-002
+  - id: q-analysis-practice-002
     type: multiple-choice
     objective: dns-troubleshooting
     question: "Ein Client fragt `app.lab.local` ab und erhält NXDOMAIN. Welche Aussagen sind korrekt?"
@@ -39,7 +39,7 @@ questions:
       - docs/10-basis-kurs/05-udp-dns-dhcp.md
       - docs/40-labs-und-uebungen/basic-dns-http-docker.md
 
-  - id: q-wca-practice-003
+  - id: q-analysis-practice-003
     type: single-choice
     objective: vlan-capture
     question: "Du schneidest auf einem normalen Client an einem Access-Port mit und siehst keine VLAN-Tags. Was ist die beste Bewertung?"
@@ -56,7 +56,7 @@ questions:
     references:
       - docs/10-basis-kurs/03-ethernet-arp-vlan.md
 
-  - id: q-wca-practice-004
+  - id: q-analysis-practice-004
     type: single-choice
     objective: http-status-vs-network
     question: "Ein Capture zeigt einen vollständigen TCP Handshake, HTTP Request und HTTP 500 Response. Welche Aussage passt am besten?"
@@ -73,7 +73,7 @@ questions:
     references:
       - docs/20-advanced-kurs/03-http-tls.md
 
-  - id: q-wca-practice-005
+  - id: q-analysis-practice-005
     type: multiple-choice
     objective: tls-analysis
     question: "Bei einer HTTPS-Verbindung ohne Entschlüsselung: Welche Daten sind typischerweise nicht im Klartext sichtbar?"
@@ -90,7 +90,7 @@ questions:
     references:
       - docs/20-advanced-kurs/03-http-tls.md
 
-  - id: q-wca-practice-006
+  - id: q-analysis-practice-006
     type: single-choice
     objective: tcp-zero-window
     question: "Ein TCP Stream zeigt mehrfach Zero Window vom Server zum Client. Was ist die beste erste Hypothese?"
@@ -107,7 +107,7 @@ questions:
     references:
       - docs/20-advanced-kurs/01-tcp-deep-dive.md
 
-  - id: q-wca-practice-007
+  - id: q-analysis-practice-007
     type: single-choice
     objective: display-filter-vs-capture-filter
     question: "Du möchtest in einer bereits geöffneten PCAP-Datei nur DNS-Pakete anzeigen. Was verwendest du?"
@@ -124,10 +124,10 @@ questions:
     references:
       - docs/10-basis-kurs/02-display-filter.md
 
-  - id: q-wca-practice-008
+  - id: q-analysis-practice-008
     type: multiple-choice
     objective: pcap-challenge
-    question: "Welche Elemente machen eine PCAP-Challenge prüfungsnah?"
+    question: "Welche Elemente machen eine PCAP-Challenge lern- und analysewirksam?"
     answers:
       - text: "Szenario mit konkretem Symptom"
         correct: true
@@ -135,13 +135,13 @@ questions:
         correct: true
       - text: "Musterlösung mit Einschränkungen"
         correct: true
-      - text: "echte Exam-Dump-Fragen"
+      - text: "nachgestellte oder kopierte Prüfungsfragen"
         correct: false
-    explanation: "Prüfungsnähe entsteht durch Analysefähigkeit, nicht durch echte Prüfungsfragen."
+    explanation: "Lernwirkung entsteht durch Analysefähigkeit, nachvollziehbare Beobachtungen und saubere Begründungen, nicht durch kopierte Prüfungsfragen."
     references:
       - docs/60-pcap-challenges/pcap-challenge-struktur.md
 
-  - id: q-wca-practice-009
+  - id: q-analysis-practice-009
     type: single-choice
     objective: arp-routing
     question: "Ein Client spricht einen Server in einem anderen Subnetz an. Welche MAC-Adresse ist im Ethernet-Ziel meist zu erwarten?"
@@ -159,7 +159,7 @@ questions:
       - docs/10-basis-kurs/03-ethernet-arp-vlan.md
       - docs/90-referenz/osi-modell-fuer-wireshark.md
 
-  - id: q-wca-practice-010
+  - id: q-analysis-practice-010
     type: single-choice
     objective: performance
     question: "DNS ist schnell, TCP Handshake ist schnell, TLS ist schnell. Danach vergehen 4 Sekunden bis zur ersten HTTP-Antwort. Was ist die beste Bewertung?"
@@ -176,7 +176,7 @@ questions:
     references:
       - docs/20-advanced-kurs/02-performance-analyse.md
 
-  - id: q-wca-practice-011
+  - id: q-analysis-practice-011
     type: multiple-choice
     objective: tshark
     question: "Welche Aussagen zu TShark im Kurs sind korrekt?"
@@ -194,7 +194,7 @@ questions:
       - docs/03-wireshark-erster-kontakt/tshark-erster-kontakt.md
       - docs/90-referenz/tshark-auf-systemen-ohne-gui.md
 
-  - id: q-wca-practice-012
+  - id: q-analysis-practice-012
     type: single-choice
     objective: methodology
     question: "Welche Aussage ist in einem Analysebericht am besten?"
@@ -211,7 +211,7 @@ questions:
     references:
       - docs/20-advanced-kurs/04-fehleranalyse-methodik.md
 
-  - id: q-wca-practice-013
+  - id: q-analysis-practice-013
     type: single-choice
     objective: security
     question: "Ein Capture zeigt HTTP Basic Auth im Klartext. Was ist die beste Einordnung?"
@@ -228,7 +228,7 @@ questions:
     references:
       - docs/20-advanced-kurs/05-security-basics.md
 
-  - id: q-wca-practice-014
+  - id: q-analysis-practice-014
     type: single-choice
     objective: expert-information
     question: "Wie sollte man Wireshark Expert Information verwenden?"
@@ -246,7 +246,7 @@ questions:
       - docs/20-advanced-kurs/02-performance-analyse.md
       - docs/20-advanced-kurs/04-fehleranalyse-methodik.md
 
-  - id: q-wca-practice-015
+  - id: q-analysis-practice-015
     type: multiple-choice
     objective: screenshot-styleguide
     question: "Welche Regeln gelten für Screenshots im Kurs?"

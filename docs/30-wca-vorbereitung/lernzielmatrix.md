@@ -1,154 +1,142 @@
-# Lernzielmatrix
+# Kursabdeckungs-Matrix
 
-Die Lernzielmatrix verbindet die offiziellen WCA-Kompetenzbereiche mit den Inhalten dieses Kurses.
+Diese Matrix zeigt, welche **eigenen Kurskompetenzen** in diesem Repository bereits erklärt, geübt oder prüfungsnah trainiert werden.
 
-Sie ist bewusst pragmatisch aufgebaut.
+Sie dient der internen Kursplanung und der gezielten Vorbereitung auf die WCA-101-Prüfung, ersetzt aber **nicht** die offiziellen Prüfungsziele.
 
-Der Status sagt nicht nur, ob ein Thema irgendwo erwähnt wird. Entscheidend ist, ob es auch praktisch trainiert wird.
+!!! warning "Unabhängige Kursmatrix"
+    Diese Seite ist keine Übersetzung, Kopie oder Ersatzfassung der offiziellen WCA-101 Exam Objectives.  
+    Für den verbindlichen Wortlaut, die Gewichtungen und die jeweils aktuelle Fassung der Prüfungsziele bitte ausschließlich die offiziellen Informationen der Wireshark Foundation verwenden.
+
+Offizielle Referenz:
+
+- <https://www.wireshark.org/certifications/>
+- <https://www.wireshark.org/pdf/wca-objectives.pdf>
+
+## Zweck der Matrix
+
+Die Matrix beantwortet vier praktische Fragen:
+
+1. Welche Fähigkeiten sollen Lernende nach diesem Kurs beherrschen?
+2. Wo werden diese Fähigkeiten im Kurs erklärt?
+3. Wo werden sie praktisch geübt?
+4. Welche Themen sind bereits prüfungsnah trainiert und welche müssen noch ausgebaut werden?
+
+## Was diese Matrix bewusst nicht tut
+
+Diese Matrix enthält bewusst keine vollständige Wiedergabe der offiziellen WCA-101 Objectives.
+
+Sie enthält daher nicht:
+
+- keine vollständige deutsche Übersetzung der offiziellen Prüfungsziele
+- keine offiziellen Prozentgewichtungen als eigene Kursstruktur
+- keine echten Prüfungsfragen
+- keine Exam Dumps
+- keine kopierten Schulungsunterlagen
+
+Stattdessen verwendet sie eigene Kompetenzbeschreibungen, eigene Labs, eigene Challenges und eigene Kontrollfragen.
 
 ## Statuswerte
 
 | Status | Bedeutung |
 |---|---|
-| Offen | Thema fehlt weitgehend |
-| Erklärt | Thema ist im Kurs erklärt |
-| Teilweise trainiert | Übungen oder Aufgaben vorhanden, aber noch nicht vollständig |
-| Trainiert | Lab, Quiz und Lösung vorhanden |
-| Prüfungsnah | Thema hat Lab, Quiz, Challenge und Wiederholung |
+| Offen | Thema fehlt weitgehend oder ist nur indirekt vorhanden |
+| Erklärt | Thema wird im Kurs beschrieben, aber noch nicht praktisch genug trainiert |
+| Teilweise trainiert | Es gibt Übungen, Labs oder Quizfragen, aber noch keine vollständige prüfungsnahe Abdeckung |
+| Trainiert | Das Thema hat Erklärung, Lab oder Challenge und Wiederholungsfragen |
+| Prüfungsnah | Das Thema wird erklärt, praktisch geübt, wiederholt und in Analyseaufgaben angewendet |
 
-## Übersicht nach WCA-Bereichen
+## Abdeckung nach eigenen Kompetenzclustern
 
-| WCA-Bereich | Gewichtung laut Objectives | Kursabdeckung | Status |
-|---|---:|---|---|
-| Wireshark-Funktionen | 10 % | erster Kontakt, Profile, TShark, Performanceanalyse | Erklärt |
-| Capture-Methoden | 10 % | Lernumgebung, Capture-Grundlagen, TShark Headless | Erklärt |
-| Capture- und Display Filter | 12 % | Display Filter, TShark, Basis-Kurs | Erklärt |
-| Oberfläche und Profile | 5 % | Oberfläche, Profile und Spalten | Erklärt |
-| Protokolle | 43 % | Ethernet, ARP, IPv4, IPv6, ICMP, UDP, DHCP, DNS, TCP | Erklärt |
-| Troubleshooting | 20 % | TCP Deep Dive, Performanceanalyse, Fehleranalyse-Methodik | Erklärt |
+Die Spalte **WCA-Referenzbereich** ist nur eine grobe Orientierung für den Abgleich mit den offiziellen Prüfungszielen. Sie gibt bewusst keine offiziellen Unterpunkte wieder.
 
-!!! important "Aktueller Stand"
-    Der Kurs erklärt viele WCA-Themen bereits gut.  
-    Für echte Prüfungsnähe brauchen wir als nächstes Labs, Quizzes, PCAP-Challenges und Screenshots.
+| Eigener Kompetenzcluster | Lernende sollen danach können | WCA-Referenzbereich | Kursstellen | Praktischer Nachweis | Status |
+|---|---|---:|---|---|---|
+| Wireshark sicher starten und erste Captures öffnen | vorhandene Mitschnitte laden, Ansichten lesen, erste Pakete untersuchen | 1, 4 | [Erster Kontakt](../03-wireshark-erster-kontakt/index.md), [erstes Capture öffnen](../03-wireshark-erster-kontakt/erstes-capture-oeffnen.md) | [Foundation First Capture](../40-labs-und-uebungen/foundation-first-capture.md), Foundation Quiz | Trainiert |
+| Wireshark-Oberfläche sinnvoll nutzen | Paketliste, Paketdetails, Bytes-Ansicht und grundlegende Bedienlogik einordnen | 1, 4 | [Oberfläche verstehen](../03-wireshark-erster-kontakt/oberflaeche-verstehen.md) | Foundation Lab, Foundation Quiz | Trainiert |
+| Profile und Spalten zweckmäßig einsetzen | Analyseprofile anlegen, Spalten ergänzen und für Fehlersuche nutzen | 1, 4 | [Profile und Spalten](../03-wireshark-erster-kontakt/profile-und-spalten.md) | [Core Features Lab](../40-labs-und-uebungen/foundation-wireshark-core-features.md) | Trainiert |
+| TShark als Ergänzung zur GUI nutzen | Captures und Filter auch ohne grafische Oberfläche nachvollziehbar auswerten | 1, 2, 3 | [TShark erster Kontakt](../03-wireshark-erster-kontakt/tshark-erster-kontakt.md), [TShark ohne GUI](../90-referenz/tshark-auf-systemen-ohne-gui.md) | Lab-Aufgaben, Challenge-Checks | Teilweise trainiert |
+| Capture-Ort und Capture-Methode bewerten | entscheiden, ob Endpunkt-, Server-, Mirror-, TAP- oder Mehrpunkt-Capture sinnvoll ist | 2, 6 | [Capture-Grundlagen](../10-basis-kurs/01-capture-grundlagen.md), [Fehleranalyse-Methodik](../20-advanced-kurs/04-fehleranalyse-methodik.md) | Analysefragen in Labs und Challenges | Teilweise trainiert |
+| Captures reproduzierbar erzeugen | Mitschnitte starten, begrenzen, speichern und für spätere Analyse nutzbar machen | 2 | [Capture-Grundlagen](../10-basis-kurs/01-capture-grundlagen.md), [Lernumgebung](../01-lern-und-uebungsumgebung/index.md) | Foundation Lab, Docker-Labs | Teilweise trainiert |
+| Capture-Qualität einschätzen | erkennen, ob ein Mitschnitt vollständig, passend platziert und für die Fragestellung geeignet ist | 2, 6 | [Fehleranalyse-Methodik](../20-advanced-kurs/04-fehleranalyse-methodik.md), [Interface Errors und Discards](../20-advanced-kurs/06-interface-errors-discards.md) | [Interface Counter Triage](../40-labs-und-uebungen/advanced-interface-counter-triage.md) | Teilweise trainiert |
+| Capture- und Display-Filter unterscheiden | wissen, wann vor dem Mitschnitt reduziert wird und wann nachträglich analysiert wird | 3 | [Capture-Grundlagen](../10-basis-kurs/01-capture-grundlagen.md), [Display Filter](../10-basis-kurs/02-display-filter.md) | [Basic Display Filter](../40-labs-und-uebungen/basic-display-filter.md), Basic Quiz | Trainiert |
+| Display-Filter methodisch erstellen | Felder finden, Operatoren einsetzen und Filter nachvollziehbar prüfen | 3 | [Display Filter](../10-basis-kurs/02-display-filter.md), [Display Filter Cheatsheet](../90-referenz/display-filter-cheatsheet.md) | Basic Display Filter Lab, Quizfragen | Trainiert |
+| Filterergebnisse kritisch bewerten | erkennen, wann ein Filter zu eng, zu breit oder fachlich irreführend ist | 3, 6 | [Display Filter](../10-basis-kurs/02-display-filter.md), [HTTP/TLS](../20-advanced-kurs/03-http-tls.md) | Labs und Challenges | Teilweise trainiert |
+| Ethernet-, ARP- und VLAN-Beobachtungen einordnen | lokale Kommunikation, Adressauflösung und Layer-2-Hinweise in Captures erkennen | 5, 6 | [Ethernet, ARP und VLAN](../10-basis-kurs/03-ethernet-arp-vlan.md) | Basic Quiz | Erklärt |
+| IPv4-, IPv6- und ICMP-Verkehr analysieren | Adressen, Protokollfelder und einfache Diagnosepakete interpretieren | 5, 6 | [IPv4, IPv6 und ICMP](../10-basis-kurs/04-ipv4-ipv6-icmp.md) | Basic Quiz | Erklärt |
+| UDP, DNS und DHCP untersuchen | Namensauflösung, Adressvergabe und UDP-basierte Abläufe nachvollziehen | 5, 6 | [UDP, DNS und DHCP](../10-basis-kurs/05-udp-dns-dhcp.md) | [DNS/HTTP Docker Lab](../40-labs-und-uebungen/basic-dns-http-docker.md), Challenge 001 | Trainiert |
+| TCP-Verbindungen grundlegend analysieren | Verbindungsaufbau, Sequenzen, ACKs und einfache Fehlerbilder erkennen | 5, 6 | [TCP-Grundlagen](../10-basis-kurs/06-tcp-grundlagen.md), [TCP Deep Dive](../20-advanced-kurs/01-tcp-deep-dive.md) | [TCP Handshake/Reset Lab](../40-labs-und-uebungen/basic-tcp-handshake-reset.md), Challenge 002 | Trainiert |
+| TCP-Performanceprobleme untersuchen | Retransmissions, RTT, Window-Hinweise und Durchsatzprobleme einordnen | 5, 6 | [TCP Deep Dive](../20-advanced-kurs/01-tcp-deep-dive.md), [Performanceanalyse](../20-advanced-kurs/02-performance-analyse.md) | [TCP Retransmission Lab](../40-labs-und-uebungen/advanced-tcp-retransmission.md), Challenge 003, Challenge 006 | Trainiert |
+| HTTP- und TLS-Beobachtungen bewerten | einfache Webabläufe, TLS-Indikatoren und typische Analysegrenzen verstehen | 5, 6 | [HTTP/TLS](../20-advanced-kurs/03-http-tls.md) | [HTTP/TLS Lab](../40-labs-und-uebungen/advanced-http-tls.md), Challenge 004 | Trainiert |
+| Analyseergebnisse strukturiert dokumentieren | Beobachtung, Bewertung und Empfehlung sauber voneinander trennen | 6 | [Fehleranalyse-Methodik](../20-advanced-kurs/04-fehleranalyse-methodik.md), [Analysebericht-Vorlage](../90-referenz/analysebericht-vorlage.md) | Musterlösungen und Challenge-Berichte | Teilweise trainiert |
+| Security-nahe Basismuster erkennen | auffällige Kommunikation beschreiben, ohne aus Wireshark allein falsche Schlüsse zu ziehen | 5, 6 | [Security Basics](../20-advanced-kurs/05-security-basics.md) | [Security Basics Lab](../40-labs-und-uebungen/advanced-security-basics.md), Challenge 005 | Trainiert |
+| Monitoring-Daten mit Paketmitschnitten abgleichen | Interface-Counter, Discards, Errors und Retransmissions gemeinsam bewerten | 6 | [Interface Errors und Discards](../20-advanced-kurs/06-interface-errors-discards.md), [Interface Counter Cheatsheet](../90-referenz/interface-counter-cheatsheet.md) | [Interface Counter Triage](../40-labs-und-uebungen/advanced-interface-counter-triage.md), Challenge 007 | Trainiert |
 
-## 1. Wireshark-Funktionen
+## Abdeckung nach Kursbestandteilen
 
-| Lernziel | Kursinhalt | Lab | Quiz | Status |
-|---|---|---|---|---|
-| Capture-Dateien öffnen, speichern und schließen | erster Kontakt, Capture-Grundlagen | fehlt | fehlt | Erklärt |
-| pcap und pcapng unterscheiden | Capture-Grundlagen | fehlt | fehlt | Teilweise |
-| Pakete oder Paketbereiche exportieren | fehlt | fehlt | fehlt | Offen |
-| Objekte aus Captures exportieren | HTTP/TLS, Security-Basics | fehlt | fehlt | Teilweise |
-| Find Packet verwenden | fehlt | fehlt | fehlt | Offen |
-| Packet Comments und File Comments verwenden | fehlt | fehlt | fehlt | Offen |
-| Time Reference setzen und entfernen | Performanceanalyse | fehlt | fehlt | Teilweise |
-| Zeitformate anwenden | Performanceanalyse | fehlt | fehlt | Erklärt |
-| Name Resolution verstehen und konfigurieren | Profile und Spalten | fehlt | fehlt | Teilweise |
-| Decode As verwenden | fehlt | fehlt | fehlt | Offen |
-| Capture File Properties auswerten | fehlt | fehlt | fehlt | Offen |
-| Protocol Hierarchy verwenden | Performanceanalyse, Methodik, Security | fehlt | fehlt | Erklärt |
-| Conversations verwenden | Methodik, Security | fehlt | fehlt | Erklärt |
-| Endpoints verwenden | Methodik, Security | fehlt | fehlt | Erklärt |
-| I/O Graph erstellen und interpretieren | Performanceanalyse | fehlt | fehlt | Erklärt |
-| echte Capture-Bytes von generierten Feldern unterscheiden | TCP Deep Dive | fehlt | fehlt | Teilweise |
-| Follow TCP/UDP Stream verwenden | TCP-Grundlagen, HTTP/TLS | fehlt | fehlt | Erklärt |
+| Kursbestandteil | Zweck | Aktueller Beitrag zur WCA-nahen Vorbereitung |
+|---|---|---|
+| Orientierung | Erwartung, Kursgrenzen und rechtliche Abgrenzung klären | wichtig für faire, nicht-offizielle Prüfungsvorbereitung |
+| Lern- und Übungsumgebung | reproduzierbare lokale Arbeitsumgebung schaffen | Grundlage für eigene Captures und Labs |
+| Wireshark erster Kontakt | Bedienung, Oberfläche und erste Analysefähigkeit aufbauen | Basis für Toolkompetenz |
+| Basis-Kurs | zentrale Protokoll- und Filtergrundlagen vermitteln | Fundament für fast alle Analyseaufgaben |
+| Advanced-Kurs | Troubleshooting, Performance und Security-nahe Analyse vertiefen | prüfungsnahe Transferleistung |
+| Labs und Übungen | Wissen praktisch anwenden | macht aus erklärten Themen trainierte Themen |
+| Quizzes | Wiederholung und Selbstkontrolle ermöglichen | stärkt Begriffe, Methodik und typische Denkfehler |
+| PCAP-Challenges | unbekannte Situationen analysieren | wichtigster Baustein für echte Analysefähigkeit |
+| Referenzbereich | Cheatsheets, Berichtsvorlagen und externe Ressourcen bündeln | unterstützt Wiederholung und Transfer |
 
-## 2. Capture-Methoden
+## Priorisierte Ausbaupunkte
 
-| Lernziel | Kursinhalt | Lab | Quiz | Status |
-|---|---|---|---|---|
-| Endpunkt-Capture bewerten | Capture-Grundlagen, Methodik | fehlt | fehlt | Erklärt |
-| TAP, Mirror Port und Infrastruktur-Capture vergleichen | Capture-Grundlagen | fehlt | fehlt | Teilweise |
-| Multi-Point Capture einordnen | Fehleranalyse-Methodik | fehlt | fehlt | Teilweise |
-| richtiges Interface auswählen | erstes Capture, Capture-Grundlagen | fehlt | fehlt | Erklärt |
-| Capture starten, stoppen und neu starten | erstes Capture | fehlt | fehlt | Erklärt |
-| Capture nach Größe, Paketanzahl oder Dauer begrenzen | fehlt | fehlt | fehlt | Offen |
-| Ring Buffer verwenden | fehlt | fehlt | fehlt | Offen |
-| Capture speichern | erstes Capture, Capture-Grundlagen | fehlt | fehlt | Erklärt |
-| Pakete in neue Datei exportieren | fehlt | fehlt | fehlt | Offen |
-| Command Line Capture verwenden | TShark, TShark Headless | fehlt | fehlt | Erklärt |
-| Promiscuous Mode und Monitor Mode einordnen | Ethernet/ARP/VLAN | fehlt | fehlt | Teilweise |
+| Priorität | Ausbaupunkt | Warum wichtig? | Mögliche Umsetzung |
+|---:|---|---|---|
+| 1 | Mehr Aufgaben zu Wireshark-Kernfunktionen | Bedienfunktionen müssen praktisch sitzen, nicht nur erklärt sein | weiteres Foundation-Lab oder Erweiterung des Core-Features-Labs |
+| 2 | Mehr Aufgaben zur Capture-Planung | Viele Analysefehler entstehen durch falsche Mitschnittpunkte | eigenes Lab zu Capture-Strategie und Capture-Qualität |
+| 3 | Filter-Fallen ausbauen | falsche Filter führen zu falschen Schlussfolgerungen | Zusatzaufgaben zu Negation, Feldtypen, Mehrfachwerten und generierten Feldern |
+| 4 | Protokoll-Labs stärker mit PCAP-Challenges verzahnen | reine Erklärung reicht für Analysefähigkeit nicht aus | zu jedem Basisprotokoll mindestens eine kleine Challenge |
+| 5 | Review-Fragen je Kapitel ergänzen | Wiederholung braucht kurze, prüfbare Einheiten | Modulquiz pro Kursabschnitt |
+| 6 | Analysebericht konsequent verwenden | Lernende sollen Ergebnisse begründen können | jede größere Challenge mit Kurzbericht abschließen |
+| 7 | Quellen- und Lizenzprüfung in Review aufnehmen | schützt das Projekt vor unklaren Fremdinhalten | Review-Checkliste für neue Seiten, Bilder, PCAPs und Quizfragen |
 
-## 3. Filter
+## Review-Kriterien für neue Inhalte
 
-| Lernziel | Kursinhalt | Lab | Quiz | Status |
-|---|---|---|---|---|
-| Capture Filter und Display Filter unterscheiden | Capture-Grundlagen, Display Filter | fehlt | fehlt | Erklärt |
-| Capture Filter für Protokoll/IP/MAC/Port verwenden | Display Filter, Capture-Grundlagen | fehlt | fehlt | Teilweise |
-| Display Filter manuell erstellen | Display Filter | fehlt | fehlt | Erklärt |
-| Display Filter per Rechtsklick erstellen | Display Filter | fehlt | fehlt | Erklärt |
-| Display Filter per Drag/Drop erstellen | fehlt | fehlt | fehlt | Offen |
-| Membership Filter verwenden | fehlt | fehlt | fehlt | Offen |
-| logische Operatoren verwenden | Display Filter | fehlt | fehlt | Erklärt |
-| Display Filter Buttons erstellen | fehlt | fehlt | fehlt | Offen |
-| unvollständige Filterergebnisse erkennen | Display Filter, HTTP/TLS | fehlt | fehlt | Teilweise |
-| Negation und any/all-Fallen verstehen | fehlt | fehlt | fehlt | Offen |
-| Filter aus Conversations/Endpoints anwenden | Methodik | fehlt | fehlt | Teilweise |
-| Filter mit generierten Feldern erstellen | Display Filter, TCP Deep Dive | fehlt | fehlt | Teilweise |
+Neue Kursinhalte sollten vor dem Merge gegen diese Fragen geprüft werden:
 
-## 4. Oberfläche und Profile
+| Prüffrage | Ziel |
+|---|---|
+| Ist der Text eigenständig formuliert? | keine ungeprüfte Übernahme externer Texte |
+| Wird eine externe Quelle nur verlinkt statt kopiert? | Urheberrechtsrisiko reduzieren |
+| Sind Screenshots selbst erstellt oder sauber lizenziert? | Bildrechte klären |
+| Sind PCAPs selbst erzeugt, synthetisch oder klar lizenziert? | Datenschutz- und Lizenzrisiken vermeiden |
+| Enthält der Inhalt keine echten Prüfungsfragen oder Dumps? | faire Prüfungsvorbereitung sicherstellen |
+| Ist klar erkennbar, dass das Projekt unabhängig ist? | Marken- und Verwechslungsrisiko reduzieren |
+| Wird praktische Analysefähigkeit trainiert? | Ziel des Kurses sichern |
 
-| Lernziel | Kursinhalt | Lab | Quiz | Status |
-|---|---|---|---|---|
-| GUI-Bereiche benennen | Oberfläche verstehen | fehlt | fehlt | Erklärt |
-| Layout anpassen | fehlt | fehlt | fehlt | Offen |
-| Wert von Profilen erklären | Profile und Spalten | fehlt | fehlt | Erklärt |
-| Profile erstellen, kopieren und ändern | Profile und Spalten | fehlt | fehlt | Erklärt |
-| Spalten für Troubleshooting nutzen | Profile und Spalten | fehlt | fehlt | Erklärt |
-| Spalten auf mehrere Arten hinzufügen | Profile und Spalten | fehlt | fehlt | Teilweise |
-| Coloring Rules nutzen | Profile und Spalten | fehlt | fehlt | Teilweise |
-| Minimap / farbige Seitenleiste nutzen | fehlt | fehlt | fehlt | Offen |
-| Colorize Conversation verwenden | fehlt | fehlt | fehlt | Offen |
-| Protocol Preferences verstehen | HTTP/TLS, TCP Deep Dive | fehlt | fehlt | Teilweise |
-| Pakete markieren und entmarkieren | fehlt | fehlt | fehlt | Offen |
+## Empfohlener Lernpfad
 
-## 5. Protokolle
+Für Lernende ergibt sich aus der Matrix dieser pragmatische Ablauf:
 
-| Protokollbereich | Kursinhalt | Lab | Quiz | Status |
-|---|---|---|---|---|
-| Ethernet | Ethernet, ARP und VLAN | fehlt | fehlt | Erklärt |
-| ARP | Ethernet, ARP und VLAN | fehlt | fehlt | Erklärt |
-| IPv4 | IPv4, IPv6 und ICMP | fehlt | fehlt | Erklärt |
-| ICMPv4 | IPv4, IPv6 und ICMP | fehlt | fehlt | Erklärt |
-| IPv6 | IPv4, IPv6 und ICMP | fehlt | fehlt | Erklärt |
-| ICMPv6 | IPv4, IPv6 und ICMP | fehlt | fehlt | Erklärt |
-| UDP | UDP, DNS und DHCP | fehlt | fehlt | Erklärt |
-| DHCPv4 | UDP, DNS und DHCP | fehlt | fehlt | Erklärt |
-| DNS | UDP, DNS und DHCP | fehlt | fehlt | Erklärt |
-| TCP | TCP-Grundlagen, TCP Deep Dive | fehlt | fehlt | Erklärt |
+1. Orientierung lesen
+2. Lernumgebung aufbauen
+3. Wireshark-Erstkontakt durcharbeiten
+4. Basis-Kurs absolvieren
+5. Foundation- und Basic-Labs bearbeiten
+6. Advanced-Kurs durcharbeiten
+7. Advanced-Labs bearbeiten
+8. Quizzes und Modulprüfungen nutzen
+9. PCAP-Challenges ohne Lösungshinweise bearbeiten
+10. Schwächen anhand dieser Matrix gezielt nacharbeiten
+11. Vor einer Prüfungsanmeldung die offiziellen WCA-Informationen erneut prüfen
 
-## 6. Troubleshooting
+## Pflegehinweise
 
-| Lernziel | Kursinhalt | Lab | Quiz | Status |
-|---|---|---|---|---|
-| Topologie aus Capture ableiten | OSI-Referenz, Methodik | fehlt | fehlt | Teilweise |
-| TCP Sequence und ACK analysieren | TCP Deep Dive | fehlt | fehlt | Erklärt |
-| Server Performance von langsamer Übertragung unterscheiden | Performanceanalyse, HTTP/TLS | fehlt | fehlt | Erklärt |
-| hohe RTT bei Request/Response-Protokollen bewerten | Performanceanalyse | fehlt | fehlt | Erklärt |
-| niedrige Window Size und hohe RTT einordnen | TCP Deep Dive, Performanceanalyse | fehlt | fehlt | Teilweise |
-| ARP-, DHCP- und ICMP-Probleme erkennen | Basis-Kurs | fehlt | fehlt | Erklärt |
+Diese Matrix sollte aktualisiert werden, wenn:
 
-## Priorisierte Lücken
+- neue Kapitel entstehen
+- neue Labs oder Challenges hinzukommen
+- Quizfragen ergänzt werden
+- Kursbereiche umbenannt werden
+- sich die offizielle WCA-Struktur ändert
+- externe Ressourcen entfernt oder ersetzt werden
 
-| Priorität | Thema | Warum wichtig? |
-|---:|---|---|
-| 1 | Labs zu Display Filter, DNS, TCP und HTTP/TLS | zentrale Prüfungskompetenz |
-| 2 | Wireshark-Funktionen wie Find Packet, Comments, Export, Decode As | aktuell noch zu wenig behandelt |
-| 3 | Capture-Begrenzung und Ring Buffer | WCA-relevant und praxisnah |
-| 4 | Filter-Fallen: Membership, Negation, any/all | WCA-relevant und fehleranfällig |
-| 5 | Screenshots zur Oberfläche, Filterleiste, Conversations, I/O Graphs | für Lernende sehr hilfreich |
-| 6 | Modulprüfungen und Quizfragen | Prüfungsvorbereitung braucht Wiederholung |
-| 7 | PCAP-Challenges | echte Analysefähigkeit trainieren |
-
-## Nächster Ausbau
-
-Der nächste sinnvolle Ausbauschritt nach dieser Matrix:
-
-```text
-1. externe Ressourcen-Matrix
-2. Lab-Templates
-3. erstes Foundation-Lab
-4. erstes Docker-Lab
-5. erste Quizfragen
-6. Screenshot-Styleguide
-```
+Dabei gilt: Die Matrix darf auf offizielle Informationen verweisen, soll deren Inhalt aber nicht als eigene deutschsprachige Ersatzfassung übernehmen.

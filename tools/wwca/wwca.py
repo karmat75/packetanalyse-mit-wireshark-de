@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-wwca - local helper tool for the Wireshark WCA DE course.
+wwca - local helper tool for the packet analysis course.
 
 This tool intentionally stays small and local-only.
 
@@ -41,7 +41,7 @@ except ImportError:
     sys.exit(2)
 
 
-APP_NAME = "wireshark-wca-de"
+APP_NAME = "packet-analysis-course-de"
 COURSE_VERSION = "0.1.0"
 
 
@@ -834,7 +834,7 @@ def progress_reset(_args: argparse.Namespace) -> int:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="wwca",
-        description="Local helper tool for Wireshark WCA DE course.",
+        description="Local helper tool for the packet analysis course.",
     )
 
     sub = parser.add_subparsers(dest="command")

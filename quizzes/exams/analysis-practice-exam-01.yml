@@ -1,0 +1,15 @@
+id: analysis-practice-exam-01
+title: "Gemischter Analyse-Selbsttest 01"
+description: "Eigener gemischter Selbsttest aus allen aktuellen Fragepools. Keine offizielle Prüfungssimulation und keine echten Prüfungsfragen."
+pass_score: 80
+time_limit_minutes: 60
+shuffle: true
+sections:
+  - pool: foundation
+    count: 5
+  - pool: basic
+    count: 10
+  - pool: advanced
+    count: 10
+  - pool: analysis-practice
+    count: 5

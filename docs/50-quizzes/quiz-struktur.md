@@ -100,9 +100,9 @@ Besser:
 Im Capture sind mehrere SYN-Pakete vom Client sichtbar, aber kein SYN/ACK. Welche Aussage ist durch diesen Capture belegbar?
 ```
 
-## WCA-nahe Formulierung
+## Szenarioorientierte Formulierung
 
-WCA-nahe Fragen sollten häufig szenariobasiert sein:
+Gute Analysefragen sollten häufig szenariobasiert sein:
 
 - kurze Ausgangslage
 - konkrete Beobachtung

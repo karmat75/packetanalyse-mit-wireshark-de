@@ -182,7 +182,7 @@ nav:
       - Basic-Quiz: 50-quizzes/basic-quiz.md
       - Advanced-Quiz: 50-quizzes/advanced-quiz.md
       - Interface-Counter-Quiz: 50-quizzes/interface-counter-quiz.md
-      - WCA-Practice-Quiz: 50-quizzes/wca-practice-quiz.md
+      - Gemischtes Analyse-Quiz: 50-quizzes/analysis-practice-quiz.md
 
   - PCAP-Challenges:
       - Überblick: 60-pcap-challenges/index.md

@@ -1,8 +1,12 @@
-# Übungs- und Prüfungsmodell
+# Übungs- und Selbsttestmodell
 
-Dieser Kurs soll nicht nur erklären, sondern trainieren.
+Dieser Kurs soll nicht nur erklären, sondern Analysefähigkeit trainieren.
 
-Dafür brauchen wir ein klares Modell für Übungen, Labs, Quizfragen, Modulprüfungen und PCAP-Challenges.
+Dafür braucht das Projekt ein klares Modell für Übungen, Labs, Quizfragen, Selbsttests und PCAP-Challenges. Dieses Modell ist unabhängig erstellt. Es enthält keine offiziellen Prüfungsfragen, keine Exam Dumps und keine kopierten Trainingsunterlagen.
+
+!!! info "Unabhängiges Kursmodell"
+    Die Übungen und Selbsttests dieses Projekts orientieren sich an praktischen Analysekompetenzen.  
+    Offizielle Prüfungsinformationen und verbindliche Prüfungsziele müssen immer bei den offiziellen Stellen geprüft werden. Dieses Dokument ersetzt diese Informationen nicht.
 
 ## Grundidee
 
@@ -18,7 +22,7 @@ Beispiel TCP:
 |---|---|
 | Erklären | TCP Handshake, Flags, Streams |
 | Üben | Lab mit einfachem Webaufruf |
-| Prüfen | Quizfragen zu SYN, SYN/ACK, ACK |
+| Prüfen | eigene Quizfragen zu SYN, SYN/ACK, ACK |
 | Anwenden | PCAP-Challenge mit Verbindungsproblem |
 
 ## Übungstypen
@@ -27,17 +31,19 @@ Beispiel TCP:
 
 Ziel:
 
-- Begriff verstehen
-- Zusammenhang erkennen
-- Merksatz aufnehmen
+- Begriffe verstehen
+- Zusammenhänge erkennen
+- Merksätze aufnehmen
+- typische Fehlannahmen vermeiden
 
 ### 2. Bedienaufgaben
 
 Ziel:
 
-- Wireshark-Funktion nutzen
+- Wireshark-Funktionen nutzen
 - Oberfläche kennenlernen
 - Menüpunkte finden
+- Ergebnisse nachvollziehbar dokumentieren
 
 Beispiel:
 
@@ -52,6 +58,7 @@ Ziel:
 - Display Filter anwenden
 - passende Pakete isolieren
 - Filter dokumentieren
+- Grenzen des Filters benennen
 
 Beispiel:
 
@@ -66,6 +73,7 @@ Ziel:
 - Analyse reproduzierbar machen
 - Filter im Terminal anwenden
 - Felder gezielt ausgeben
+- Ergebnisse skriptfähig vorbereiten
 
 ### 5. Analyseberichte
 
@@ -75,6 +83,7 @@ Ziel:
 - Frame-Nummern nennen
 - Einschränkungen benennen
 - nächsten Schritt formulieren
+- keine Ursache behaupten, die der Capture nicht belegt
 
 ### 6. PCAP-Challenges
 
@@ -82,7 +91,8 @@ Ziel:
 
 - unbekannten Capture analysieren
 - mehrere Hinweise kombinieren
-- Ergebnis sauber begründen
+- Hypothesen sauber begründen
+- Gegenbeispiele und Unsicherheiten benennen
 
 ## Lab-Struktur
 
@@ -113,10 +123,12 @@ title: "DNS NXDOMAIN analysieren"
 track: basic
 level: foundation
 estimated_time: 30m
-wca_objectives:
-  - dns
-  - display-filters
-  - packet-details
+course_competencies:
+  - dns-analysis
+  - display-filtering
+  - packet-details-navigation
+external_reference_areas:
+  - certification-objectives-external-reference-only
 tools:
   - wireshark
   - tshark
@@ -127,6 +139,16 @@ outputs:
   - analysis-report
   - quiz
 ```
+
+Hinweise zu den Feldern:
+
+| Feld | Zweck |
+|---|---|
+| `course_competencies` | eigene Kompetenz-Tags dieses Kurses |
+| `external_reference_areas` | grobe externe Referenzbereiche, ohne offiziellen Wortlaut zu übernehmen |
+| `tools` | benötigte Werkzeuge |
+| `requires` | fachliche oder technische Voraussetzungen |
+| `outputs` | erwartete Arbeitsergebnisse der Lernenden |
 
 ## Quizmodell
 
@@ -140,14 +162,18 @@ quizzes/
 │   ├── foundation.yml
 │   ├── basic.yml
 │   ├── advanced.yml
-│   └── wca-practice.yml
+│   └── analysis-practice.yml
 ├── exams/
+│   ├── module-foundation.yml
 │   ├── module-basic.yml
 │   ├── module-advanced.yml
-│   └── practice-exam-01.yml
-└── objectives/
-    └── wca-objectives.yml
+│   └── readiness-self-test-01.yml
+└── coverage/
+    ├── course-competencies.yml
+    └── external-reference-map.yml
 ```
+
+Die Datei `external-reference-map.yml` darf nur grob abbilden, welche eigenen Kurskompetenzen auf welche externen Referenzbereiche einzahlen. Sie soll keine offizielle Objective-Liste nachbauen, übersetzen oder ersetzen.
 
 ## Fragetypen
 
@@ -170,7 +196,7 @@ Geplante Fragetypen:
 ```yaml
 id: q-basic-tcp-001
 type: single-choice
-objective: tcp-handshake
+competency: tcp-handshake
 question: "Welche Paketfolge beschreibt einen erfolgreichen TCP 3-Way Handshake?"
 answers:
   - text: "SYN, SYN/ACK, ACK"
@@ -186,17 +212,21 @@ references:
   - docs/10-basis-kurs/06-tcp-grundlagen.md
 ```
 
-## Zwischenprüfungen
+## Selbsttests und Modulprüfungen
 
 Zwischenprüfungen sollen pro Kursblock entstehen:
 
-| Prüfung | Inhalt |
+| Selbsttest | Inhalt |
 |---|---|
 | Foundation Check | Umgebung, Oberfläche, TShark |
 | Basis-Modulprüfung | Ethernet, ARP, IP, ICMP, UDP, DNS, DHCP, TCP-Grundlagen |
 | Advanced-Modulprüfung | TCP Deep Dive, Performance, HTTP/TLS, Methodik, Security |
-| WCA Practice 01 | gemischte prüfungsnahe Fragen |
-| WCA Practice 02 | gemischte Fragen plus PCAP-Szenarien |
+| Prüfungsnaher Selbsttest 01 | gemischte Fragen aus eigenen Kurskompetenzen |
+| Prüfungsnaher Selbsttest 02 | gemischte Fragen plus PCAP-Szenarien |
+
+!!! warning "Keine offiziellen Prüfungsfragen"
+    Prüfungsnahe Selbsttests in diesem Repository sind eigene Lernkontrollen.  
+    Sie dürfen keine echten Prüfungsfragen, keine vertraulichen Inhalte und keine nachgebauten Exam Dumps enthalten.
 
 ## Bewertung
 
@@ -205,7 +235,7 @@ Für Kurszwecke reicht eine einfache Bewertung.
 | Ergebnis | Bewertung |
 |---:|---|
 | 90–100 % | sehr sicher |
-| 80–89 % | prüfungsnah gut |
+| 80–89 % | gut vorbereitet |
 | 70–79 % | solide, Lücken prüfen |
 | 60–69 % | Grundlagen wiederholen |
 | unter 60 % | Thema erneut durcharbeiten |
@@ -228,13 +258,13 @@ Der Kurs soll ohne zentralen Server funktionieren.
 Geplante lokale Speicherung:
 
 ```text
-~/.local/share/wireshark-wca-de/progress.json
+~/.local/share/packet-analysis-course-de/progress.json
 ```
 
 Spätere Alternative:
 
 ```text
-~/.local/share/wireshark-wca-de/progress.sqlite
+~/.local/share/packet-analysis-course-de/progress.sqlite
 ```
 
 Beispielstruktur:
@@ -248,7 +278,7 @@ Beispielstruktur:
       "timestamp": "2026-05-15T10:30:00+02:00",
       "score": 82,
       "passed": true,
-      "objectives": ["dns", "tcp", "display-filters"]
+      "competencies": ["dns-analysis", "tcp-analysis", "display-filtering"]
     }
   ],
   "completed_labs": [
@@ -260,17 +290,17 @@ Beispielstruktur:
 
 ## Geplantes CLI-Tool
 
-Später kann ein kleines Tool `wwca` entstehen.
+Später kann ein kleines Tool `packetlab` entstehen.
 
 Beispielbefehle:
 
 ```bash
-wwca progress
-wwca quiz run basic
-wwca lab check lab-basic-030-dns-nxdomain
-wwca exam start practice-exam-01
-wwca progress export ./mein-fortschritt.json
-wwca progress import ./mein-fortschritt.json
+packetlab progress
+packetlab quiz run basic
+packetlab lab check lab-basic-030-dns-nxdomain
+packetlab self-test start readiness-self-test-01
+packetlab progress export ./mein-fortschritt.json
+packetlab progress import ./mein-fortschritt.json
 ```
 
 Wichtig:
@@ -279,7 +309,7 @@ Wichtig:
 
 ## Qualität von Quizfragen
 
-Gute Fragen prüfen Verständnis.
+Gute Fragen prüfen Verständnis und Analysefähigkeit.
 
 Schlecht:
 
@@ -301,12 +331,27 @@ Gute Fragen sollten:
 - eine klare Begründung enthalten
 - auf Kurskapitel verweisen
 - keine echten Prüfungsfragen kopieren
+- keine vertraulichen Trainingsmaterialien nachbauen
 - nicht nur Definitionen abfragen
-- WCA-Ziele abdecken
+- eigene Kurskompetenzen trainieren
+- bei externen Referenzen nur grob verweisen
+
+## Redaktionelle Prüfpunkte
+
+Vor der Aufnahme neuer Labs, Quizfragen oder Selbsttests sollte geprüft werden:
+
+| Prüffrage | Ziel |
+|---|---|
+| Ist die Aufgabe selbst formuliert? | kein kopierter Fremdtext |
+| Wurde ein eigener Capture oder ein klar lizenzierter Capture verwendet? | saubere PCAP-Rechte |
+| Ist die Quelle externer Inhalte dokumentiert? | Nachvollziehbarkeit |
+| Wird keine offizielle Objective-Liste nachgebaut? | geringeres Lizenzrisiko |
+| Klingt der Test nicht wie offizielles Prüfungsmaterial? | klare Markenabgrenzung |
+| Enthält die Lösung nachvollziehbare Begründungen? | didaktischer Wert |
 
 ## Nächster praktischer Schritt
 
-Nach diesem Konzept sollten wir als nächstes erstellen:
+Nach diesem Konzept sollten als nächstes entstehen:
 
 ```text
 labs/foundation/lab-foundation-001-first-capture/
@@ -314,6 +359,7 @@ labs/basic/lab-basic-010-display-filter/
 labs/basic/lab-basic-020-dns-nxdomain/
 quizzes/questions/foundation.yml
 quizzes/questions/basic.yml
+quizzes/coverage/course-competencies.yml
 ```
 
 Damit beginnt der Kurs, von einer starken Dokumentation zu einem echten Trainingssystem zu werden.
