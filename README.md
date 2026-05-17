@@ -1,8 +1,8 @@
-# Packetanalyse mit Wireshark – DE
+# Packetanalyse mit Wireshark
 
 Unabhängiger deutschsprachiger Open-Source-Selbstlernkurs zur Netzwerkanalyse mit Wireshark und zur fairen WCA-101-Vorbereitung.
 
-> Dieses Projekt ist kein offizieller Kurs der Wireshark Foundation und enthält keine offiziellen Prüfungsfragen, Exam Dumps oder geschützten Zertifizierungsinhalte. Wireshark und WCA werden nur beschreibend verwendet. Ziel ist der Aufbau echter Analysekompetenz mit Wireshark, TShark und reproduzierbaren Laborübungen.
+> Dieses Projekt ist ein unabhängiger Selbstlernkurs. Es ist kein offizieller Kurs der Wireshark Foundation, keine offizielle WCA-Vorbereitung, kein Training-Partner-Angebot und nicht durch die Wireshark Foundation zertifiziert, geprüft oder unterstützt. Wireshark und WCA werden ausschließlich beschreibend verwendet. Das Repository enthält keine offiziellen Prüfungsfragen, keine Exam Dumps und keine lokal gespiegelten oder nachgebildeten Zertifizierungsunterlagen.
 
 ---
 
@@ -21,6 +21,27 @@ Der Kurs richtet sich an Menschen, die bereits erste Kenntnisse im Bereich Netzw
 Der Kurs setzt jedoch nicht voraus, dass bereits tiefes Wissen zu Netzwerkprotokollen, Paketaufbau oder TCP/IP-Analyse vorhanden ist.
 
 Ziel ist es, Schritt für Schritt von der Lernumgebung bis zur fortgeschrittenen Paket- und Protokollanalyse zu kommen.
+
+---
+
+## Rechte-, Quellen- und Markenprinzip
+
+Dieser Kurs soll langfristig frei nutzbar und rechtlich sauber bleiben. Deshalb gilt für alle Inhalte:
+
+- eigene Erklärungen statt kopierter Fremdtexte
+- eigene Labs, eigene Szenarien und eigene Quizfragen
+- eigene Screenshots aus eigenen Laborumgebungen bevorzugen
+- externe Quellen verlinken, kurz einordnen und nicht als Kurstext übernehmen
+- offizielle WCA-101-Informationen nur als externe Referenz zum Abgleich verwenden
+- keine offiziellen Prüfungsfragen, keine nachgestellten Prüfungsfragen und keine Exam Dumps
+- Marken, Produktnamen und Logos nur beschreibend verwenden
+
+Ausführliche Regeln stehen in:
+
+- [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- [`docs/90-referenz/beitragen-und-review.md`](docs/90-referenz/beitragen-und-review.md)
+- [`docs/90-referenz/externe-ressourcen.md`](docs/90-referenz/externe-ressourcen.md)
+- [`docs/90-referenz/screenshot-styleguide.md`](docs/90-referenz/screenshot-styleguide.md)
 
 ---
 
@@ -134,17 +155,17 @@ Themen:
 - Applikationsprobleme
 - Analyseberichte
 
-### 4. WCA-nahe Vorbereitung
+### 4. WCA-nahe Orientierung
 
-Dieser Abschnitt unterstützt die Vorbereitung auf WCA-101, ohne offizielle Prüfungsziele, Prüfungsfragen oder Trainingsunterlagen nachzubilden.
+Dieser Abschnitt unterstützt eine eigenständige, faire Vorbereitung auf WCA-101. Er beschreibt, welche Kursbereiche typische Analysekompetenzen trainieren, ersetzt aber weder die offiziellen Prüfungsinformationen noch die offiziellen WCA-101 Objectives.
 
 Inhalte:
 
-- Kursabdeckungs-Matrix
-- Wiederholungsfragen
+- Kursabdeckungs-Matrix auf Basis eigener Kurskompetenzen
+- Wiederholungsfragen mit eigenen Formulierungen
 - praktische PCAP-Challenges
-- Zwischenprüfungen
-- unabhängige Selbsttests
+- Zwischenprüfungen zur Lernkontrolle
+- unabhängige Selbsttests ohne offizielle Prüfungsfragen
 - prüfungsnahe Lernstrategie
 - typische Denkfehler
 - Analyse unter Zeitdruck
@@ -269,9 +290,9 @@ oder später:
 
 ## Externe Ressourcen
 
-Der Kurs soll auf gute externe Ressourcen verweisen, diese aber nicht ungeprüft kopieren.
+Der Kurs soll auf gute externe Ressourcen verweisen, diese aber nicht übernehmen oder lokal nachbilden. Externe Quellen dienen als Vertiefung, Aktualitätsprüfung und weiterführende Referenz.
 
-Geplante Ressourcentypen:
+Geeignete Ressourcentypen:
 
 - offizielle Wireshark-Dokumentation
 - Wireshark User Guide
@@ -279,16 +300,18 @@ Geplante Ressourcentypen:
 - TShark Manual Page
 - SharkFest-Videos
 - frei verfügbare Artikel
-- öffentlich nutzbare PCAP-Sammlungen
+- öffentlich nutzbare PCAP-Sammlungen mit klarer Lizenz
 - ergänzende TCP/IP-Lernmaterialien
 
-Jede Lektion soll möglichst passende Querverweise enthalten.
+Jede Lektion soll möglichst passende Querverweise enthalten. Längere Übernahmen, Übersetzungen, Transkripte, lokale Spiegelungen oder nachgebaute Fassungen externer Inhalte gehören nicht in dieses Repository.
+
+Für offizielle WCA-101-Informationen gilt besonders: Sie werden extern verlinkt und zum Abgleich genutzt, aber nicht vollständig übersetzt, strukturell nachgebildet oder als lokale Ersatzfassung veröffentlicht.
 
 ---
 
 ## Umgang mit PCAP-Dateien
 
-Paketmitschnitte können sensible Informationen enthalten.
+Paketmitschnitte können sensible, personenbezogene oder sicherheitsrelevante Informationen enthalten.
 
 Deshalb gelten für dieses Repository folgende Regeln:
 
@@ -296,9 +319,11 @@ Deshalb gelten für dieses Repository folgende Regeln:
 - keine echten Zugangsdaten veröffentlichen
 - keine Kundendaten veröffentlichen
 - keine personenbezogenen Daten veröffentlichen
-- bevorzugt selbst erzeugte Captures verwenden
-- externe Captures nur bei klarer Lizenzlage aufnehmen
+- bevorzugt selbst erzeugte Captures aus kontrollierten Labs verwenden
+- synthetische Testdaten klar kennzeichnen
+- externe Captures nur bei klarer Lizenzlage, dokumentierter Quelle und fachlicher Notwendigkeit aufnehmen
 - externe Captures ansonsten nur verlinken
+- Security-nahe Captures vor einer Aufnahme besonders kritisch prüfen
 
 ---
 
@@ -327,7 +352,9 @@ bash tools/quality/install_git_hooks.sh
 
 Damit laufen die Repository-Checks automatisch vor jedem Commit.
 
-Details siehe `CONTRIBUTING.md` und `tools/quality/README.md`.
+Details siehe `CONTRIBUTING.md`, `tools/quality/README.md` und `docs/90-referenz/beitragen-und-review.md`.
+
+Bei Pull Requests mit neuen Texten, Bildern, PCAPs, Quizfragen oder externen Quellen ist zusätzlich der Rechte-, Quellen- und Markencheck aus dem Review-Leitfaden zu prüfen.
 
 ---
 
@@ -381,11 +408,16 @@ Mögliche Beiträge:
 
 Bitte beachte:
 
-- keine echten Prüfungsfragen
+- keine offiziellen Prüfungsfragen
+- keine nachgestellten Prüfungsfragen
 - keine Exam Dumps
+- keine kopierten Fremdtexte
+- keine ungeklärten Screenshots, Logos oder Bilder
 - keine privaten Captures
 - keine Zugangsdaten
 - keine urheberrechtlich problematischen Inhalte
+
+Neue Inhalte sollten vor dem Pull Request gegen `CONTRIBUTING.md` und den Review-Leitfaden geprüft werden.
 
 ---
 
@@ -423,8 +455,10 @@ Massgeblich ist die Zuordnung in der Datei `LICENSE`.
 Wichtige Hinweise:
 
 - Fremdmaterial bleibt unter der jeweiligen Originallizenz.
-- Inhalte mit unklarer Lizenz werden nicht uebernommen, sondern nur verlinkt.
+- Inhalte mit unklarer Lizenz werden nicht übernommen, sondern nur verlinkt.
+- Verlinkte externe Inhalte sind nicht Bestandteil der Repository-Lizenz.
 - Marken, Produktnamen und Logos (z. B. Wireshark) sind nicht durch diese Lizenz freigegeben.
+- Die Lizenz dieses Repositories erlaubt keine Nutzung offizieller Prüfungsunterlagen oder Marken außerhalb der jeweils geltenden Rechte.
 
 ---
 
@@ -438,10 +472,12 @@ Paketmitschnitte können sensible oder personenbezogene Daten enthalten. Lernend
 
 ---
 
-## Kein offizielles Wireshark-Projekt
+## Kein offizielles Wireshark- oder WCA-Projekt
 
 Dieses Repository ist ein unabhängiges Open-Source-Projekt.
 
-Es ist nicht offiziell mit der Wireshark Foundation verbunden und ersetzt keine offiziellen Schulungs- oder Zertifizierungsunterlagen.
+Es ist nicht offiziell mit der Wireshark Foundation verbunden, nicht von ihr geprüft, nicht von ihr zertifiziert und kein offizielles Training-Partner-Angebot.
 
-Wireshark ist ein eingetragenes oder verwendetes Markenzeichen der jeweiligen Rechteinhaber.
+Der Kurs ersetzt keine offiziellen Schulungs-, Zertifizierungs- oder Prüfungsunterlagen. Für verbindliche Informationen zur Zertifizierung und zu Prüfungszielen sind ausschließlich die offiziellen Quellen maßgeblich.
+
+Wireshark, WCA und ggf. zugehörige Logos oder Bezeichnungen sind Marken bzw. Bezeichnungen der jeweiligen Rechteinhaber und werden in diesem Repository nur beschreibend verwendet.

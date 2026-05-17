@@ -1,20 +1,24 @@
 # Externe Ressourcen
 
-Diese Seite sammelt externe Ressourcen, die für den Kurs und die WCA-Vorbereitung besonders nützlich sind.
+Diese Seite sammelt externe Ressourcen, die für diesen unabhängigen Kurs und die WCA-101-Vorbereitung nützlich sein können.
 
-Sie ist bewusst als zentrale Link-Matrix gedacht.
+Die Seite ist bewusst als Link- und Bewertungsmatrix gedacht. Sie ist **keine lokale Kopie** offizieller Dokumentation, Prüfungsziele, Trainingsunterlagen, Labs, Screenshots, Videos oder PCAP-Sammlungen.
 
 Spätere Kapitel, Labs und Quizfragen können von hier aus gezielt auf passende Quellen verweisen.
 
 ## Grundregel
 
-Externe Ressourcen werden verlinkt, nicht ungeprüft kopiert.
+Externe Ressourcen werden verlinkt, nicht übernommen.
 
-Hinweis zur Kursseite:
+Für dieses Repository gilt:
 
-- externe Links sind als externe Verweise gekennzeichnet
+- externe Quellen werden als externe Verweise kenntlich gemacht
 - externe Links erhalten `rel="external nofollow noopener noreferrer"`
-- Referrer-Daten werden nicht an Zielseiten uebermittelt
+- Referrer-Daten werden nicht an Zielseiten übermittelt
+- offizielle Dokumente bleiben bei der offiziellen Quelle
+- fremde Texte, Tabellen, Grafiken, Screenshots, Folien, Labs und PCAPs werden nicht ohne klare Lizenz oder ausdrückliche Erlaubnis kopiert
+- kurze eigene Zusammenfassungen sind erlaubt, wenn sie nicht den fremden Text ersetzen oder nachbilden
+- wörtliche Zitate bleiben selten, kurz, eindeutig gekennzeichnet und mit Quelle versehen
 
 Das gilt besonders für:
 
@@ -25,14 +29,29 @@ Das gilt besonders für:
 - PCAP-Dateien
 - Prüfungsunterlagen
 - fremde Labs
+- Screenshots aus fremden Webseiten, Büchern, Kursen oder Videos
 
 !!! warning "Lizenz und Urheberrecht"
     Nur weil etwas im Internet verfügbar ist, darf es nicht automatisch in dieses Repository kopiert werden.  
     Wenn die Lizenz unklar ist, wird verlinkt und nicht übernommen.
 
+## Nutzungsmodell für externe Quellen
+
+| Nutzung | Bewertung | Vorgehen |
+|---|---|---|
+| Link auf externe Quelle | in der Regel unkritisch | Quelle verlinken, Zweck kurz beschreiben |
+| Eigene Zusammenfassung | meistens möglich | in eigenen Worten schreiben, Quelle nennen, nicht als Ersatz für Original anbieten |
+| Kurzes Zitat | nur sparsam | eindeutig markieren, Quelle nennen, Umfang klein halten |
+| Fremder Screenshot | nur mit Prüfung | Lizenz, Quelle, Abrufdatum und Änderungen dokumentieren |
+| Fremde Grafik oder Tabelle | nur mit Prüfung | Lizenz oder Erlaubnis dokumentieren; sonst neu erstellen |
+| Fremdes Lab | nicht kopieren | nur verlinken oder ein eigenes Lab mit eigener Aufgabenstellung bauen |
+| Fremde PCAP-Datei | nur mit klarer Lizenz und Datenschutzprüfung | bevorzugt synthetische oder selbst erzeugte Captures verwenden |
+| Offizielle Prüfungsziele | nur extern referenzieren | nicht übersetzen, nicht vollständig nachbilden, nicht lokal spiegeln |
+| Offizielle Prüfungsfragen | nicht verwenden | keine Exam Dumps, keine erinnerten Prüfungsfragen, keine nachgestellten offiziellen Fragen |
+
 ## Offizielle Wireshark-Ressourcen
 
-Diese Quellen haben die höchste Priorität, wenn es um Wireshark selbst geht.
+Diese Quellen haben die höchste Priorität, wenn es um Wireshark selbst geht. Sie werden im Kurs als Referenz verlinkt, aber nicht inhaltlich kopiert.
 
 | Ressource | Link | Wofür nutzen? |
 |---|---|---|
@@ -45,24 +64,42 @@ Diese Quellen haben die höchste Priorität, wenn es um Wireshark selbst geht.
 | Wireshark Manual Pages | <https://www.wireshark.org/docs/man-pages/> | TShark, dumpcap, editcap, mergecap usw. |
 | TShark Manual Page | <https://www.wireshark.org/docs/man-pages/tshark.html> | TShark-Optionen und CLI-Verhalten |
 | Wireshark Wiki | <https://wiki.wireshark.org/> | Zusatzwissen, Protokollseiten, Beispiele |
-| Wireshark Sample Captures | <https://wiki.wireshark.org/SampleCaptures> | Beispiel-PCAPs zum Üben |
+| Wireshark Sample Captures | <https://wiki.wireshark.org/SampleCaptures> | Beispiel-PCAPs zum Üben; Lizenz und Datenschutz vor Übernahme prüfen |
 | Wireshark Blog | <https://www.wireshark.org/blog/> | Projektneuigkeiten und Hinweise |
 | Wireshark Community | <https://www.wireshark.org/community> | SharkFest, Community und Veranstaltungen |
 
 ## WCA-Ressourcen
 
+Diese Quellen sind für die Zertifizierung relevant. Der verbindliche Wortlaut liegt ausschließlich bei den offiziellen WCA-/Wireshark-Ressourcen.
+
 | Ressource | Link | Wofür nutzen? |
 |---|---|---|
-| Wireshark Certifications | <https://www.wireshark.org/certifications/> | offizielle Zertifizierungsseite |
-| WCA-101 Exam Objectives PDF | <https://www.wireshark.org/pdf/wca-objectives.pdf> | offizielle Referenz zum Abgleich der Kursabdeckung; nicht kopieren oder nachdrucken |
+| Wireshark Certifications | <https://www.wireshark.org/certifications/> | offizielle Zertifizierungsseite, Prüfungsinformationen und aktuelle Hinweise |
+| WCA-101 Exam Objectives PDF | <https://www.wireshark.org/pdf/wca-objectives.pdf> | externe Referenz zum Abgleich der Kursabdeckung; nicht kopieren, übersetzen, nachdrucken oder lokal spiegeln |
 
 !!! important "Vor der Prüfung prüfen"
     Prüfungsdetails können sich ändern.  
     Vor Anmeldung zur Prüfung immer die offiziellen Informationen auf der Wireshark-Seite prüfen.
 
+!!! note "Keine lokale Ersatzfassung"
+    Dieses Repository enthält keine vollständige Übersetzung, Zusammenfassung oder Ersatzfassung der offiziellen WCA-101 Objectives.  
+    Die eigene Kursabdeckungs-Matrix beschreibt nur, welche Kompetenzen dieser Kurs trainiert und wo Lernende passende Kapitel, Labs und Selbsttests finden.
+
+## Marken, Logos und Produktnamen
+
+Wireshark, WCA und ggf. zugehörige Logos oder Bezeichnungen gehören ihren jeweiligen Rechteinhabern.
+
+Für dieses Repository gilt:
+
+- Namen wie Wireshark und WCA werden nur beschreibend verwendet
+- der Kurs tritt nicht als offizielles Wireshark-, SharkFest- oder WCA-Angebot auf
+- offizielle Logos, Markenbilder oder Designbestandteile werden nicht ohne klare Erlaubnis eingebunden
+- eigene Icons und Grafiken dürfen keine Verwechslungsgefahr mit offiziellen Logos erzeugen
+- README, Startseite und Footer weisen auf die unabhängige Natur des Projekts hin
+
 ## Display Filter
 
-Die Display Filter Reference ist eine Pflichtressource.
+Die Display Filter Reference ist eine zentrale Referenz.
 
 Wireshark unterstützt sehr viele Protokolle und Felder. Niemand sollte versuchen, alle Feldnamen auswendig zu lernen.
 
@@ -88,20 +125,20 @@ TShark ist für diesen Kurs ein Kernwerkzeug.
 |---|---|---|
 | TShark im User's Guide | <https://www.wireshark.org/docs/wsug_html_chunked/AppToolstshark.html> | Einordnung von TShark |
 | TShark Manual Page | <https://www.wireshark.org/docs/man-pages/tshark.html> | Optionen und Verhalten |
-| tshark.dev | <https://tshark.dev/> | praxisnahe TShark-Anleitungen |
+| tshark.dev | <https://tshark.dev/> | praxisnahe TShark-Anleitungen; vor Übernahme von Texten oder Beispielen Lizenz prüfen |
 
 ## Sample Captures und PCAPs
 
 PCAP-Dateien sind für diesen Kurs sehr wichtig.
 
-Sie müssen aber lizenzrechtlich und datenschutztechnisch sauber behandelt werden.
+Sie müssen aber lizenzrechtlich, datenschutztechnisch und sicherheitstechnisch sauber behandelt werden.
 
 | Ressource | Link | Hinweis |
 |---|---|---|
-| Wireshark Sample Captures | <https://wiki.wireshark.org/SampleCaptures> | offizielle Wiki-Sammlung |
-| Kurose/Ross Wireshark Labs | <https://gaia.cs.umass.edu/kurose_ross/wireshark.php> | sehr gute Lehr-Labs, nicht ungeprüft kopieren |
-| Stratosphere IPS Dataset | <https://www.stratosphereips.org/datasets-overview> | Security-nahe Datasets, Lizenz und Zweck prüfen |
-| Malware-Traffic-Analysis.net | <https://www.malware-traffic-analysis.net/> | nur in sicherer Lab-Umgebung nutzen |
+| Wireshark Sample Captures | <https://wiki.wireshark.org/SampleCaptures> | offizielle Wiki-Sammlung; nicht pauschal lokal übernehmen |
+| Kurose/Ross Wireshark Labs | <https://gaia.cs.umass.edu/kurose_ross/wireshark.php> | sehr gute Lehr-Labs; verlinken, nicht kopieren |
+| Stratosphere IPS Dataset | <https://www.stratosphereips.org/datasets-overview> | Security-nahe Datasets; Lizenz, Zweck und Sicherheit prüfen |
+| Malware-Traffic-Analysis.net | <https://www.malware-traffic-analysis.net/> | nur in sicherer Lab-Umgebung nutzen; nicht ungeprüft in Kursmaterial übernehmen |
 
 !!! warning "Security-Captures"
     Malware- oder Incident-Captures dürfen nicht leichtfertig verwendet werden.  
@@ -130,7 +167,7 @@ Link:
 Wichtig:
 
 > Diese Labs werden verlinkt und nicht kopiert.  
-> Eigene Kurslabs können sich didaktisch inspirieren lassen, müssen aber eigene Aufgaben, Texte und Captures verwenden.
+> Eigene Kurslabs können sich didaktisch inspirieren lassen, müssen aber eigene Aufgaben, Texte, Daten, Screenshots und Captures verwenden.
 
 ## SharkFest und Videos
 
@@ -152,6 +189,13 @@ Mögliche Video-Kategorien für den Kurs:
 - Troubleshooting-Methodik
 - Security Analysis
 
+Wichtig:
+
+- Videos werden verlinkt, nicht transkribiert
+- Folien oder Screenshots aus Videos werden nicht ohne Erlaubnis übernommen
+- Erkenntnisse aus Videos werden in eigenen Worten zusammengefasst
+- direkte Zitate bleiben kurz und eindeutig markiert
+
 ## Deutschsprachige Ressourcen
 
 Deutschsprachige Ressourcen sind willkommen, sollten aber fachlich geprüft werden.
@@ -163,6 +207,7 @@ Mögliche Kriterien:
 - keine offensiven Anleitungen ohne defensiven Kontext
 - klare Trennung zwischen Capture Filter und Display Filter
 - verantwortlicher Umgang mit Captures und Datenschutz
+- nachvollziehbare Quelle und klare Autorenschaft
 
 Beispiele für nützliche deutschsprachige Ergänzungen:
 
@@ -189,7 +234,7 @@ Diese Tabelle hilft, spätere Kapitel und Labs mit externen Quellen zu verbinden
 | HTTP/TLS | Kurose/Ross HTTP Lab, Wireshark TLS-Dokumentation, Sample Captures |
 | Performance | Wireshark Statistics, I/O Graphs, TCP Stream Graphs, SharkFest |
 | Security-Basics | Wireshark Sample Captures, Security-Datasets, defensive Analyseartikel |
-| WCA-Vorbereitung | WCA-Objectives, User's Guide, eigene Labs und Quizzes |
+| Zertifizierungsvorbereitung | offizielle WCA-Seite und Objective-PDF nur als externer Abgleich, User's Guide, eigene Labs und Quizzes |
 
 ## Ressourcenblock für Kurskapitel
 
@@ -223,18 +268,20 @@ Beispiel für ein DNS-Lab:
 - [TShark Manual Page](https://www.wireshark.org/docs/man-pages/tshark.html)
 ```
 
-## Bewertung externer Quellen
+## Bewertungsfragen für externe Quellen
 
-Vor dem Verlinken einer Quelle prüfen:
+Vor dem Verlinken oder Verwenden einer Quelle prüfen:
 
 | Frage | Bewertung |
 |---|---|
 | Ist die Quelle fachlich zuverlässig? | bevorzugt offizielle oder etablierte Quellen |
 | Ist sie aktuell genug? | besonders wichtig bei Tools und Prüfung |
-| Ist die Lizenz klar? | wichtig, wenn Inhalte übernommen werden sollen |
+| Ist die Lizenz klar? | wichtig, sobald mehr als ein Link oder eine kurze Quellenbeschreibung übernommen werden soll |
 | Ist der Inhalt defensiv und kursgeeignet? | besonders bei Security-Themen |
+| Enthält die Quelle personenbezogene Daten, produktive Infrastruktur oder reale Incidents? | dann nicht lokal übernehmen |
 | Ist der Inhalt für Lernende verständlich? | nicht zu abstrakt, nicht zu beliebig |
 | Ergänzt die Quelle wirklich das Kursziel? | keine Link-Sammlung ohne Zweck |
+| Könnte die Nutzung wie offizielles Kurs- oder Prüfungsmaterial wirken? | dann umformulieren oder nur neutral verlinken |
 
 ## Was nicht in diese Ressourcensammlung gehört
 
@@ -242,29 +289,36 @@ Nicht aufnehmen:
 
 - Exam Dumps
 - echte Prüfungsfragen
+- erinnerte Prüfungsfragen aus Zertifizierungsprüfungen
+- nachgestellte Fragen, die den Eindruck offizieller Prüfungsfragen erzeugen
 - unseriöse Zertifizierungsseiten
 - urheberrechtlich kopierte PDFs
+- lokale Kopien offizieller Objective-Dokumente
 - private PCAPs
 - produktive Incident-Captures
 - offensive Anleitungen ohne defensiven Lernkontext
+- fremde Screenshots ohne Quelle, Lizenz und Zweck
 - Links ohne klaren Nutzen für den Kurs
 
 ## Pflegehinweise
 
 Diese Seite sollte regelmäßig aktualisiert werden.
 
-Besonders prüfungsnahe Links müssen aktuell bleiben:
+Besonders prüfungs- und toolnahe Links müssen aktuell bleiben:
 
-- WCA-Objectives
+- offizielle WCA-Zertifizierungsseite
+- offizielles WCA-101 Objective-PDF
 - Wireshark-Versionen
 - TShark-Optionen
 - Dokumentationslinks
 - externe PCAP-Sammlungen
 - Video- und Kurslinks
 
+Bei Änderungen an offiziellen Quellen wird der Kursinhalt nicht automatisch angepasst. Zuerst wird die eigene Kursabdeckungs-Matrix geprüft und anschließend entschieden, ob eigene Kapitel, Labs oder Selbsttests aktualisiert werden müssen.
+
 ## Nächster Ausbauschritt
 
-Nach dieser Ressourcenseite sollten wir die Links gezielt in die bestehenden Kapitel einbauen.
+Nach dieser Ressourcenseite sollten die Links gezielt in die bestehenden Kapitel eingebaut werden.
 
 Priorität:
 

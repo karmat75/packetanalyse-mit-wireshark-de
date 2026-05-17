@@ -1,14 +1,12 @@
 # Screenshot-Styleguide
 
-Screenshots sind für diesen Kurs sehr wichtig.
-
-Wireshark ist ein visuelles Werkzeug. Viele Lernende verstehen die Arbeit mit Paketliste, Paketdetails, Filterleiste, Conversations oder I/O Graphs deutlich schneller, wenn sie sehen, worauf sie achten sollen.
+Screenshots sind für diesen Kurs hilfreich, weil Wireshark ein visuelles Werkzeug ist. Viele Lernende verstehen Paketliste, Paketdetails, Filterleiste, Conversations, Expert Information oder I/O Graphs schneller, wenn sie sehen, worauf sie achten sollen.
 
 Trotzdem gilt:
 
 > Screenshots unterstützen die Analyse. Sie ersetzen sie nicht.
 
-Ein guter Screenshot zeigt genau eine Aussage und verweist auf den dazugehörigen Text, Filter oder Frame.
+Ein guter Screenshot zeigt genau eine Aussage und verweist auf den dazugehörigen Text, Filter, Frame oder Befehl.
 
 ## Ziel
 
@@ -16,6 +14,7 @@ Dieser Styleguide legt fest:
 
 - wann Screenshots sinnvoll sind
 - welche Daten in Screenshots erlaubt sind
+- welche Herkunfts- und Lizenzangaben nötig sind
 - wo Bilder abgelegt werden
 - wie Dateien benannt werden
 - wie Screenshots eingebunden werden
@@ -23,19 +22,22 @@ Dieser Styleguide legt fest:
 - wie Markierungen verwendet werden
 - wie Screenshots wartbar bleiben
 
-## Grundsatz: nur saubere Lab-Daten
+## Grundsatz: eigene Screenshots aus sauberen Lab-Daten
 
-Screenshots dürfen nur aus kontrollierten Umgebungen stammen.
+Der Standardfall für dieses Repository ist:
 
-Erlaubt:
+> Screenshot selbst erstellen, mit eigenen Lab-Captures oder synthetischen Testdaten arbeiten und die Herkunft dokumentieren.
 
-- selbst erzeugte Lab-Captures
+Erlaubt sind:
+
+- selbst erzeugte Screenshots aus Wireshark oder TShark
 - Docker-Labs aus diesem Repository
 - synthetische Beispiel-Captures
-- öffentliche Beispiel-Captures mit klarer Lizenz
-- unkritische Testumgebungen
+- selbst erstellte Diagramme und Skizzen
+- öffentliche Beispiel-Captures mit klarer Lizenz, wenn diese Lizenz die Nutzung erlaubt
+- unkritische Testumgebungen ohne reale Betriebsdaten
 
-Nicht erlaubt:
+Nicht erlaubt sind:
 
 - produktive Unternehmens-Captures
 - personenbezogene Daten
@@ -44,11 +46,77 @@ Nicht erlaubt:
 - interne Hostnamen aus produktiven Netzen
 - Patientendaten oder medizinische Fachdaten
 - reale Incident-Captures ohne ausdrückliche Freigabe
-- Screenshots aus fremden Kursen oder Videos ohne Lizenz
+- Screenshots aus fremden Kursen, Büchern, Videos, Blogartikeln oder Folien ohne passende Lizenz oder Erlaubnis
+- Logos, Zertifizierungsabzeichen oder Produktgrafiken als dekorative Elemente, wenn sie nicht ausdrücklich erlaubt sind
 
 !!! warning "PCAPs und Screenshots können sensible Daten enthalten"
-    Ein Screenshot kann DNS-Namen, IP-Adressen, Cookies, Tokens, Zertifikatsdetails oder interne Systemnamen zeigen.  
-    Vor dem Commit immer prüfen, ob der Screenshot wirklich veröffentlichbar ist.
+    Ein Screenshot kann DNS-Namen, IP-Adressen, Cookies, Tokens, Zertifikatsdetails, Benutzernamen oder interne Systemnamen zeigen. Vor dem Commit immer prüfen, ob der Screenshot wirklich veröffentlichbar ist.
+
+## Rechte- und Quellenmodell
+
+Für jeden Screenshot muss klar sein, woher er stammt und unter welcher Grundlage er verwendet wird.
+
+| Fall | Verwendung im Kurs | Erforderliche Dokumentation |
+|---|---|---|
+| eigener Wireshark-Screenshot aus eigenem Lab | bevorzugt | Bildnachweis mit "eigener Screenshot", Lab-Name, optional Wireshark-Version |
+| eigener TShark-/Terminal-Screenshot | erlaubt, wenn Textblock nicht besser ist | Bildnachweis mit "eigene Ausgabe", System/Lab-Kontext |
+| eigenes Diagramm | erlaubt | Bildnachweis mit "eigene Darstellung" |
+| öffentliches PCAP mit klarer Lizenz | möglich | Quelle, Lizenz, Abrufdatum, Änderungen, Link auf Original |
+| fremder Screenshot aus Artikel, Video, Buch oder Kurs | grundsätzlich vermeiden | nur mit Lizenz/Erlaubnis; Quelle und Lizenz sichtbar dokumentieren |
+| offizielles Logo, Badge, Zertifizierungslogo | vermeiden | nur verwenden, wenn Nutzungsrechte eindeutig geklärt sind |
+| unklare Quelle oder unklare Lizenz | nicht verwenden | keine Ausnahme |
+
+Für Wireshark-Screenshots gilt: Die Software darf im Kurs beschrieben und in selbst erstellten Screenshots gezeigt werden. Der Screenshot darf aber nicht so eingesetzt werden, dass eine offizielle Unterstützung, Zertifizierung oder Zugehörigkeit zur Wireshark Foundation suggeriert wird.
+
+## Pflichtangaben für Bilder
+
+Jedes neue Bild braucht einen kurzen Bildnachweis. Damit die Seiten nicht überladen werden, kann der Nachweis als HTML-Kommentar direkt unter der Bildeinbindung stehen.
+
+Standardvorlage:
+
+```markdown
+![Aussagekräftiger Alt-Text](../assets/images/<ordner>/<dateiname>.png)
+
+<!--
+Bildnachweis:
+- Datei: docs/assets/images/<ordner>/<dateiname>.png
+- Herkunft: eigener Screenshot / eigene Darstellung / externe Quelle
+- Grundlage: eigenes Lab / synthetisches PCAP / öffentliches PCAP / andere Quelle
+- Quelle/URL: entfällt bei eigenen Inhalten
+- Lizenz/Nutzungsgrundlage: eigene Kursgrafik / eigene Aufnahme / Lizenzname / Erlaubnis
+- Erstellt oder geprüft am: YYYY-MM-DD
+- Änderungen: zugeschnitten / markiert / anonymisiert / unverändert
+- Sensible Daten geprüft: ja
+-->
+```
+
+Bei eigenen Lab-Screenshots reicht eine kurze Variante:
+
+```markdown
+![DNS NXDOMAIN im Wireshark-Paketdetailbereich](../assets/images/dns/dns-response-code-nxdomain.png)
+
+<!--
+Bildnachweis: eigener Screenshot aus dem DNS-Lab dieses Repositories; synthetische Lab-Daten; sensible Daten geprüft.
+-->
+```
+
+Bei externen Quellen ist die ausführliche Variante Pflicht:
+
+```markdown
+![Aussagekräftiger Alt-Text](../assets/images/<ordner>/<dateiname>.png)
+
+<!--
+Bildnachweis:
+- Herkunft: externe Quelle
+- Quelle/URL: <Originalquelle eintragen>
+- Abrufdatum: YYYY-MM-DD
+- Lizenz/Nutzungsgrundlage: <Lizenz oder Erlaubnis eintragen>
+- Änderungen: <z. B. zugeschnitten, markiert, verkleinert>
+- Sensible Daten geprüft: ja
+-->
+```
+
+Wenn diese Angaben nicht sauber ausgefüllt werden können, wird das Bild nicht verwendet.
 
 ## Wann ein Screenshot sinnvoll ist
 
@@ -57,7 +125,7 @@ Ein Screenshot ist sinnvoll, wenn er etwas zeigt, das textlich schwerer zu vermi
 Gute Fälle:
 
 - Wireshark-Oberfläche erklären
-- Display Filter-Leiste zeigen
+- Display-Filter-Leiste zeigen
 - Paketdetails mit einem relevanten Feld zeigen
 - TCP Stream isolieren
 - Conversations oder Endpoints zeigen
@@ -123,7 +191,7 @@ docs/assets/images/
 ├── performance/
 ├── security/
 ├── labs/
-└── wca-nahe-vorbereitung/
+└── pruefungsnahe-vorbereitung/
 ```
 
 ## Ordnerzuordnung
@@ -139,7 +207,7 @@ docs/assets/images/
 | `performance/` | I/O Graphs, TCP Stream Graphs, Zeitverhalten |
 | `security/` | defensive Beispiele, IOC-Suche, Klartext-Hinweise |
 | `labs/` | lab-spezifische Screenshots |
-| `wca-nahe-vorbereitung/` | Kursabdeckungs-Matrix, Quiz-/Selbsttestvorbereitung |
+| `pruefungsnahe-vorbereitung/` | Kursabdeckungs-Matrix, Quiz-/Selbsttestvorbereitung |
 
 ## Dateinamen
 
@@ -224,7 +292,7 @@ Markierungen sind erlaubt, aber sparsam.
 
 Gute Markierungen:
 
-- ein roter oder gelber Rahmen um einen Bereich
+- ein Rahmen um einen Bereich
 - ein Pfeil auf ein Feld
 - eine kurze Nummerierung
 - dezente Hervorhebung
@@ -261,6 +329,55 @@ Besser:
 
 > Lab neu erzeugen und sauberen Screenshot verwenden.
 
+## Fremde Screenshots vermeiden
+
+Fremde Screenshots sind besonders problematisch, weil sie gleichzeitig Text, UI, Grafiken, Layout, Logos, Kursmaterial und möglicherweise sensible Daten enthalten können.
+
+Deshalb gilt:
+
+- keine Screenshots aus fremden Kursen übernehmen
+- keine Frames aus YouTube- oder Schulungsvideos übernehmen
+- keine Abbildungen aus Büchern oder PDFs nachbauen
+- keine fremden Blog-Screenshots lokal speichern
+- lieber auf die externe Ressource verlinken und den Lernpunkt mit eigenen Lab-Daten neu erklären
+
+Zulässig ist ein fremder Screenshot nur, wenn Lizenz oder schriftliche Erlaubnis eindeutig passen und die Quelle dokumentiert ist.
+
+## Screenshots aus eigenen Wireshark-Labs
+
+Eigene Wireshark-Screenshots sind der gewünschte Standard.
+
+Dabei beachten:
+
+- nur eigene oder synthetische PCAPs verwenden
+- Profile, Spalten und Filter möglichst reproduzierbar halten
+- im Text nennen, aus welchem Lab der Screenshot stammt
+- keine offiziellen Logos oder Zertifizierungsabzeichen als Schmuckelement hinzufügen
+- bei größeren UI-Änderungen Screenshots aktualisieren
+
+Kurzer Nachweis genügt:
+
+```markdown
+<!--
+Bildnachweis: eigener Wireshark-Screenshot aus `lab-basic-dns-http`; synthetische Lab-Daten; sensible Daten geprüft.
+-->
+```
+
+## Screenshots auf Basis öffentlicher PCAPs
+
+Öffentliche PCAPs dürfen nur verwendet werden, wenn die Nutzungsbedingungen klar sind.
+
+Zusätzlich zum Bildnachweis muss im begleitenden Text klar werden:
+
+- welches PCAP verwendet wurde
+- woher es stammt
+- welche Lizenz oder Nutzungsgrundlage gilt
+- ob das Bild zugeschnitten, markiert oder anonymisiert wurde
+
+Bei unklarer Lizenz:
+
+> nicht verwenden.
+
 ## Alt-Text
 
 Jeder Screenshot braucht einen sinnvollen Alt-Text.
@@ -295,6 +412,10 @@ Beispiel:
 
 ```markdown
 ![Wireshark-Hauptfenster mit Paketliste, Paketdetails und Paketbytes](../assets/images/wireshark-ui/wireshark-ui-main-window-overview.png)
+
+<!--
+Bildnachweis: eigener Screenshot aus einem synthetischen Lab-Capture; sensible Daten geprüft.
+-->
 ```
 
 Wenn das Bild direkt unterhalb eines Kapitels liegt, immer den Pfad relativ zur aktuellen Markdown-Datei prüfen.
@@ -321,6 +442,10 @@ Gut:
 Der folgende Screenshot zeigt den TCP Stream Index im Paketdetailbereich. Dieser Wert kann anschließend als Display Filter verwendet werden.
 
 ![TCP Stream Index im Paketdetailbereich](../assets/images/tcp/tcp-stream-index-packet-details.png)
+
+<!--
+Bildnachweis: eigener Wireshark-Screenshot aus einem synthetischen TCP-Lab; sensible Daten geprüft.
+-->
 ```
 
 Noch besser mit anschließendem Filter:
@@ -333,7 +458,7 @@ tcp.stream == 4
 
 Vor jedem Commit prüfen:
 
-- [ ] stammt der Screenshot aus einem Lab oder einer sauberen Testumgebung?
+- [ ] stammt der Screenshot aus einem eigenen Lab, einer eigenen Testumgebung oder einer eindeutig lizenzierten Quelle?
 - [ ] enthält er keine sensiblen Daten?
 - [ ] ist die Aussage klar?
 - [ ] ist der Bildausschnitt nicht zu groß?
@@ -343,7 +468,9 @@ Vor jedem Commit prüfen:
 - [ ] hat das Bild einen sinnvollen Alt-Text?
 - [ ] wird der Screenshot im Text erklärt?
 - [ ] ist die Bilddatei nicht unnötig groß?
+- [ ] ist der Bildnachweis vorhanden?
 - [ ] ist die Lizenz oder Herkunft klar?
+- [ ] wirkt der Screenshot nicht wie offizielles Material eines Herstellers oder einer Zertifizierungsstelle?
 
 ## Screenshots für Wireshark-Oberfläche
 
@@ -351,7 +478,7 @@ Für Grundlagenkapitel sind sinnvoll:
 
 - Startseite mit Interfaces
 - Paketliste, Paketdetails, Paketbytes
-- Display Filter-Leiste
+- Display-Filter-Leiste
 - Paketdetailbaum mit Ethernet/IP/TCP
 - Statusleiste
 - Conversations
@@ -477,20 +604,7 @@ Deshalb:
 - Dateinamen stabil halten
 - bei Änderungen alte Screenshots ersetzen
 - keine veralteten UI-Bilder stehen lassen
-
-## Dokumentation der Herkunft
-
-Wenn ein Screenshot nicht aus einem eigenen Lab stammt, muss die Herkunft dokumentiert werden.
-
-Beispiel im Text:
-
-```text
-Screenshot auf Basis des öffentlich verfügbaren Wireshark Sample Captures `<name>`.
-```
-
-Bei unklarer Lizenz:
-
-> nicht verwenden.
+- Bildnachweise bei Änderungen aktualisieren
 
 ## Verhältnis Text, Screenshot und Aufgabe
 
@@ -499,24 +613,29 @@ Ein gutes Kapitel folgt oft diesem Muster:
 ```text
 1. Erklärung
 2. Screenshot
-3. Filter oder Befehl
-4. kleine Aufgabe
-5. kurze Bewertung
+3. Bildnachweis
+4. Filter oder Befehl
+5. kleine Aufgabe
+6. kurze Bewertung
 ```
 
 Beispiel:
 
-```markdown
+~~~markdown
 Der Response Code steht im DNS-Antwortpaket im Bereich `Flags`.
 
 ![DNS Response Code NXDOMAIN](../assets/images/dns/dns-response-code-nxdomain.png)
+
+<!--
+Bildnachweis: eigener Wireshark-Screenshot aus dem DNS-Lab dieses Repositories; synthetische Lab-Daten; sensible Daten geprüft.
+-->
 
 Passender Display Filter:
 
 ```text
 dns.flags.rcode == 3
 ```
-```
+~~~
 
 ## Merksatz
 

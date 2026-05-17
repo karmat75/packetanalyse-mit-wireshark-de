@@ -1,43 +1,101 @@
-Packetanalyse mit Wireshark – DE - Lizenzhinweise
+Packetanalyse mit Wireshark – DE - Lizenz- und Rechtehinweise
 
 Copyright (c) Projektbeitragende des Projekts Packetanalyse mit Wireshark – DE
 
-Dieses Repository verwendet eine gemischte Lizenzierung.
+Dieses Repository verwendet eine gemischte Lizenzierung. Die folgenden Hinweise
+beschreiben, welche Bestandteile unter welcher Lizenz stehen und welche Rechte
+nicht durch dieses Repository eingeräumt werden.
 
-1) Inhalte unter CC BY 4.0
+## 1) Kursinhalte unter CC BY 4.0
 
-Die folgenden Inhalte stehen, sofern nicht anders gekennzeichnet, unter
-Creative Commons Attribution 4.0 International (CC BY 4.0):
+Die folgenden selbst erstellten Inhalte stehen, sofern nicht in der jeweiligen
+Datei anders gekennzeichnet, unter Creative Commons Attribution 4.0
+International (CC BY 4.0):
 
-- Dokumentation und Kursinhalte unter docs/
-- Lab- und Challenge-Texte unter labs/ und challenges/
-- Quizinhalte unter quizzes/
-- Vorlagen unter templates/
-- Selbst erzeugte PCAP-Dateien im Repository
+- Dokumentation und Kursinhalte unter `docs/`
+- Lab- und Challenge-Texte unter `labs/` und `challenges/`
+- Quizinhalte und Selbsttestinhalte unter `quizzes/`
+- Vorlagen unter `templates/`
+- selbst erstellte Grafiken, Tabellen und Screenshots im Repository
+- selbst erzeugte, synthetische PCAP-Dateien im Repository
 
-Details: LICENSES/CC-BY-4.0.txt
+Der vollständige Lizenztext liegt unter:
 
-2) Code unter MIT
+- `LICENSES/CC-BY-4.0.txt`
 
-Software, Skripte und Konfigurationslogik in diesem Repository stehen,
-sofern nicht anders gekennzeichnet, unter der MIT License. Dazu zaehlen
-insbesondere:
+## 2) Code unter MIT
 
-- tools/
-- Hilfsskripte (z. B. *.py, *.sh)
-- Build-/Automationsdateien
-- Theme-/Frontend-Code (z. B. CSS/JavaScript)
+Software, Skripte, Konfigurationslogik und Automationsbestandteile in diesem
+Repository stehen, sofern nicht in der jeweiligen Datei anders gekennzeichnet,
+unter der MIT License. Dazu zählen insbesondere:
 
-Details: LICENSES/MIT.txt
+- `tools/`
+- Hilfsskripte, zum Beispiel `*.py` und `*.sh`
+- Build-, Prüf- und Automationsdateien
+- Docker-, Entwicklungs- und Tool-Konfigurationen
+- eigener Theme-, CSS- oder JavaScript-Code
 
-3) Drittmaterial und Ausnahmen
+Der vollständige Lizenztext liegt unter:
 
-- Fremdmaterial (Texte, Bilder, PCAPs, Datensaetze, Logos, Marken) bleibt
-  unter der jeweiligen Originallizenz.
-- Wenn in einer Datei ein abweichender Lizenzhinweis steht, gilt dieser.
-- Bei unklarer Lizenzlage wird nur verlinkt, nicht uebernommen.
+- `LICENSES/MIT.txt`
 
-4) Keine Markenfreigabe
+## 3) Drittmaterial, externe Quellen und Ausnahmen
 
-Diese Lizenzen gewaehrleisten keine Rechte an Marken, Produktnamen oder
-Logos Dritter (einschliesslich "Wireshark").
+Fremdmaterial ist nicht automatisch Bestandteil der oben genannten
+Repository-Lizenzen.
+
+Dazu zählen insbesondere:
+
+- fremde Texte, Tabellen, Grafiken, Bilder, Screenshots, Folien und Videos
+- fremde PCAP-Dateien, Datensätze und Beispiel-Captures
+- externe Dokumentationen, Artikel, Bücher, Kurse und Webseiten
+- Logos, Produktgrafiken, Markenbilder und sonstige geschützte Kennzeichen
+- offizielle Zertifizierungs-, Prüfungs- und Schulungsunterlagen Dritter
+
+Für solches Material gilt jeweils die Originallizenz, Nutzungsbedingung oder
+separate Erlaubnis der jeweiligen Rechteinhaber. Wenn in einer Datei, einem
+Metadatensatz oder einem Bildnachweis ein abweichender Lizenzhinweis steht, gilt
+dieser spezifische Hinweis für das betreffende Material.
+
+Externe Ressourcen werden in diesem Projekt bevorzugt verlinkt und kurz
+eingeordnet. Sie werden nicht ohne klare Lizenz, Erlaubnis oder eigene
+Neuerstellung als Repository-Inhalt übernommen. Verlinkte externe Inhalte sind
+nicht Teil der Lizenz dieses Repositories.
+
+## 4) PCAPs, Screenshots und Beispielmaterial
+
+PCAPs, Screenshots und Beispielmaterial im Repository sollen grundsätzlich aus
+eigenen Labs, synthetischen Daten oder eindeutig freigegebenen Quellen stammen.
+
+Für externe PCAPs, öffentliche Datensätze, fremde Screenshots oder abgeleitete
+Abbildungen müssen Quelle, Lizenz oder Nutzungsgrundlage, Abrufdatum und
+relevante Änderungen dokumentiert werden. Bei unklarer Lizenzlage oder unklarem
+Datenschutzstatus wird das Material nicht übernommen, sondern höchstens extern
+verlinkt.
+
+Diese Repository-Lizenz räumt keine zusätzlichen Rechte an externen PCAPs,
+Screenshots, Datensätzen oder sonstigem Fremdmaterial ein.
+
+## 5) Keine Lizenz für offizielle Prüfungsunterlagen
+
+Dieses Repository enthält keine offiziellen WCA-101-Prüfungsfragen, keine Exam
+Dumps und keine lokal gespiegelten oder nachgebildeten offiziellen
+Zertifizierungsunterlagen.
+
+Offizielle WCA-101-Informationen, Prüfungsziele und Zertifizierungshinweise
+dürfen in diesem Projekt als externe Referenz verlinkt und zum Abgleich der
+eigenen Kursabdeckung genutzt werden. Sie werden durch diese Repository-Lizenz
+nicht erneut lizenziert, übersetzt, nachgedruckt oder zur lokalen Ersatzfassung
+erklärt.
+
+## 6) Keine Markenfreigabe
+
+Wireshark, WCA und weitere genannte Produkt-, Projekt- oder Firmennamen können
+Marken oder geschützte Bezeichnungen ihrer jeweiligen Rechteinhaber sein. Die
+Nennung erfolgt ausschließlich beschreibend.
+
+Diese Lizenz gewährt keine Rechte an Marken, Logos, Produktnamen,
+Zertifizierungsnamen, Designbestandteilen oder sonstigen Kennzeichen Dritter.
+Das Projekt ist unabhängig und kein offizielles Angebot, keine offizielle
+Schulung und kein zertifiziertes oder unterstütztes Material der jeweiligen
+Marken- oder Rechteinhaber.

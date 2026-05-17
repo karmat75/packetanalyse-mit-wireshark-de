@@ -11,24 +11,42 @@ Beiträge sollen:
 - fachlich korrekt sein
 - auf Deutsch geschrieben sein
 - verständlich und didaktisch sauber sein
+- eigene Erklärungen, eigene Labs, eigene Quizfragen und eigene Screenshots verwenden
+- externe Quellen verlinken, aber nicht als Kurstext übernehmen
+- Marken und Produktnamen nur beschreibend verwenden
 - keine produktiven oder personenbezogenen Daten enthalten
 - keine echten Zugangsdaten, Tokens oder privaten PCAPs enthalten
 - mit lokalen Checks geprüft werden
 - in kleinen, nachvollziehbaren Pull Requests erfolgen
+
+Der ausführliche Review-Prozess steht hier:
+
+```text
+docs/90-referenz/beitragen-und-review.md
+```
 
 ## Was willkommen ist
 
 Willkommen sind insbesondere:
 
 - Korrekturen an bestehenden Kapiteln
-- zusätzliche Erklärungen
-- neue Labs
-- neue PCAP-Challenges
-- neue Quizfragen
+- zusätzliche eigene Erklärungen
+- neue Labs mit synthetischen Daten
+- neue PCAP-Challenges mit klarer Herkunft
+- neue eigene Quizfragen
 - bessere Hinweise und Musterlösungen
 - neue Referenzen zu offiziellen oder hochwertigen Quellen
-- bessere Screenshots, sofern sie keine sensiblen Daten enthalten
+- bessere Screenshots aus eigenen Lab-Umgebungen
 - Verbesserungen an Tools und CI
+
+Nicht willkommen sind:
+
+- kopierte oder nur leicht umformulierte Fremdtexte
+- lokale Kopien offizieller Prüfungsziele, Handbücher, Blogartikel oder Schulungsunterlagen
+- offizielle Prüfungsfragen, nachgestellte Prüfungsfragen oder Exam Dumps
+- fremde Screenshots, Folien, Buchabbildungen oder Video-Frames ohne klare Erlaubnis
+- fremde PCAPs ohne klare Lizenz und Quellenangabe
+- Logos oder Markenverwendungen, die einen offiziellen Charakter nahelegen
 
 ## Sprache und Stil
 
@@ -63,6 +81,7 @@ fix/<kurzer-name>
 docs/<kurzer-name>
 lab/<kurzer-name>
 challenge/<kurzer-name>
+quiz/<kurzer-name>
 ```
 
 Beispiele:
@@ -71,6 +90,7 @@ Beispiele:
 feature/tshark-cheatsheet
 lab/dhcp-basics
 challenge/tls-alert-triage
+quiz/tcp-flags
 fix/display-filter-typo
 ```
 
@@ -133,14 +153,14 @@ Wichtig: Lokale Git-Hooks sind nicht zentral erzwingbar. Verbindlich wird es üb
 
 Empfohlene Einrichtung (Repository Settings):
 
-1. Unter `Settings -> Branches` eine Branch-Protection-Regel fuer `main` anlegen.
+1. Unter `Settings -> Branches` eine Branch-Protection-Regel für `main` anlegen.
 2. `Require a pull request before merging` aktivieren.
 3. `Require status checks to pass before merging` aktivieren.
-4. Als Pflichtcheck den Workflow-Job `Quality Checks / quality` auswaehlen.
+4. Als Pflichtcheck den Workflow-Job `Quality Checks / quality` auswählen.
 5. Optional aktivieren: `Require branches to be up to date before merging`.
 6. Optional aktivieren: `Require conversation resolution before merging`.
 
-Damit kann niemand direkt in `main` mergen, wenn `bash tools/quality/run_quality_checks.sh` in CI fehlschlaegt.
+Damit kann niemand direkt in `main` mergen, wenn `bash tools/quality/run_quality_checks.sh` in CI fehlschlägt.
 
 Mindestens sollte funktionieren:
 
@@ -148,6 +168,26 @@ Mindestens sollte funktionieren:
 mkdocs build --strict
 python3 tools/packetlab/packetlab.py quiz validate
 python3 tools/packetlab/packetlab.py exam validate
+```
+
+## Rechte-, Quellen- und Markencheck
+
+Vor einem Pull Request bitte prüfen:
+
+- Sind alle Erklärtexte selbst geschrieben?
+- Werden externe Quellen nur verlinkt oder kurz in eigenen Worten zusammengefasst?
+- Sind längere Zitate, kopierte Tabellen oder übersetzte Fremdpassagen vermieden?
+- Werden offizielle WCA-101-Ziele nicht übersetzt, vollständig nachgebildet oder lokal gespiegelt?
+- Sind Wireshark, WCA und andere Marken nur beschreibend verwendet?
+- Wirkt der Beitrag nicht wie offizielles Material der Wireshark Foundation oder eines Trainingsanbieters?
+- Haben Screenshots, Bilder und PCAPs eine nachvollziehbare Herkunft?
+
+Details:
+
+```text
+docs/90-referenz/externe-ressourcen.md
+docs/90-referenz/screenshot-styleguide.md
+docs/90-referenz/beitragen-und-review.md
 ```
 
 ## PCAP-Regeln
@@ -159,7 +199,9 @@ Nicht committen:
 - PCAPs mit echten IPs aus sensiblen Umgebungen
 - PCAPs mit echten Zugangsdaten
 - PCAPs mit echten Tokens, Session-Cookies oder API-Keys
-- unklare fremde PCAPs ohne Lizenz
+- PCAPs aus Kundensystemen
+- PCAPs aus fremden Schulungen, Büchern, Videos oder Kursen
+- unklare fremde PCAPs ohne Lizenz und Quellenangabe
 
 Erlaubt:
 
@@ -174,19 +216,35 @@ Standardpfad für lokale Captures:
 pcaps/generated/
 ```
 
-## Screenshots
+Für jedes committed PCAP muss klar sein:
 
-Screenshots dürfen keine sensiblen Daten enthalten.
+- woher es stammt
+- welche Lizenz oder Freigabe gilt
+- welches Lab oder welche Challenge es verwendet
+- ob sensible Daten geprüft wurden
+
+## Screenshots und Bilder
+
+Bevorzugter Standard:
+
+- eigene Screenshots
+- eigene Lab-Umgebung
+- synthetische Daten
+- neutraler Bildausschnitt
+- Bildnachweis direkt an der verwendeten Stelle
 
 Vor dem Commit prüfen:
 
 - keine echten Hostnamen
 - keine echten Benutzer
 - keine internen IPs, wenn nicht ausdrücklich erlaubt
+- keine URLs aus produktiven oder privaten Umgebungen
 - keine Tokens
 - keine Passwörter
+- keine Cookies oder Session-IDs
 - keine privaten Notizen
 - keine personenbezogenen Daten
+- keine fremden Logos oder Produktgrafiken ohne klare Grundlage
 
 Details siehe:
 
@@ -215,6 +273,8 @@ check_tshark.sh
 
 Wenn ein Lab Docker benötigt, sollte es unterhalb von `docker/compose/` eine eigene Umgebung oder eine dokumentierte Wiederverwendung geben.
 
+Neue Labs sollen eigene Szenarien verwenden und keine fremden Lab-Texte, Schulungsunterlagen oder Aufgabenstellungen nachbauen.
+
 ## Challenges
 
 Neue PCAP-Challenges sollten enthalten:
@@ -231,7 +291,9 @@ check_tshark.sh
 
 Eine Challenge soll weniger führen als ein Lab und mehr Eigenleistung verlangen.
 
-## Quizzes
+Auch Challenges müssen mit eigenen Szenarien, klarer PCAP-Herkunft und ohne sensible Daten erstellt werden.
+
+## Quizzes und Selbsttests
 
 Quizfragen sollen:
 
@@ -240,11 +302,15 @@ Quizfragen sollen:
 - falsche Antworten plausibel, aber nicht unfair machen
 - mit einer kurzen Erklärung versehen sein
 - keine reinen Fangfragen sein
+- keine offiziellen Prüfungsfragen enthalten
+- keine nachgestellten Prüfungsfragen oder Exam-Dump-Inhalte enthalten
+- nicht die offiziellen WCA-101-Ziele als Fragenkatalog nachbilden
 
 Nach Änderungen:
 
 ```bash
 python3 tools/packetlab/packetlab.py quiz validate
+python3 tools/packetlab/packetlab.py exam validate
 ```
 
 ## Pull Requests
@@ -254,10 +320,11 @@ Ein Pull Request sollte enthalten:
 - kurze Beschreibung
 - betroffene Bereiche
 - durchgeführte Checks
-- Hinweise zu Screenshots, PCAPs oder Docker-Labs
+- Hinweise zu Screenshots, Bildern, PCAPs oder Docker-Labs
+- Hinweise zu neuen oder geänderten externen Quellen
 - offene Punkte
 
-Bitte die Pull-Request-Vorlage verwenden.
+Bitte die Pull-Request-Vorlage verwenden, falls vorhanden.
 
 ## Review-Kriterien
 
@@ -270,26 +337,34 @@ Ein Review prüft mindestens:
 - sind keine sensiblen Daten enthalten?
 - sind Labs/Challenges reproduzierbar?
 - sind Check-Skripte ungefährlich und nachvollziehbar?
+- sind externe Quellen sauber verlinkt?
+- wurden fremde Inhalte nicht übernommen?
+- sind Bildnachweise vorhanden?
+- ist die Nutzung von Wireshark, WCA und anderen Marken beschreibend?
+- enthält der Beitrag keine offiziellen Prüfungsfragen, Exam Dumps oder nachgestellte Prüfungsfragen?
 
 ## Lizenz und Quellen
 
-Beitraege muessen mit der Repository-Lizenzierung kompatibel sein:
+Beiträge müssen mit der Repository-Lizenzierung kompatibel sein:
 
-- Inhalte (Docs/Labs/Quiz): CC BY 4.0
-- Code/Skripte: MIT
-- PCAPs: nur selbst erzeugt oder mit klarer, dokumentierter Lizenz
+- Inhalte, Dokumentation, Labs und Quizfragen: CC BY 4.0
+- Code und Skripte: MIT
+- PCAPs: nur selbst erzeugt, synthetisch oder mit klarer, dokumentierter Lizenz
+- Bilder und Screenshots: nur eigene Lab-Screenshots oder externe Bilder mit klarer Nutzungsgrundlage
 
-Mit einem Beitrag bestaetigst du, dass du die noetigen Rechte zur Einreichung besitzt.
-Bei uebernommenem Fremdmaterial muessen Quelle und Lizenz dokumentiert werden.
-Bei unklarer Lizenzlage bitte nur verlinken und nichts uebernehmen.
+Mit einem Beitrag bestätigst du, dass du die nötigen Rechte zur Einreichung besitzt.
+
+Bei übernommenem Fremdmaterial müssen Quelle, Lizenz oder Nutzungsgrundlage dokumentiert werden. Bei unklarer Lizenzlage bitte nur verlinken und nichts übernehmen.
 
 Bei neuen Quellen:
 
 - offizielle Quellen bevorzugen
 - Lizenz beachten
 - keine geschützten Inhalte kopieren
+- keine geschützten Inhalte vollständig übersetzen
+- keine offiziellen Prüfungszielkataloge lokal nachbauen
 - nur kurze Zitate verwenden, wenn nötig
-- lieber verlinken und zusammenfassen
+- lieber verlinken und in eigenen Worten zusammenfassen
 
 ## Merksatz
 
