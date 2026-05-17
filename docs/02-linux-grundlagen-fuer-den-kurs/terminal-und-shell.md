@@ -6,7 +6,7 @@ Das Terminal ist die Arbeitsfläche für viele Übungen im Kurs.
 
 ## Terminal öffnen
 
-Unter Ubuntu und Pop!_OS funktioniert meistens:
+Unter Ubuntu und anderen Debian-basierten Distributionen funktioniert meistens:
 
 ```bash
 Ctrl + Alt + T

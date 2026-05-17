@@ -283,7 +283,7 @@ Rules:
 Target platform:
 
 - Ubuntu Desktop LTS
-- Pop!_OS as compatible Ubuntu-based variant
+- Pop!_OS and other Debian-based distributions should work as well, but may require minor adjustments
 
 Primary tools:
 

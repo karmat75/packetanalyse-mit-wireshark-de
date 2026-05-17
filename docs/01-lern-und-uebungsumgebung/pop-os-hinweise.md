@@ -1,58 +1,34 @@
-# Pop!_OS Hinweise
+# Hinweise für andere Distributionen
 
-Pop!_OS ist eine Ubuntu-basierte Distribution und eignet sich gut als Lernsystem für diesen Kurs.
+Die Referenzplattform für diesen Kurs ist Ubuntu Desktop LTS. Die Befehle und Anleitungen sollten auf allen Debian-basierten Distributionen – wie zum Beispiel Pop!_OS, Linux Mint oder Debian selbst – grundsätzlich funktionieren. Allerdings kann es hier und da kleinere Anpassungen erfordern.
 
-Die meisten Befehle aus dem Kurs funktionieren unter Pop!_OS genauso wie unter Ubuntu. Trotzdem gibt es ein paar Besonderheiten, die Lernende kennen sollten.
+## Was bedeutet "Debian-basiert"
 
-## Pop!_OS als unterstützte Variante
+Debian-basierte Distributionen teilen die grundlegende Paketverwaltung über `apt`. Das bedeutet:
 
-Der Kurs verwendet Ubuntu Desktop LTS als Referenzplattform. Pop!_OS wird als kompatible Variante betrachtet.
+- `apt update`, `apt install` und verwandte Befehle funktionieren gleich
+- Paketname und -verfügbarkeit können sich leicht unterscheiden
+- Docker, Wireshark, Git, Python und VSCode lassen sich auf diesen Systemen ähnlich installieren
 
-Das bedeutet:
+## Mögliche Unterschiede
 
-- Paketverwaltung erfolgt ebenfalls über `apt`
-- viele Ubuntu-Anleitungen funktionieren direkt
-- Docker, Wireshark, Git, Python und VSCode lassen sich ähnlich installieren
-- einzelne Desktop-Funktionen oder Menüs können anders aussehen
+Wo Anpassungen nötig werden können:
 
-## Version prüfen
+- **Docker**: Docker richtet seine Paketquellen nach Ubuntu-Codenamen aus. Auf abgeleiteten Distributionen kann ein zusätzlicher Schritt nötig sein, um den richtigen Codename zu ermitteln:
 
-Zur Prüfung der Version:
+  ```bash
+  grep -E 'VERSION_CODENAME|UBUNTU_CODENAME' /etc/os-release
+  ```
 
-```bash
-cat /etc/os-release
-```
+  Manche Distributionen setzen `UBUNTU_CODENAME`, andere nur `VERSION_CODENAME`.
 
-Für Docker ist besonders interessant, ob ein Ubuntu-Codename vorhanden ist:
+- **Desktop-Umgebung**: Menüs, Tastenkombinationen und vorinstallierte Anwendungen können abweichen. Für den Kurs ist das in der Regel nicht kritisch.
 
-```bash
-grep -E 'VERSION_CODENAME|UBUNTU_CODENAME' /etc/os-release
-```
-
-Bei Pop!_OS ist häufig `UBUNTU_CODENAME` relevant, weil Docker seine Paketquellen nach Ubuntu-Codenamen strukturiert.
-
-## Terminal öffnen
-
-Unter Pop!_OS kann das Terminal je nach Desktop-Version unterschiedlich heißen, zum Beispiel:
-
-- Terminal
-- Ptyxis
-- GNOME Terminal
-- COSMIC Terminal
-
-In der Regel funktioniert:
-
-```text
-Strg + Alt + T
-```
-
-## App-Installation
-
-Pop!_OS bietet zusätzlich zum Terminal einen grafischen App Store. Für den Kurs bevorzugen wir trotzdem die Installation über Terminalbefehle, weil sie reproduzierbarer ist.
+- **Terminal**: Der Name der Terminal-Anwendung variiert je nach Distribution und Desktop.
 
 ## Wayland, X11 und Wireshark
 
-Wireshark selbst funktioniert unabhängig davon, ob die Desktop-Sitzung Wayland oder X11 nutzt.
+Wireshark funktioniert unabhängig davon, ob die Desktop-Sitzung Wayland oder X11 nutzt.
 
 Für den Kurs ist nur wichtig:
 
@@ -60,23 +36,9 @@ Für den Kurs ist nur wichtig:
 - TShark und tcpdump sollen im Terminal funktionieren
 - Docker-Container sollen nicht selbst die Wireshark-GUI starten müssen
 
-Wir betreiben Wireshark also bewusst auf dem Host-System und nutzen Docker nur für reproduzierbare Lab-Dienste und Traffic-Erzeugung.
-
-## Typische Unterschiede zu Ubuntu
-
-Mögliche Unterschiede:
-
-- andere Standardprogramme
-- andere Systemeinstellungen-App
-- anderer grafischer App Store
-- andere Desktop-Tastenkombinationen
-- andere vorinstallierte Pakete
-
-Für die Kursarbeit sind diese Unterschiede normalerweise nicht kritisch.
-
 ## Zielzustand
 
-Pop!_OS ist für den Kurs geeignet, wenn folgende Befehle erfolgreich laufen:
+Das System ist für den Kurs geeignet, wenn folgende Befehle erfolgreich laufen:
 
 ```bash
 sudo apt update

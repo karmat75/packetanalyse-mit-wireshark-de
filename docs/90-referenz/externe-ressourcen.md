@@ -222,7 +222,7 @@ Diese Tabelle hilft, spätere Kapitel und Labs mit externen Quellen zu verbinden
 
 | Kursbereich | Externe Ressourcen |
 |---|---|
-| Lernumgebung | Wireshark Learn, User's Guide, Ubuntu-/Pop!_OS-Dokumentation |
+| Lernumgebung | Wireshark Learn, User's Guide, Ubuntu-Dokumentation |
 | Wireshark erster Kontakt | Wireshark Learn, User's Guide |
 | TShark | TShark Manual Page, TShark User Guide, tshark.dev |
 | Display Filter | Display Filter Reference, DisplayFilters Wiki |

@@ -12,7 +12,7 @@ In diesem Abschnitt richtest du deine Arbeitsumgebung ein.
 
 Geplante Inhalte:
 
-- Ubuntu oder Pop!_OS installieren
+- Ubuntu Desktop LTS installieren
 - System aktualisieren
 - benötigte Pakete installieren
 - VSCode einrichten

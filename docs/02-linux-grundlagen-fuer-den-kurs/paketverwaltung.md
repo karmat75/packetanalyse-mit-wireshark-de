@@ -1,6 +1,6 @@
 # Paketverwaltung
 
-Ubuntu und Pop!_OS verwenden `apt` für viele Systempakete.
+Ubuntu und andere Debian-basierte Distributionen verwenden `apt` für viele Systempakete.
 
 Damit installierst du Werkzeuge wie `curl`, `git`, `tcpdump`, `tshark`, `tree` oder `python3-venv`.
 

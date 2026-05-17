@@ -43,7 +43,7 @@ Die Grundidee lautet:
 ## Empfohlene Reihenfolge
 
 1. **Lern- und Übungsumgebung einrichten**  
-   Ubuntu oder Pop!_OS, VSCode, Docker, Wireshark und TShark vorbereiten.
+   Ubuntu Desktop LTS, VSCode, Docker, Wireshark und TShark vorbereiten.
 
 2. **Wireshark erster Kontakt**  
    Oberfläche, Profile, Spalten, erste Capture-Dateien und TShark kennenlernen.

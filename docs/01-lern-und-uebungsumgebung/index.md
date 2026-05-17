@@ -21,16 +21,13 @@ Dafür brauchen wir eine Umgebung, in der alle Lernenden ungefähr dieselben Vor
 
 ## Referenzplattform
 
-Die Referenzplattform für diesen Kurs ist:
+Die Referenzplattform für diesen Kurs ist Ubuntu Desktop LTS. Die Anleitungen sollten auf allen Debian-basierten Distributionen grundsätzlich funktionieren, hier und da können aber kleinere Anpassungen nötig sein.
 
-- Ubuntu Desktop LTS
-- Pop!_OS als kompatible Ubuntu-basierte Variante
-
-Andere Systeme können funktionieren, sind aber nicht der primäre Lernpfad.
+Andere Betriebssysteme können funktionieren, sind aber nicht der primäre Lernpfad.
 
 ## Ablauf
 
-1. Ubuntu oder Pop!_OS installieren
+1. Ubuntu Desktop LTS installieren
 2. Betriebssystem aktualisieren
 3. benötigte Pakete installieren
 4. VSCode einrichten

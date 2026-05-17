@@ -10,7 +10,7 @@ Du lernst, einen kleinen, kontrollierten Mitschnitt zu erstellen und anschließe
 
 Du brauchst:
 
-- Ubuntu oder Pop!_OS
+- Ubuntu Desktop LTS (oder eine andere Debian-basierte Distribution)
 - Wireshark
 - TShark
 - `curl`

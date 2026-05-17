@@ -83,7 +83,6 @@ Die primäre Lern- und Übungsumgebung basiert auf Linux.
 Geplant und empfohlen:
 
 - Ubuntu Desktop LTS
-- Pop!_OS als kompatible Ubuntu-basierte Variante
 - VSCode
 - Docker
 - Wireshark
@@ -102,7 +101,7 @@ Der Kurs ist in mehrere Bereiche unterteilt.
 
 ### 1. Lern- und Übungsumgebung
 
-- Ubuntu oder Pop!_OS installieren
+- Ubuntu Desktop LTS installieren
 - grundlegende Werkzeuge installieren
 - VSCode einrichten
 - Docker installieren

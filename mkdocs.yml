@@ -120,7 +120,7 @@ nav:
   - Lernumgebung:
       - Überblick: 01-lern-und-uebungsumgebung/index.md
       - Ubuntu installieren: 01-lern-und-uebungsumgebung/ubuntu-installieren.md
-      - Pop!_OS Hinweise: 01-lern-und-uebungsumgebung/pop-os-hinweise.md
+      - Andere Distributionen: 01-lern-und-uebungsumgebung/pop-os-hinweise.md
       - Benötigte Pakete installieren: 01-lern-und-uebungsumgebung/pakete-installieren.md
       - VSCode einrichten: 01-lern-und-uebungsumgebung/vscode-einrichten.md
       - Docker installieren: 01-lern-und-uebungsumgebung/docker-installieren.md

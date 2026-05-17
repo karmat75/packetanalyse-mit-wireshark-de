@@ -42,7 +42,7 @@ Für die WCA-nahe Vorbereitung ist das wichtig, weil gute Paket- und Protokollan
 
 ## TShark installieren: Desktop-System
 
-Auf einem Ubuntu- oder Pop!_OS-Desktop ist häufig Wireshark bereits das Hauptpaket, das du installierst.
+Auf einem Ubuntu-Desktop (oder einer anderen Debian-basierten Distribution) ist häufig Wireshark bereits das Hauptpaket, das du installierst.
 
 ```bash
 sudo apt update
