@@ -260,7 +260,7 @@ Quizfragen sollen:
 Nach Änderungen:
 
 ```bash
-python3 tools/wwca/wwca.py quiz validate
+python3 tools/packetlab/packetlab.py quiz validate
 ```
 
 ## Review-Kriterien

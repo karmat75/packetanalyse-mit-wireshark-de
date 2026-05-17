@@ -8,7 +8,7 @@ pcap:
   path: pcaps/generated/challenge-007-discards-retransmission-correlation.pcapng
 docker_compose:
   file: docker/compose/lab-advanced-tcp-loss/compose.yml
-wca_objectives:
+course_competencies:
   - tcp
   - retransmission
   - duplicate-ack

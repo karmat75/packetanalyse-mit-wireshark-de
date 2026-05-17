@@ -7,7 +7,7 @@ Deshalb solltest du wissen, wie du dich im Dateisystem bewegst und Inhalte prüf
 ## In einen Ordner wechseln
 
 ```bash
-cd /home/mkargel/DailyWorkspace/source/repos/wireshark-wca-de
+cd /home/mkargel/DailyWorkspace/source/repos/packetanalyse-mit-wireshark-de
 ```
 
 In einen Unterordner wechseln:
@@ -175,7 +175,7 @@ Führe den Befehl im Repository-Root aus.
 Dann sollte `pwd` ungefähr so aussehen:
 
 ```text
-/home/<benutzer>/.../wireshark-wca-de
+/home/<benutzer>/.../packetanalyse-mit-wireshark-de
 ```
 
 Und `ls` sollte unter anderem zeigen:

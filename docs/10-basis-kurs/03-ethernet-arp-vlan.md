@@ -553,7 +553,7 @@ Layer-2-Kommunikation zum Gateway ist damit grundsätzlich sichtbar.
 | keine ARP-Pakete | ARP funktioniert nicht | Cache kann bereits gefüllt sein |
 | Promiscuous Mode aktiv | ich sehe alles | auf Switches weiterhin nur sichtbarer Traffic |
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieser Abschnitt übt WCA-nahe Grundlagen:
 

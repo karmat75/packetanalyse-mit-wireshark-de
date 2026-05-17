@@ -93,7 +93,7 @@ Erwartung:
 User-Agent:
 
 ```text
-WWCA-BeaconSimulator/1.0
+PacketLab-BeaconSimulator/1.0
 ```
 
 Bewertung:
@@ -111,7 +111,7 @@ Belegt ist:
 - sichtbare synthetische Formularwerte
 - sichtbarer synthetischer Token
 - mehrere ähnliche `/beacon` Requests
-- User-Agent `WWCA-BeaconSimulator/1.0`
+- User-Agent `PacketLab-BeaconSimulator/1.0`
 - Query-Parameter mit `training-node-01` und `seq`
 
 ## Was nicht belegt ist
@@ -137,7 +137,7 @@ Ein Request zu /basic enthält einen Authorization Header.
 Der POST zu /login enthält username=labuser, password=LabPassword123 und token=LAB-TOKEN-12345 im Klartext.
 
 Beacon-Muster:
-Es sind fünf GET Requests zu /beacon sichtbar. Die Requests enthalten id=training-node-01 und fortlaufende seq-Werte. Der User-Agent lautet WWCA-BeaconSimulator/1.0. Der Abstand liegt ungefähr bei einer Sekunde.
+Es sind fünf GET Requests zu /beacon sichtbar. Die Requests enthalten id=training-node-01 und fortlaufende seq-Werte. Der User-Agent lautet PacketLab-BeaconSimulator/1.0. Der Abstand liegt ungefähr bei einer Sekunde.
 
 Bewertung:
 Der Capture belegt Klartextübertragung synthetischer sensibler Werte und ein regelmäßiges HTTP-Request-Muster. Das Muster ist Beacon-ähnlich, beweist aber ohne Host-, Prozess- und Kontextdaten keine Malware.

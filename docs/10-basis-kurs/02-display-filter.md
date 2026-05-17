@@ -333,7 +333,7 @@ Beantworte:
 4. Welche TCP-Ports tauchen auf?
 5. Welche Filter würdest du in einem Analysebericht dokumentieren?
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieser Abschnitt übt WCA-nahe Grundlagen:
 

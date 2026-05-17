@@ -40,7 +40,7 @@ Alternativ kannst du im Lab eine neue Datei erzeugen:
 pcaps/generated/lab-basic-010-display-filter.pcapng
 ```
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieses Lab trainiert eine Kernkompetenz:
 

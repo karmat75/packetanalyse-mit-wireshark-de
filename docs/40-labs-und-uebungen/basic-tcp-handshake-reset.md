@@ -42,7 +42,7 @@ pcaps/generated/lab-basic-030-tcp-handshake-reset.pcapng
 
 Diese Datei ist lokal und wird nicht committed.
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieses Lab trainiert:
 

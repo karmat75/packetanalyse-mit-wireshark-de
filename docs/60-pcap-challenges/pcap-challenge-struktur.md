@@ -70,7 +70,7 @@ estimated_time: 45m
 pcap:
   mode: generated
   path: pcaps/generated/challenge-001-dns-http-triage.pcapng
-wca_objectives:
+course_competencies:
   - dns
   - display-filters
   - http

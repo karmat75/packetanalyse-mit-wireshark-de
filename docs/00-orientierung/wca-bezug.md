@@ -1,18 +1,18 @@
-# WCA-Bezug
+# WCA-101 als Orientierung
 
-Der Kurs ist an den Lernzielen der **Wireshark Certified Analyst (WCA-101)** Zertifizierung ausgerichtet.
+Der Kurs unterstützt eine faire, unabhängige Vorbereitung auf die **Wireshark Certified Analyst (WCA-101)** Zertifizierung.
 
 Das bedeutet:
 
 - Themen werden so ausgewählt, dass sie zur professionellen Wireshark-Nutzung passen.
 - Labs sollen praktische Analysefähigkeit aufbauen.
 - Wiederholungsfragen orientieren sich an typischen Wissensbereichen der Paket- und Protokollanalyse.
-- Die Kursstruktur soll später über eine Lernzielmatrix nachvollziehbar mit WCA-Themen verknüpft werden.
+- Die Kursstruktur wird über eine eigene Kursabdeckungs-Matrix nachvollziehbar mit Analysekompetenzen und groben WCA-Referenzbereichen verknüpft.
 
 !!! warning "Keine Exam Dumps"
     Dieses Projekt enthält keine echten Prüfungsfragen und keine kopierten Zertifizierungsinhalte. Alle Fragen, Labs und Captures werden selbst erstellt oder sauber lizenziert.
 
-## Warum WCA als Orientierung?
+## Warum WCA-101 als Orientierung?
 
 WCA ist ein sinnvoller Referenzpunkt, weil die Zertifizierung nicht nur reine Toolbedienung betrachtet. Für die Vorbereitung sind unter anderem wichtig:
 
@@ -40,25 +40,25 @@ Sondern:
 
 > Du erkennst anhand von Sequenznummern, ACKs und Wireshark-Markierungen, ob ein Paketverlust wahrscheinlich ist und ob eine Neuübertragung stattgefunden hat.
 
-## Lernzielmatrix
+## Kursabdeckungs-Matrix
 
-Für spätere Versionen ist eine Lernzielmatrix geplant.
+Die Kursabdeckungs-Matrix zeigt, welche eigenen Kurskompetenzen bereits erklärt, geübt oder wiederholt werden.
 
 Beispiel:
 
-| Kursbereich | Thema | WCA-Bezug | Nachweis im Kurs |
+| Kursbereich | Thema | Grober Referenzbereich | Nachweis im Kurs |
 |---|---|---|---|
 | Basis-Kurs | Display Filter | Filter und Felder | Lab + Quiz |
 | Basis-Kurs | DNS | Protokollanalyse | PCAP-Analyse |
 | Erweiterter Kurs | TCP Retransmissions | TCP Troubleshooting | Lab + Analysebericht |
 | Erweiterter Kurs | Performanceanalyse | Fehlerbewertung | Challenge |
 
-Die Matrix soll später zeigen:
+Die Matrix soll zeigen:
 
-- welche WCA-nahen Themen im Kurs behandelt werden
+- welche WCA-nahen Analysekompetenzen im Kurs behandelt werden
 - welche Labs zu welchem Thema gehören
 - welche Inhalte noch fehlen
-- welche Lernenden für die Prüfung wiederholen sollten
+- welche Themen Lernende vor einer Prüfung wiederholen sollten
 
 ## Prüfungsnahe, aber faire Fragen
 
@@ -88,4 +88,4 @@ Das Ziel ist:
 
 > Du sollst einen Paketmitschnitt öffnen, eine fachlich sinnvolle Analysefrage stellen, die relevanten Pakete finden und deine Bewertung nachvollziehbar begründen können.
 
-Wenn das gelingt, ist die WCA-Vorbereitung ein natürlicher Nebeneffekt.
+Wenn das gelingt, ist eine WCA-nahe Vorbereitung ein natürlicher Nebeneffekt.

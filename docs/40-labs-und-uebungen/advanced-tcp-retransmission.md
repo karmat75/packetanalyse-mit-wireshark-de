@@ -38,7 +38,7 @@ pcaps/generated/lab-advanced-010-tcp-retransmission.pcapng
 
 Diese Datei ist lokal und wird nicht committed.
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieses Lab trainiert:
 

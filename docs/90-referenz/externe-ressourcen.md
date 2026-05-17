@@ -54,7 +54,7 @@ Diese Quellen haben die höchste Priorität, wenn es um Wireshark selbst geht.
 | Ressource | Link | Wofür nutzen? |
 |---|---|---|
 | Wireshark Certifications | <https://www.wireshark.org/certifications/> | offizielle Zertifizierungsseite |
-| WCA-101 Exam Objectives PDF | <https://www.wireshark.org/pdf/wca-objectives.pdf> | Grundlage für Lernzielmatrix und Abdeckung |
+| WCA-101 Exam Objectives PDF | <https://www.wireshark.org/pdf/wca-objectives.pdf> | offizielle Referenz zum Abgleich der Kursabdeckung; nicht kopieren oder nachdrucken |
 
 !!! important "Vor der Prüfung prüfen"
     Prüfungsdetails können sich ändern.  

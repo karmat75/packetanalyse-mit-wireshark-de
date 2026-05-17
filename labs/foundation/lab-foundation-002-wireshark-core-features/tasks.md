@@ -156,7 +156,7 @@ Setze einen File Comment.
 Beispiel:
 
 ```text
-Wireshark WCA DE Lab Foundation 002.
+Packetanalyse mit Wireshark – DE Lab Foundation 002.
 Analyse von DNS/HTTP oder TCP Handshake/Reset.
 Wichtige Frames wurden markiert und kommentiert.
 ```

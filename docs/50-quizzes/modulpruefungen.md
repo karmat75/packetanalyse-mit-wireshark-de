@@ -44,20 +44,20 @@ quizzes/exams/analysis-practice-exam-01.yml
 ## Exam auflisten
 
 ```bash
-python3 tools/wwca/wwca.py exam list
+python3 tools/packetlab/packetlab.py exam list
 ```
 
 ## Exam validieren
 
 ```bash
-python3 tools/wwca/wwca.py exam validate
+python3 tools/packetlab/packetlab.py exam validate
 ```
 
 ## Exam starten
 
 ```bash
-python3 tools/wwca/wwca.py exam run module-basic
-python3 tools/wwca/wwca.py exam run module-interface-counters
+python3 tools/packetlab/packetlab.py exam run module-basic
+python3 tools/packetlab/packetlab.py exam run module-interface-counters
 ```
 
 ## Exam-Dateiformat

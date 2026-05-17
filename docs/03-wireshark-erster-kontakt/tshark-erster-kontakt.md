@@ -221,7 +221,7 @@ Im Kurs verwenden wir beides:
 | Wireshark | visuelle Analyse, Drilldown, Streams, Statistiken |
 | TShark | Automatisierung, Tests, wiederholbare Checks |
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieser Abschnitt berührt besonders diese WCA-nahe Kompetenzbereiche:
 

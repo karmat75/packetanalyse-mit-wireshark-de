@@ -27,11 +27,11 @@ echo "== Markdown fences =="
 
 echo
 echo "== Quiz validation =="
-"$PYTHON" tools/wwca/wwca.py quiz validate
+"$PYTHON" tools/packetlab/packetlab.py quiz validate
 
 echo
 echo "== Exam validation =="
-"$PYTHON" tools/wwca/wwca.py exam validate
+"$PYTHON" tools/packetlab/packetlab.py exam validate
 
 echo
 echo "== MkDocs build =="

@@ -81,7 +81,7 @@ title: "DNS NXDOMAIN analysieren"
 track: basic
 level: foundation
 estimated_time: 30m
-wca_objectives:
+course_competencies:
   - dns
   - display-filters
   - packet-details
@@ -141,13 +141,13 @@ Damit ist belegt, dass dieser DNS-Server den Namen nicht kennt.
 Nicht belegt ist, ob ein anderer DNS-Server den Namen auflösen könnte.
 ```
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
-Jedes Lab soll einen WCA-Bezug haben.
+Jedes Lab soll einen Kurskompetenz-Bezug haben.
 
-Dabei geht es nicht darum, Prüfungsfragen zu kopieren.
+Dabei geht es nicht darum, offizielle Prüfungsziele oder Prüfungsfragen nachzubilden.
 
-Es geht darum, die geübte Kompetenz zu benennen.
+Es geht darum, die geübte Kompetenz in eigenen Worten zu benennen.
 
 Beispiele:
 

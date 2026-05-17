@@ -114,8 +114,8 @@ http.user_agent
 Erwartete Werte:
 
 ```text
-WWCA-LabClient/1.0
-WWCA-BeaconSimulator/1.0
+PacketLab-LabClient/1.0
+PacketLab-BeaconSimulator/1.0
 curl/...
 ```
 

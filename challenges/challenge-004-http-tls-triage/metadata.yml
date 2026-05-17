@@ -8,7 +8,7 @@ pcap:
   path: pcaps/generated/challenge-004-http-tls-triage.pcapng
 docker_compose:
   file: docker/compose/lab-advanced-http-tls/compose.yml
-wca_objectives:
+course_competencies:
   - http
   - tls
   - sni

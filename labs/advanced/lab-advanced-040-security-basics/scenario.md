@@ -33,4 +33,4 @@ Deine Aufgabe ist eine defensive Triage:
 | Basic Auth | Authorization Header im HTTP-Request |
 | Formularlogin | POST Body mit synthetischen Lab-Werten |
 | Beacon-Simulation | mehrere ähnliche GET-Requests zu `/beacon` |
-| User-Agent | `WWCA-LabClient/1.0` und `WWCA-BeaconSimulator/1.0` |
+| User-Agent | `PacketLab-LabClient/1.0` und `PacketLab-BeaconSimulator/1.0` |

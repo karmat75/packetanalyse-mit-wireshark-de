@@ -27,7 +27,7 @@ Die Labs sind in Tracks gegliedert.
 | Foundation | Bedienung, Umgebung, erste Captures |
 | Basic | Protokollgrundlagen und einfache Analysen |
 | Advanced | TCP, Performance, HTTP/TLS, Methodik |
-| WCA Practice | gemischte prüfungsnahe Aufgaben |
+| Analysis Practice | gemischte prüfungsnahe Analyseaufgaben |
 
 ## Aktuelle Labs
 
@@ -85,7 +85,7 @@ Diese Dateien werden nicht ins Repository committed, weil sie lokal erzeugt sind
 
 ## Warum Labs so wichtig sind
 
-Für die WCA-Vorbereitung reicht Lesen allein nicht.
+Für WCA-nahe Vorbereitung reicht Lesen allein nicht.
 
 Du musst lernen, unbekannte Captures zu untersuchen.
 

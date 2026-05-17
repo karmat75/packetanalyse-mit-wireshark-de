@@ -37,8 +37,8 @@ So ist der Check nicht nur lokal, sondern auch vor jedem Merge verbindlich.
 ```bash
 python3 tools/quality/check_repo_structure.py
 python3 tools/quality/check_markdown_fences.py
-python3 tools/wwca/wwca.py quiz validate
-python3 tools/wwca/wwca.py exam validate
+python3 tools/packetlab/packetlab.py quiz validate
+python3 tools/packetlab/packetlab.py exam validate
 mkdocs build --strict
 ```
 

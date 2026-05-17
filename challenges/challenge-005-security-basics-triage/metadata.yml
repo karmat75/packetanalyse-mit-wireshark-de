@@ -8,7 +8,7 @@ pcap:
   path: pcaps/generated/challenge-005-security-basics-triage.pcapng
 docker_compose:
   file: docker/compose/lab-advanced-security-basics/compose.yml
-wca_objectives:
+course_competencies:
   - http
   - security-basics
   - display-filters
@@ -24,8 +24,8 @@ synthetic_lab_values:
   - labuser
   - LabPassword123
   - LAB-TOKEN-12345
-  - WWCA-LabClient/1.0
-  - WWCA-BeaconSimulator/1.0
+  - PacketLab-LabClient/1.0
+  - PacketLab-BeaconSimulator/1.0
 expected_observations:
   - http-cleartext
   - http-basic-auth

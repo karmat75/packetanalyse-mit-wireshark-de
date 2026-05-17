@@ -2,14 +2,14 @@ services:
   lab-web-tls:
     build:
       context: ./web-tls
-    container_name: wwca-lab-web-tls
+    container_name: packetlab-lab-web-tls
     networks:
       labnet:
         ipv4_address: 172.28.70.10
 
   lab-client:
     image: nicolaka/netshoot:latest
-    container_name: wwca-lab-http-tls-client
+    container_name: packetlab-lab-http-tls-client
     command: sleep infinity
     networks:
       labnet:

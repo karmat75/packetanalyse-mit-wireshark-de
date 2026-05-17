@@ -32,19 +32,19 @@ quizzes/questions/advanced.yml
 ## Nutzung
 
 ```bash
-python3 tools/wwca/wwca.py quiz run advanced
+python3 tools/packetlab/packetlab.py quiz run advanced
 ```
 
 Mit zufälliger Reihenfolge:
 
 ```bash
-python3 tools/wwca/wwca.py quiz run advanced --shuffle
+python3 tools/packetlab/packetlab.py quiz run advanced --shuffle
 ```
 
 Nur zehn Fragen:
 
 ```bash
-python3 tools/wwca/wwca.py quiz run advanced --limit 10 --shuffle
+python3 tools/packetlab/packetlab.py quiz run advanced --limit 10 --shuffle
 ```
 
 ## Ziel

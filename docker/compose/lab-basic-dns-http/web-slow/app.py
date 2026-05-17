@@ -9,16 +9,16 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-Type", "text/plain; charset=utf-8")
         self.send_header("Content-Length", "0")
-        self.send_header("X-WWCA-Lab", "slow-response")
+        self.send_header("X-PacketLab-Lab", "slow-response")
         self.end_headers()
 
     def do_GET(self):
         time.sleep(2)
-        body = b"Slow response from Wireshark WCA DE lab.\n"
+        body = b"Slow response from Packetanalyse mit Wireshark – DE lab.\n"
         self.send_response(200)
         self.send_header("Content-Type", "text/plain; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
-        self.send_header("X-WWCA-Lab", "slow-response")
+        self.send_header("X-PacketLab-Lab", "slow-response")
         self.end_headers()
         self.wfile.write(body)
 

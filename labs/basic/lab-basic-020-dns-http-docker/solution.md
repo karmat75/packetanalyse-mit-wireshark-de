@@ -106,7 +106,7 @@ Erwartung:
 - Request sichtbar
 - Response kommt etwa 2 Sekunden später
 - Statuscode 200
-- Header `X-WWCA-Lab: slow-response` kann sichtbar sein
+- Header `X-PacketLab-Lab: slow-response` kann sichtbar sein
 
 Bewertung:
 

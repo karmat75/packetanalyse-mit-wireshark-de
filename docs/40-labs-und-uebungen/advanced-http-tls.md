@@ -46,7 +46,7 @@ pcaps/generated/lab-advanced-020-http-tls.pcapng
 
 Diese Datei ist lokal und wird nicht committed.
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieses Lab trainiert:
 

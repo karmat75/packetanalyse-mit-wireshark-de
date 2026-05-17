@@ -807,7 +807,7 @@ tcp.analysis.flags
 | tcp.analysis.flags | Fehlerliste | Analysehinweise, keine Diagnose |
 | RST | Netzwerkproblem | Verbindung wurde hart beendet, Ursache offen |
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieser Abschnitt übt WCA-nahe Fähigkeiten:
 

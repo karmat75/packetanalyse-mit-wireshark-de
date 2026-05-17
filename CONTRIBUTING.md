@@ -1,8 +1,8 @@
 # Contributing
 
-Danke, dass du zu **Wireshark WCA DE** beitragen möchtest.
+Danke, dass du zu **Packetanalyse mit Wireshark – DE** beitragen möchtest.
 
-Dieses Projekt ist ein deutschsprachiger Open-Source-Selbstlernkurs zur Netzwerkanalyse mit Wireshark und TShark, ausgerichtet an WCA-101.
+Dieses Projekt ist ein deutschsprachiger Open-Source-Selbstlernkurs zur Netzwerkanalyse mit Wireshark und TShark. Es unterstützt eine faire, unabhängige WCA-101-Vorbereitung, ist aber kein offizielles Zertifizierungsmaterial.
 
 ## Grundsätze
 
@@ -146,8 +146,8 @@ Mindestens sollte funktionieren:
 
 ```bash
 mkdocs build --strict
-python3 tools/wwca/wwca.py quiz validate
-python3 tools/wwca/wwca.py exam validate
+python3 tools/packetlab/packetlab.py quiz validate
+python3 tools/packetlab/packetlab.py exam validate
 ```
 
 ## PCAP-Regeln
@@ -244,7 +244,7 @@ Quizfragen sollen:
 Nach Änderungen:
 
 ```bash
-python3 tools/wwca/wwca.py quiz validate
+python3 tools/packetlab/packetlab.py quiz validate
 ```
 
 ## Pull Requests

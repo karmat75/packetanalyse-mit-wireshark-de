@@ -62,7 +62,7 @@ Diese Datei wird lokal erzeugt und soll normalerweise nicht ins Repository commi
 30 Minuten
 ```
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieses Lab übt:
 

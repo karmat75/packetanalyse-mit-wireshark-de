@@ -38,7 +38,7 @@ quizzes/questions/analysis-practice.yml
 ## Nutzung
 
 ```bash
-python3 tools/wwca/wwca.py quiz run analysis-practice --shuffle
+python3 tools/packetlab/packetlab.py quiz run analysis-practice --shuffle
 ```
 
 ## Ziel

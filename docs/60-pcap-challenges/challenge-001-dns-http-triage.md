@@ -40,7 +40,7 @@ Du sollst herausfinden:
 - welche Aussagen durch den Capture belegbar sind
 - welche Aussagen nicht belegt sind
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Diese Challenge trainiert:
 

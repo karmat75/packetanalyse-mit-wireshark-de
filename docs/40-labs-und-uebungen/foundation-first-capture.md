@@ -75,7 +75,7 @@ pcaps/generated/lab-foundation-001-first-capture.pcapng
 
 Diese Datei ist lokal erzeugt und sollte normalerweise nicht committed werden.
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieses Lab trainiert grundlegende WCA-nahe Fähigkeiten:
 

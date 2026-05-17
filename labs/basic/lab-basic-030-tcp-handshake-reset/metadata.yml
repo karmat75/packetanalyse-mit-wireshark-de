@@ -4,7 +4,7 @@ track: basic
 level: basic
 estimated_time: 45m
 status: draft
-wca_objectives:
+course_competencies:
   - tcp
   - display-filters
   - packet-details

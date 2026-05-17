@@ -4,7 +4,7 @@ track: advanced
 level: advanced
 estimated_time: 45m
 status: draft
-wca_objectives:
+course_competencies:
   - troubleshooting-methodology
   - capture-point-selection
   - interface-counters

@@ -1,40 +1,40 @@
-.wwca-header-home-link {
+.packetlab-header-home-link {
   color: inherit;
   text-decoration: none;
 }
 
-.wwca-header-home-link:hover,
-.wwca-header-home-link:focus {
+.packetlab-header-home-link:hover,
+.packetlab-header-home-link:focus {
   text-decoration: none;
 }
 
-.md-content a.wwca-external-link::after {
+.md-content a.packetlab-external-link::after {
   content: " [extern]";
   font-size: 0.75em;
   color: var(--md-default-fg-color--light);
   white-space: nowrap;
 }
 
-.wwca-footer-meta {
+.packetlab-footer-meta {
   margin-top: 0.35rem;
   width: 100%;
   flex: 1 1 100%;
 }
 
-.wwca-footer-transparency {
+.packetlab-footer-transparency {
   text-align: center;
   color: var(--md-default-fg-color--light);
   line-height: 1.4;
 }
 
-.wwca-footer-updated {
+.packetlab-footer-updated {
   margin-top: 0.2rem;
   text-align: center;
   color: var(--md-default-fg-color--light);
   font-size: 0.78rem;
 }
 
-.wwca-footer-version-row {
+.packetlab-footer-version-row {
   margin-top: 0.35rem;
   display: flex;
   justify-content: space-between;
@@ -44,11 +44,11 @@
   font-size: 0.74rem;
 }
 
-.wwca-footer-version,
-.wwca-footer-build {
+.packetlab-footer-version,
+.packetlab-footer-build {
   display: inline-block;
 }
 
-.wwca-footer-build {
+.packetlab-footer-build {
   text-align: right;
 }

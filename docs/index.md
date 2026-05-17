@@ -1,10 +1,10 @@
-# Wireshark WCA DE
+# Packetanalyse mit Wireshark – DE
 
 Lerne Netzwerkanalyse so, wie sie im Betrieb wirklich gebraucht wird: strukturiert, nachvollziehbar und mit echten Wireshark-Workflows.
 
 Dieser deutschsprachige Open-Source-Selbstlernkurs hilft dir, aus Paketmitschnitten belastbare Aussagen abzuleiten statt nur Pakete anzuklicken.
 
-Der Kurs ist an den Lernzielen der **Wireshark Certified Analyst (WCA-101)** ausgerichtet, ist aber kein offizielles Angebot der Wireshark Foundation.
+Der Kurs unterstützt eine faire Vorbereitung auf die **Wireshark Certified Analyst (WCA-101)** Zertifizierung, ist aber kein offizielles Angebot der Wireshark Foundation.
 
 ## Worum es hier geht
 
@@ -51,9 +51,9 @@ Wenn du lieber direkt praktisch arbeitest, starte mit [Labs und Übungen](40-lab
 - [Labs und Übungen](40-labs-und-uebungen/index.md)
 - [Quizzes](50-quizzes/index.md)
 
-### Zielgerichtet auf WCA hinarbeiten
+### Zielgerichtet WCA-nah wiederholen
 
-- [WCA-Vorbereitung](30-wca-vorbereitung/index.md)
+- [WCA-nahe Vorbereitung](30-wca-vorbereitung/index.md)
 - [PCAP-Challenges](60-pcap-challenges/index.md)
 - [Referenz und Cheatsheets](90-referenz/index.md)
 

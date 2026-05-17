@@ -1,10 +1,10 @@
-site_name: Wireshark WCA DE
-site_description: Deutschsprachiger Open-Source-Selbstlernkurs für Netzwerkanalyse mit Wireshark, ausgerichtet an WCA-101.
-site_author: Wireshark WCA DE Contributors
-site_url: https://karmat75.github.io/wireshark-wca-de/
+site_name: Packetanalyse mit Wireshark
+site_description: Unabhängiger deutschsprachiger Selbstlernkurs zur Netzwerkanalyse und WCA-101-Vorbereitung
+site_author: Projektbeitragende
+site_url: https://karmat75.github.io/packetanalyse-mit-wireshark-de/
 
-repo_name: karmat75/wireshark-wca-de
-repo_url: https://github.com/karmat75/wireshark-wca-de
+repo_name: karmat75/packetanalyse-mit-wireshark-de
+repo_url: https://github.com/karmat75/packetanalyse-mit-wireshark-de
 edit_uri: edit/main/docs/
 
 docs_dir: docs
@@ -103,8 +103,9 @@ extra:
   build_date: !ENV [BUILD_DATE, "lokaler Build"]
 
 copyright: >
-  Dieses Projekt ist ein unabhängiger deutschsprachiger Open-Source-Kurs.
-  Es ist nicht offiziell mit der Wireshark Foundation verbunden.
+  Packetanalyse mit Wireshark - DE ist ein unabhängiger deutschsprachiger Open-Source-Kurs.
+  Wireshark und WCA sind Marken bzw. Bezeichnungen ihrer jeweiligen Rechteinhaber.
+  Es besteht keine Verbindung, Förderung oder Zertifizierung durch die Wireshark Foundation.
 
 nav:
   - Start: index.md
@@ -113,7 +114,7 @@ nav:
       - Überblick: 00-orientierung/index.md
       - Zielgruppe: 00-orientierung/zielgruppe.md
       - Kursaufbau: 00-orientierung/kursaufbau.md
-      - WCA-Bezug: 00-orientierung/wca-bezug.md
+      - WCA-101 als Orientierung: 00-orientierung/wca-bezug.md
       - Rechtliches und Datenschutz: 00-orientierung/rechtliches-und-datenschutz.md
 
   - Lernumgebung:
@@ -195,11 +196,11 @@ nav:
       - Challenge 006 Performance Triage: 60-pcap-challenges/challenge-006-performance-triage.md
       - Challenge 007 Discards/Retransmission Correlation: 60-pcap-challenges/challenge-007-discards-retransmission-correlation.md
 
-  - WCA-Vorbereitung:
+  - WCA-nahe Vorbereitung:
       - Überblick: 30-wca-vorbereitung/index.md
-      - Lernzielmatrix: 30-wca-vorbereitung/lernzielmatrix.md
-      - Prüfungsstrategie: 30-wca-vorbereitung/pruefungsstrategie.md
-      - Übungs- und Prüfungsmodell: 30-wca-vorbereitung/uebungs-und-pruefungsmodell.md
+      - Kursabdeckungs-Matrix: 30-wca-vorbereitung/lernzielmatrix.md
+      - Prüfungsnahe Lernstrategie: 30-wca-vorbereitung/pruefungsstrategie.md
+      - Übungs- und Selbsttestmodell: 30-wca-vorbereitung/uebungs-und-pruefungsmodell.md
 
   - Referenz:
       - Überblick: 90-referenz/index.md

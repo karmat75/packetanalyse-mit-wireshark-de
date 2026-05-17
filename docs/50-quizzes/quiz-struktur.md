@@ -120,10 +120,10 @@ Später soll ein lokales Tool die YAML-Fragen ausführen.
 Geplante Befehle:
 
 ```bash
-wwca quiz run foundation
-wwca quiz run basic
-wwca exam start module-basic
-wwca progress
+packetlab quiz run foundation
+packetlab quiz run basic
+packetlab exam start module-basic
+packetlab progress
 ```
 
 Bis dahin dienen die YAML-Dateien als strukturierte Fragensammlung.

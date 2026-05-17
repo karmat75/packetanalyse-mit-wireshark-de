@@ -50,7 +50,7 @@ Diese Dateien sollen nicht committed werden.
 45 Minuten
 ```
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieses Lab übt:
 

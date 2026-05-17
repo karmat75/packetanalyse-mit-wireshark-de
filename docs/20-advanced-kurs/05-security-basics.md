@@ -880,7 +880,7 @@ Verwendete Filter:
 | DNS NXDOMAIN | DGA | auch Tippfehler oder Suchdomänen möglich |
 | Datei im Capture | gefahrlos öffnen | isoliert behandeln, nicht direkt ausführen |
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieser Abschnitt übt WCA-nahe Fähigkeiten:
 

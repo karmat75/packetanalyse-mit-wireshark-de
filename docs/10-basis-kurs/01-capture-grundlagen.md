@@ -268,7 +268,7 @@ pcaps/generated/basic-capture-01.pcapng
 - Welche TCP-Verbindungen siehst du?
 - Wie viele Pakete enthält der Mitschnitt?
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieser Abschnitt übt WCA-nahe Grundlagen:
 

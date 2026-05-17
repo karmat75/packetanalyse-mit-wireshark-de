@@ -65,10 +65,10 @@ Die YAML-Fragen können lokal im Terminal ausgeführt werden.
 Beispiel:
 
 ```bash
-python3 tools/wwca/wwca.py quiz list
-python3 tools/wwca/wwca.py quiz run advanced --limit 10 --shuffle
-python3 tools/wwca/wwca.py exam list
-python3 tools/wwca/wwca.py exam run module-basic
+python3 tools/packetlab/packetlab.py quiz list
+python3 tools/packetlab/packetlab.py quiz run advanced --limit 10 --shuffle
+python3 tools/packetlab/packetlab.py exam list
+python3 tools/packetlab/packetlab.py exam run module-basic
 ```
 
 ## Keine Exam Dumps

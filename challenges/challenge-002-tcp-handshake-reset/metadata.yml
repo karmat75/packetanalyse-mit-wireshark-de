@@ -8,7 +8,7 @@ pcap:
   path: pcaps/generated/challenge-002-tcp-handshake-reset.pcapng
 docker_compose:
   file: docker/compose/lab-basic-dns-http/compose.yml
-wca_objectives:
+course_competencies:
   - tcp
   - tcp-flags
   - tcp-stream

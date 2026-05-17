@@ -4,19 +4,19 @@
   </div>
 {% endif %}
 
-<div class="wwca-footer-meta">
-  <div class="wwca-footer-transparency">
+<div class="packetlab-footer-meta">
+  <div class="packetlab-footer-transparency">
     Transparenz: Inhalte werden mit KI-Unterstuetzung erstellt und redaktionell geprueft.
   </div>
 
   {% if page and page.meta and page.meta.git_revision_date_localized %}
-    <div class="wwca-footer-updated">
+    <div class="packetlab-footer-updated">
       Zuletzt aktualisiert: {{ page.meta.git_revision_date_localized }}
     </div>
   {% endif %}
 
-  <div class="wwca-footer-version-row">
-    <span class="wwca-footer-version">Kurs-Version: {{ config.extra.course_version }}</span>
-    <span class="wwca-footer-build">Build: {{ config.extra.build_date }}</span>
+  <div class="packetlab-footer-version-row">
+    <span class="packetlab-footer-version">Kurs-Version: {{ config.extra.course_version }}</span>
+    <span class="packetlab-footer-build">Build: {{ config.extra.build_date }}</span>
   </div>
 </div>

@@ -43,7 +43,7 @@ pcaps/generated/lab-advanced-040-security-basics.pcapng
 
 Diese Datei ist lokal und wird nicht committed.
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieses Lab trainiert:
 

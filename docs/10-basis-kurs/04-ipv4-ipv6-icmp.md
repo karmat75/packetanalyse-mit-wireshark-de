@@ -756,7 +756,7 @@ ip.addr == <ziel-ip>
 | Checksum-Warnung | Paket ist defekt | Offloading am Capture-Punkt prüfen |
 | andere Quell-IP am Server | falscher Client | NAT oder Proxy berücksichtigen |
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieser Abschnitt übt WCA-nahe Grundlagen:
 

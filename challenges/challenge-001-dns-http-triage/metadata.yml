@@ -8,7 +8,7 @@ pcap:
   path: pcaps/generated/challenge-001-dns-http-triage.pcapng
 docker_compose:
   file: docker/compose/lab-basic-dns-http/compose.yml
-wca_objectives:
+course_competencies:
   - display-filters
   - dns
   - udp

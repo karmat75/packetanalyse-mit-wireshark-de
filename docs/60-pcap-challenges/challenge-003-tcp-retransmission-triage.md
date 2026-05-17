@@ -37,7 +37,7 @@ Du sollst herausfinden:
 - was durch den Capture belegt ist
 - was ohne weitere Daten nicht belegt ist
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Diese Challenge trainiert:
 

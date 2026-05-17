@@ -792,7 +792,7 @@ tls.alert_message
 | TLS Alert | immer kritisch | Alert-Typ und Kontext prüfen |
 | UDP 443 sichtbar | komisch | kann QUIC/HTTP/3 sein |
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieser Abschnitt übt WCA-nahe Fähigkeiten:
 

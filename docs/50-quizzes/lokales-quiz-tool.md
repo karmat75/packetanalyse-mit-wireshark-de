@@ -11,13 +11,13 @@ Es soll helfen, Fragen lokal zu beantworten und Fortschritt zu speichern, ohne e
 Tool:
 
 ```text
-tools/wwca/wwca.py
+tools/packetlab/packetlab.py
 ```
 
 Wrapper:
 
 ```text
-tools/wwca/wwca
+tools/packetlab/packetlab
 ```
 
 Fragen:
@@ -35,7 +35,7 @@ quizzes/exams/
 Fortschritt:
 
 ```text
-~/.local/share/packet-analysis-course-de/progress.json
+~/.local/share/packetanalyse-mit-wireshark-de/progress.json
 ```
 
 ## Voraussetzung
@@ -64,43 +64,43 @@ python -m pip install PyYAML
 ## Quizzes auflisten
 
 ```bash
-python3 tools/wwca/wwca.py quiz list
+python3 tools/packetlab/packetlab.py quiz list
 ```
 
 ## Fragen validieren
 
 ```bash
-python3 tools/wwca/wwca.py quiz validate
+python3 tools/packetlab/packetlab.py quiz validate
 ```
 
 ## Quiz ausführen
 
 ```bash
-python3 tools/wwca/wwca.py quiz run foundation
-python3 tools/wwca/wwca.py quiz run basic --limit 10 --shuffle
-python3 tools/wwca/wwca.py quiz run advanced --limit 10 --shuffle
-python3 tools/wwca/wwca.py quiz run analysis-practice --shuffle
+python3 tools/packetlab/packetlab.py quiz run foundation
+python3 tools/packetlab/packetlab.py quiz run basic --limit 10 --shuffle
+python3 tools/packetlab/packetlab.py quiz run advanced --limit 10 --shuffle
+python3 tools/packetlab/packetlab.py quiz run analysis-practice --shuffle
 ```
 
 ## Modulprüfungen auflisten
 
 ```bash
-python3 tools/wwca/wwca.py exam list
+python3 tools/packetlab/packetlab.py exam list
 ```
 
 ## Modulprüfungen validieren
 
 ```bash
-python3 tools/wwca/wwca.py exam validate
+python3 tools/packetlab/packetlab.py exam validate
 ```
 
 ## Modulprüfung starten
 
 ```bash
-python3 tools/wwca/wwca.py exam run foundation-check
-python3 tools/wwca/wwca.py exam run module-basic
-python3 tools/wwca/wwca.py exam run module-advanced
-python3 tools/wwca/wwca.py exam run analysis-practice-exam-01
+python3 tools/packetlab/packetlab.py exam run foundation-check
+python3 tools/packetlab/packetlab.py exam run module-basic
+python3 tools/packetlab/packetlab.py exam run module-advanced
+python3 tools/packetlab/packetlab.py exam run analysis-practice-exam-01
 ```
 
 Im Exam-Modus werden Erklärungen erst am Ende angezeigt.
@@ -108,19 +108,19 @@ Im Exam-Modus werden Erklärungen erst am Ende angezeigt.
 ## Fortschritt anzeigen
 
 ```bash
-python3 tools/wwca/wwca.py progress
+python3 tools/packetlab/packetlab.py progress
 ```
 
 ## Fortschritt exportieren
 
 ```bash
-python3 tools/wwca/wwca.py progress export ./mein-fortschritt.json
+python3 tools/packetlab/packetlab.py progress export ./mein-fortschritt.json
 ```
 
 ## Fortschritt zurücksetzen
 
 ```bash
-python3 tools/wwca/wwca.py progress reset
+python3 tools/packetlab/packetlab.py progress reset
 ```
 
 ## Bedienung im Quiz

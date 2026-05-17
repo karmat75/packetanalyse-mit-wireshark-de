@@ -30,7 +30,7 @@ REQUIRED_PATHS = [
     "docker/compose",
     "quizzes/questions",
     "quizzes/exams",
-    "tools/wwca/wwca.py",
+    "tools/packetlab/packetlab.py",
     "templates",
 ]
 

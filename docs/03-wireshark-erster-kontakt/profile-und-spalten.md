@@ -33,7 +33,7 @@ Dann:
 Empfohlener Name:
 
 ```text
-wireshark-wca-de
+packetanalyse-mit-wireshark-de
 ```
 
 ## Sinnvolle Basisspalten
@@ -148,7 +148,7 @@ Bis dahin reicht:
 Lege ein Profil an:
 
 ```text
-wireshark-wca-de
+packetanalyse-mit-wireshark-de
 ```
 
 Öffne deinen ersten Mitschnitt und ergänze mindestens eine zusätzliche Spalte:

@@ -49,7 +49,7 @@ pcaps/generated/lab-basic-030-tcp-handshake-reset.pcapng
 
 Falls keine vorhanden ist, bearbeite zuerst eines der vorherigen Labs.
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieses Lab trainiert wichtige WCA-nahe Bedienfähigkeiten:
 

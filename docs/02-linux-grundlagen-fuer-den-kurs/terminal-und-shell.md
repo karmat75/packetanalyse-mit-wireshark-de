@@ -51,7 +51,7 @@ pwd
 Beispiel:
 
 ```text
-/home/mkargel/DailyWorkspace/source/repos/wireshark-wca-de
+/home/mkargel/DailyWorkspace/source/repos/packetanalyse-mit-wireshark-de
 ```
 
 `pwd` bedeutet `print working directory`.

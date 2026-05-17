@@ -64,18 +64,18 @@ Geplante Inhalte:
 - Performanceanalyse
 - Fehleranalyse-Methodik
 
-### 4. WCA-Vorbereitung
+### 4. WCA-nahe Vorbereitung
 
-Dieser Abschnitt dient der strukturierten Wiederholung und Prüfungsvorbereitung.
+Dieser Abschnitt dient der strukturierten Wiederholung und fairen, unabhängigen Prüfungsvorbereitung.
 
 Geplante Inhalte:
 
-- Lernzielmatrix
+- Kursabdeckungs-Matrix
 - Wiederholungsfragen
 - Zwischenprüfungen
 - PCAP-Challenges
-- Probeprüfungen
-- Prüfungsstrategie
+- unabhängige Selbsttests
+- prüfungsnahe Lernstrategie
 - typische Denkfehler
 
 ## Aufbau einer Lektion
@@ -97,8 +97,8 @@ Eine typische Lektion soll möglichst gleich aufgebaut sein:
 5. **Übung oder Lab**  
    Lernende wenden das Thema selbst an.
 
-6. **WCA-Bezug**  
-   Die Lektion wird grob den passenden WCA-Lernzielen zugeordnet.
+6. **Kurskompetenz-Bezug**  
+   Die Lektion wird grob den passenden Kurskompetenzen und, wo sinnvoll, WCA-nahen Referenzbereichen zugeordnet.
 
 7. **Weiterführende Ressourcen**  
    Offizielle Dokumentation, Artikel oder Videos werden verlinkt.
@@ -130,7 +130,7 @@ Jedes Lab soll enthalten:
 - Aufgaben
 - Hinweise
 - Musterlösung
-- WCA-Bezug
+- Kurskompetenz-Bezug
 - weiterführende Ressourcen
 - optional automatisierte Prüfung
 

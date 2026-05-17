@@ -455,7 +455,7 @@ Falsch.
 
 Wireshark zeigt Pakete. Die Bewertung entsteht durch Analyse.
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Für WCA-nahe Vorbereitung ist das Schichtenmodell wichtig, weil es hilft:
 

@@ -120,7 +120,7 @@ alles kaputt
 Guter File Comment:
 
 ```text
-Wireshark WCA DE Lab Foundation 002.
+Packetanalyse mit Wireshark – DE Lab Foundation 002.
 Analyse einer lokal erzeugten Lab-PCAP.
 Wichtige Frames wurden markiert und kommentiert.
 ```

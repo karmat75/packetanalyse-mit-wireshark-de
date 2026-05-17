@@ -1,7 +1,7 @@
 services:
   lab-dns:
     image: coredns/coredns:1.11.3
-    container_name: wwca-lab-dns
+    container_name: packetlab-lab-dns
     command: -conf /etc/coredns/Corefile
     volumes:
       - ./dns/Corefile:/etc/coredns/Corefile:ro
@@ -12,7 +12,7 @@ services:
 
   lab-web-ok:
     image: nginx:1.27-alpine
-    container_name: wwca-lab-web-ok
+    container_name: packetlab-lab-web-ok
     volumes:
       - ./web-ok/index.html:/usr/share/nginx/html/index.html:ro
     networks:
@@ -21,7 +21,7 @@ services:
 
   lab-web-slow:
     image: python:3.12-alpine
-    container_name: wwca-lab-web-slow
+    container_name: packetlab-lab-web-slow
     working_dir: /app
     command: python /app/app.py
     volumes:
@@ -32,7 +32,7 @@ services:
 
   lab-client:
     image: nicolaka/netshoot:latest
-    container_name: wwca-lab-client
+    container_name: packetlab-lab-client
     command: sleep infinity
     dns:
       - 172.28.50.53

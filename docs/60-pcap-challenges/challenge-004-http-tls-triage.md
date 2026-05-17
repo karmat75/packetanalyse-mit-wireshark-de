@@ -37,7 +37,7 @@ Du sollst herausfinden:
 - was bei TLS nicht im Klartext lesbar ist
 - welche Metadaten bei TLS trotzdem sichtbar bleiben
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Diese Challenge trainiert:
 

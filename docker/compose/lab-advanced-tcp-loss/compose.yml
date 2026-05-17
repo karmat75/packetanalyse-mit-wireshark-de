@@ -2,7 +2,7 @@ services:
   lab-web-loss:
     build:
       context: ./web-loss
-    container_name: wwca-lab-web-loss
+    container_name: packetlab-lab-web-loss
     cap_add:
       - NET_ADMIN
     networks:
@@ -11,7 +11,7 @@ services:
 
   lab-client:
     image: nicolaka/netshoot:latest
-    container_name: wwca-lab-tcp-client
+    container_name: packetlab-lab-tcp-client
     command: sleep infinity
     networks:
       labnet:

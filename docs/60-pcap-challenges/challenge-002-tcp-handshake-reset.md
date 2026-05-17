@@ -39,7 +39,7 @@ Du sollst herausfinden:
 - welche Aussage dadurch belegbar ist
 - welche Aussagen zu stark wären
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Diese Challenge trainiert:
 

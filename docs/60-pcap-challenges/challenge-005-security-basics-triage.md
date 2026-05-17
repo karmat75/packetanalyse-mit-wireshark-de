@@ -38,7 +38,7 @@ Du sollst herausfinden:
 - was ohne weiteren Kontext nicht belegt ist
 - warum echte Captures mit solchen Daten geschützt werden müssen
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Diese Challenge trainiert:
 

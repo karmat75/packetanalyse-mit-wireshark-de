@@ -39,7 +39,7 @@ code --version
 Im Root-Verzeichnis des Kurses:
 
 ```bash
-cd ~/DailyWorkspace/source/repos/wireshark-wca-de
+cd ~/DailyWorkspace/source/repos/packetanalyse-mit-wireshark-de
 code .
 ```
 

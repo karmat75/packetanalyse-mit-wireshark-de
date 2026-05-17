@@ -6,7 +6,7 @@ Dieser Ordner enthält lokale Hilfswerkzeuge für den Kurs.
 
 | Tool | Zweck |
 |---|---|
-| `wwca` | lokales Quiz- und Fortschrittstool |
+| `packetlab` | lokales Quiz- und Fortschrittstool |
 
 ## Grundsatz
 

@@ -29,19 +29,19 @@ quizzes/questions/interface-counters.yml
 ## Nutzung
 
 ```bash
-python3 tools/wwca/wwca.py quiz run interface-counters
+python3 tools/packetlab/packetlab.py quiz run interface-counters
 ```
 
 Mit zufälliger Reihenfolge:
 
 ```bash
-python3 tools/wwca/wwca.py quiz run interface-counters --shuffle
+python3 tools/packetlab/packetlab.py quiz run interface-counters --shuffle
 ```
 
 Als Modulprüfung:
 
 ```bash
-python3 tools/wwca/wwca.py exam run module-interface-counters
+python3 tools/packetlab/packetlab.py exam run module-interface-counters
 ```
 
 ## Ziel

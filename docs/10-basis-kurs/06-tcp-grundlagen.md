@@ -688,7 +688,7 @@ tcp.port == <port>
 | kein HTTP bei HTTPS | Wireshark funktioniert nicht | Inhalt ist durch TLS verschlüsselt |
 | tcp.analysis.flags | sicherer Fehler | Analysehinweis im Kontext bewerten |
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieser Abschnitt übt WCA-nahe Grundlagen:
 

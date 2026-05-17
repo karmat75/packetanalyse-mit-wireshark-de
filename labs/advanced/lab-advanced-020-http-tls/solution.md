@@ -17,7 +17,7 @@ Erwartete Beobachtung:
 - HTTP Request
 - HTTP Response
 - Statuscode 200
-- Header `X-WWCA-Lab: http-cleartext`
+- Header `X-PacketLab-Lab: http-cleartext`
 - je nach Request sichtbarer HTML-Inhalt
 
 Beispielbewertung:

@@ -8,7 +8,7 @@ pcap:
   path: pcaps/generated/challenge-003-tcp-retransmission-triage.pcapng
 docker_compose:
   file: docker/compose/lab-advanced-tcp-loss/compose.yml
-wca_objectives:
+course_competencies:
   - tcp
   - tcp-analysis
   - retransmission

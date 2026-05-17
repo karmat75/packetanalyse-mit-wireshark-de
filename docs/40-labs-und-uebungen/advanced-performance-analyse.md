@@ -41,7 +41,7 @@ pcaps/generated/lab-advanced-030-performance-analyse.pcapng
 
 Diese Datei ist lokal und wird nicht committed.
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieses Lab trainiert:
 

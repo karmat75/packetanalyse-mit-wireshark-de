@@ -29,8 +29,8 @@ In dieser Challenge können sichtbar werden:
 labuser
 LabPassword123
 LAB-TOKEN-12345
-WWCA-LabClient/1.0
-WWCA-BeaconSimulator/1.0
+PacketLab-LabClient/1.0
+PacketLab-BeaconSimulator/1.0
 training-node-01
 ```
 

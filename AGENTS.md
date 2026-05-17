@@ -2,7 +2,7 @@
 
 ## Project
 
-This repository contains an open-source German self-study course for network analysis with Wireshark, aligned with the Wireshark Certified Analyst WCA-101 learning objectives.
+This repository contains an open-source German self-study course for network analysis with Wireshark. It supports fair preparation for the Wireshark Certified Analyst WCA-101 certification without reproducing official exam content.
 
 The course is independent and is not an official Wireshark Foundation project.
 
@@ -39,7 +39,7 @@ The course must not assume deep protocol analysis knowledge.
 
 The course should help learners build real packet analysis skills with Wireshark, TShark and reproducible lab environments.
 
-The course should prepare learners for WCA-101 in a legitimate way.
+The course should support WCA-101 preparation in a legitimate way.
 
 Do not include:
 
@@ -133,7 +133,7 @@ Every lab should include:
 - Aufgaben
 - Hinweise
 - Lösung
-- WCA-Bezug
+- Kurskompetenz-Bezug
 - Weiterführende Ressourcen
 
 ## Lab metadata
@@ -148,7 +148,7 @@ title: "DNS NXDOMAIN analysieren"
 track: basic
 level: foundation
 estimated_time: 30m
-wca_objectives:
+course_competencies:
   - display-filters
   - dns
   - packet-details
@@ -165,11 +165,11 @@ outputs:
   - analysis-report
 ```
 
-## WCA alignment
+## WCA-related alignment
 
-When adding lessons or labs, include a WCA mapping where applicable.
+When adding lessons or labs, include a course competency mapping where applicable.
 
-The course may be aligned with WCA-101 objectives, but it must not copy protected exam content.
+The course may reference WCA-101 at a high level, but it must not reproduce official objectives, protected exam content or proprietary training material.
 
 Good:
 
@@ -261,13 +261,13 @@ Progress should be stored locally.
 Preferred locations:
 
 ```text
-~/.local/share/wireshark-wca-de/progress.json
+~/.local/share/packetanalyse-mit-wireshark-de/progress.json
 ```
 
 or later:
 
 ```text
-~/.local/share/wireshark-wca-de/progress.sqlite
+~/.local/share/packetanalyse-mit-wireshark-de/progress.sqlite
 ```
 
 Export and import should be supported.
@@ -275,12 +275,12 @@ Export and import should be supported.
 Example commands:
 
 ```bash
-wwca progress
-wwca quiz run basic-030
-wwca lab check lab-basic-030-dns-nxdomain
-wwca exam start wca-practice-01
-wwca progress export ./mein-fortschritt.json
-wwca progress import ./mein-fortschritt.json
+packetlab progress
+packetlab quiz run basic-030
+packetlab lab check lab-basic-030-dns-nxdomain
+packetlab exam run analysis-practice-exam-01
+packetlab progress export ./mein-fortschritt.json
+packetlab progress import ./mein-fortschritt.json
 ```
 
 ## MkDocs conventions
@@ -304,7 +304,7 @@ Before accepting changes, check:
 - Are commands suitable for Ubuntu-based systems?
 - Does the Markdown render correctly?
 - Are labs structured consistently?
-- Are WCA references legitimate and not copied from protected exam material?
+- Are WCA-related references legitimate, high-level and not copied from protected exam material?
 - Are external resources linked responsibly?
 - Are there no private captures, credentials or personal data?
 - Does `mkdocs build` complete successfully?

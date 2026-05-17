@@ -13,7 +13,7 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(status)
         self.send_header("Content-Type", "text/plain; charset=utf-8")
         self.send_header("Content-Length", str(len(data)))
-        self.send_header("X-WWCA-Lab", "security-basics")
+        self.send_header("X-PacketLab-Lab", "security-basics")
         if extra_headers:
             for key, value in extra_headers.items():
                 self.send_header(key, value)
@@ -24,7 +24,7 @@ class Handler(BaseHTTPRequestHandler):
         parsed = urlparse(self.path)
 
         if parsed.path == "/":
-            self._send_text(200, "Wireshark WCA DE Security Basics Lab\n")
+            self._send_text(200, "Packetanalyse mit Wireshark – DE Security Basics Lab\n")
             return
 
         if parsed.path == "/basic":
@@ -36,7 +36,7 @@ class Handler(BaseHTTPRequestHandler):
                 self._send_text(
                     401,
                     "Basic auth required for lab.\n",
-                    {"WWW-Authenticate": 'Basic realm="WWCA Lab"'},
+                    {"WWW-Authenticate": 'Basic realm="PacketLab Lab"'},
                 )
             return
 
@@ -70,5 +70,5 @@ class Handler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     server = HTTPServer(("0.0.0.0", 80), Handler)
-    print("Starting WWCA security basics lab server on port 80", flush=True)
+    print("Starting PacketLab security basics lab server on port 80", flush=True)
     server.serve_forever()

@@ -39,7 +39,7 @@ Am Ende hast du:
 45 Minuten
 ```
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieses Lab übt:
 

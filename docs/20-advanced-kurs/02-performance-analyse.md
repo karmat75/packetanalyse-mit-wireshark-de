@@ -697,7 +697,7 @@ Nächster sinnvoller Schritt:
 | I/O Graph hat Lücken | Fehler | Paketdetails und Anwendungskontext prüfen |
 | Expert Information zeigt Warnungen | Ursache gefunden | Hinweis prüfen, nicht blind übernehmen |
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieser Abschnitt übt WCA-nahe Fähigkeiten:
 

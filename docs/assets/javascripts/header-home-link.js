@@ -1,4 +1,4 @@
-function wwcaMakeHeaderTitleClickable() {
+function packetlabMakeHeaderTitleClickable() {
   const logoLink = document.querySelector("a.md-header__button.md-logo[href]");
   if (!logoLink) {
     return;
@@ -13,12 +13,12 @@ function wwcaMakeHeaderTitleClickable() {
     return;
   }
 
-  if (siteNameNode.closest("a.wwca-header-home-link")) {
+  if (siteNameNode.closest("a.packetlab-header-home-link")) {
     return;
   }
 
   const homeLink = document.createElement("a");
-  homeLink.className = "wwca-header-home-link";
+  homeLink.className = "packetlab-header-home-link";
   homeLink.href = homeHref;
   homeLink.setAttribute("aria-label", "Zur Startseite");
 
@@ -27,7 +27,7 @@ function wwcaMakeHeaderTitleClickable() {
   homeLink.appendChild(siteNameNode);
 }
 
-function wwcaMarkExternalLinks() {
+function packetlabMarkExternalLinks() {
   const contentLinks = document.querySelectorAll(".md-content a[href]");
 
   for (const link of contentLinks) {
@@ -55,7 +55,7 @@ function wwcaMarkExternalLinks() {
       continue;
     }
 
-    link.classList.add("wwca-external-link");
+    link.classList.add("packetlab-external-link");
 
     const existingRel = (link.getAttribute("rel") || "")
       .split(/\s+/)
@@ -69,13 +69,13 @@ function wwcaMarkExternalLinks() {
   }
 }
 
-function wwcaApplyEnhancements() {
-  wwcaMakeHeaderTitleClickable();
-  wwcaMarkExternalLinks();
+function packetlabApplyEnhancements() {
+  packetlabMakeHeaderTitleClickable();
+  packetlabMarkExternalLinks();
 }
 
 if (typeof window.document$ !== "undefined") {
-  window.document$.subscribe(wwcaApplyEnhancements);
+  window.document$.subscribe(packetlabApplyEnhancements);
 } else {
-  document.addEventListener("DOMContentLoaded", wwcaApplyEnhancements);
+  document.addEventListener("DOMContentLoaded", packetlabApplyEnhancements);
 }

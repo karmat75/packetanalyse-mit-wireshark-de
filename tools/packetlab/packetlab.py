@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """
-wwca - local helper tool for the packet analysis course.
+packetlab - local helper tool for the packet analysis course.
 
 This tool intentionally stays small and local-only.
 
 Supported commands:
-  wwca quiz list
-  wwca quiz validate
-  wwca quiz run <quiz-id>
-  wwca exam list
-  wwca exam validate
-  wwca exam run <exam-id>
-  wwca progress
-  wwca progress export <path>
-  wwca progress reset
+  packetlab quiz list
+  packetlab quiz validate
+  packetlab quiz run <quiz-id>
+  packetlab exam list
+  packetlab exam validate
+  packetlab exam run <exam-id>
+  packetlab progress
+  packetlab progress export <path>
+  packetlab progress reset
 """
 
 from __future__ import annotations
@@ -41,7 +41,7 @@ except ImportError:
     sys.exit(2)
 
 
-APP_NAME = "packet-analysis-course-de"
+APP_NAME = "packetanalyse-mit-wireshark-de"
 COURSE_VERSION = "0.1.0"
 
 
@@ -833,7 +833,7 @@ def progress_reset(_args: argparse.Namespace) -> int:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="wwca",
+        prog="packetlab",
         description="Local helper tool for the packet analysis course.",
     )
 

@@ -258,13 +258,13 @@ Der Kurs soll ohne zentralen Server funktionieren.
 Geplante lokale Speicherung:
 
 ```text
-~/.local/share/packet-analysis-course-de/progress.json
+~/.local/share/packetanalyse-mit-wireshark-de/progress.json
 ```
 
 Spätere Alternative:
 
 ```text
-~/.local/share/packet-analysis-course-de/progress.sqlite
+~/.local/share/packetanalyse-mit-wireshark-de/progress.sqlite
 ```
 
 Beispielstruktur:

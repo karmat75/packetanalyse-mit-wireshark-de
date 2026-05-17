@@ -856,7 +856,7 @@ tshark -r capture.pcapng \
   -Y "http.response.code >= 400"
 ```
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieser Abschnitt übt WCA-nahe Fähigkeiten:
 

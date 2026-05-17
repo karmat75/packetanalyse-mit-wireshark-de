@@ -1,8 +1,8 @@
-# Wireshark WCA DE
+# Packetanalyse mit Wireshark – DE
 
-Deutschsprachiger Open-Source-Selbstlernkurs für Netzwerkanalyse mit Wireshark, ausgerichtet an den Lernzielen der **Wireshark Certified Analyst (WCA-101)** Zertifizierung.
+Unabhängiger deutschsprachiger Open-Source-Selbstlernkurs zur Netzwerkanalyse mit Wireshark und zur fairen WCA-101-Vorbereitung.
 
-> Dieses Projekt ist kein offizieller Kurs der Wireshark Foundation und enthält keine Prüfungsfragen, Exam Dumps oder geschützten Zertifizierungsinhalte. Ziel ist der Aufbau echter Analysekompetenz mit Wireshark, TShark und reproduzierbaren Laborübungen.
+> Dieses Projekt ist kein offizieller Kurs der Wireshark Foundation und enthält keine offiziellen Prüfungsfragen, Exam Dumps oder geschützten Zertifizierungsinhalte. Wireshark und WCA werden nur beschreibend verwendet. Ziel ist der Aufbau echter Analysekompetenz mit Wireshark, TShark und reproduzierbaren Laborübungen.
 
 ---
 
@@ -36,7 +36,7 @@ Nach Abschluss des Kurses sollen Lernende in der Lage sein:
 - TCP-Probleme wie Retransmissions, Duplicate ACKs, Window-Probleme und Resets zu bewerten
 - zwischen Netzwerk-, Server-, Client- und Applikationsproblemen zu unterscheiden
 - Analyseergebnisse nachvollziehbar zu dokumentieren
-- sich strukturiert auf die WCA-101-Zertifizierung vorzubereiten
+- sich strukturiert und fair auf WCA-101 vorzubereiten
 
 ---
 
@@ -49,7 +49,7 @@ Der Kurs ist besonders geeignet für:
 - IT-Support und IT-Operations
 - Monitoring- und Infrastruktur-Teams
 - Auszubildende und Quereinsteiger mit Netzwerkgrundlagen
-- Menschen, die sich auf die WCA-101 vorbereiten möchten
+- Menschen, die sich strukturiert und fair auf WCA-101 vorbereiten möchten
 
 Der Kurs ist nicht als offensives Security-Training gedacht. Security-nahe Themen werden ausschließlich aus Sicht der defensiven Analyse und Fehlersuche behandelt.
 
@@ -134,18 +134,18 @@ Themen:
 - Applikationsprobleme
 - Analyseberichte
 
-### 4. WCA-Vorbereitung
+### 4. WCA-nahe Vorbereitung
 
-Dieser Abschnitt orientiert sich an den Lernzielen der WCA-101-Zertifizierung.
+Dieser Abschnitt unterstützt die Vorbereitung auf WCA-101, ohne offizielle Prüfungsziele, Prüfungsfragen oder Trainingsunterlagen nachzubilden.
 
 Inhalte:
 
-- Lernzielmatrix
+- Kursabdeckungs-Matrix
 - Wiederholungsfragen
 - praktische PCAP-Challenges
 - Zwischenprüfungen
-- Probeprüfungen
-- Prüfungsstrategie
+- unabhängige Selbsttests
+- prüfungsnahe Lernstrategie
 - typische Denkfehler
 - Analyse unter Zeitdruck
 
@@ -182,11 +182,10 @@ Aktuelle Struktur des Repositories:
 │   ├── foundation/
 │   ├── basic/
 │   ├── advanced/
-│   └── wca-practice/
+│   └── analysis-practice/
 ├── quizzes/
 │   ├── questions/
-│   ├── exams/
-│   └── objectives/
+│   └── exams/
 ├── pcaps/
 │   ├── generated/
 │   └── challenge/
@@ -194,7 +193,7 @@ Aktuelle Struktur des Repositories:
 │   └── compose/
 ├── tools/
 │   ├── quality/
-│   └── wwca/
+│   └── packetlab/
 ├── templates/
 ├── overrides/
 └── .github/
@@ -229,7 +228,7 @@ Jedes Lab soll enthalten:
 - Aufgaben
 - Hinweise
 - Musterlösung
-- WCA-Bezug
+- Kurskompetenz-Bezug
 - weiterführende Ressourcen
 - optional automatisierte Prüfung
 
@@ -244,12 +243,12 @@ Geplant ist eine lokale Fortschrittsspeicherung auf dem System der lernenden Per
 Mögliche Funktionen:
 
 ```bash
-wwca progress
-wwca quiz run basic-030
-wwca lab check lab-basic-030-dns-nxdomain
-wwca exam start wca-practice-01
-wwca progress export ./mein-fortschritt.json
-wwca progress import ./mein-fortschritt.json
+packetlab progress
+packetlab quiz run basic-030
+packetlab lab check lab-basic-030-dns-nxdomain
+packetlab exam run analysis-practice-exam-01
+packetlab progress export ./mein-fortschritt.json
+packetlab progress import ./mein-fortschritt.json
 ```
 
 Die Ergebnisse sollen lokal gespeichert und exportierbar sein.
@@ -257,13 +256,13 @@ Die Ergebnisse sollen lokal gespeichert und exportierbar sein.
 Geplante Speicherorte:
 
 ```text
-~/.local/share/wireshark-wca-de/progress.json
+~/.local/share/packetanalyse-mit-wireshark-de/progress.json
 ```
 
 oder später:
 
 ```text
-~/.local/share/wireshark-wca-de/progress.sqlite
+~/.local/share/packetanalyse-mit-wireshark-de/progress.sqlite
 ```
 
 ---
@@ -337,8 +336,8 @@ Details siehe `CONTRIBUTING.md` und `tools/quality/README.md`.
 Repository klonen:
 
 ```bash
-git clone https://github.com/karmat75/wireshark-wca-de.git
-cd wireshark-wca-de
+git clone https://github.com/karmat75/packetanalyse-mit-wireshark-de.git
+cd packetanalyse-mit-wireshark-de
 ```
 
 Projekt in VSCode öffnen:
@@ -376,7 +375,7 @@ Mögliche Beiträge:
 - Verbesserungen an Docker-Labs
 - bessere Erklärungen
 - Diagramme
-- WCA-Lernzielzuordnung
+- Kurskompetenz-Zuordnung
 - technische Prüfskripte
 - Übersetzungen und sprachliche Verbesserungen
 

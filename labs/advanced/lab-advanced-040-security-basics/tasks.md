@@ -47,11 +47,11 @@ In einem zweiten Terminal:
 
 ```bash
 docker compose -f docker/compose/lab-advanced-security-basics/compose.yml exec lab-client sh -lc '
-curl --noproxy "*" -A "WWCA-LabClient/1.0" http://172.28.80.10/
+curl --noproxy "*" -A "PacketLab-LabClient/1.0" http://172.28.80.10/
 curl --noproxy "*" -u labuser:LabPassword123 http://172.28.80.10/basic
 curl --noproxy "*" -X POST -d "username=labuser&password=LabPassword123&token=LAB-TOKEN-12345" http://172.28.80.10/login
 for i in 1 2 3 4 5; do
-  curl --noproxy "*" -A "WWCA-BeaconSimulator/1.0" "http://172.28.80.10/beacon?id=training-node-01&seq=$i"
+  curl --noproxy "*" -A "PacketLab-BeaconSimulator/1.0" "http://172.28.80.10/beacon?id=training-node-01&seq=$i"
   sleep 1
 done
 '

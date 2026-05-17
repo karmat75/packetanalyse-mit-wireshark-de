@@ -56,7 +56,7 @@ pcaps/generated/lab-basic-020-dns-http-docker.pcapng
 
 Diese Datei ist lokal und wird nicht committed.
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieses Lab trainiert:
 

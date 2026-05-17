@@ -88,7 +88,7 @@ Wenn Interfaces angezeigt werden, ist die Grundkonfiguration einsatzbereit.
 Für einen sehr kurzen Test:
 
 ```bash
-tshark -a duration:5 -w /tmp/wwca-test.pcapng
+tshark -a duration:5 -w /tmp/packetlab-test.pcapng
 ```
 
 In einem zweiten Terminal währenddessen etwas Traffic erzeugen:
@@ -100,7 +100,7 @@ curl -I https://www.wireshark.org/
 Danach prüfen:
 
 ```bash
-capinfos /tmp/wwca-test.pcapng
+capinfos /tmp/packetlab-test.pcapng
 ```
 
 ## Wireshark starten

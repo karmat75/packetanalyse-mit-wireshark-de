@@ -123,7 +123,7 @@ docs/assets/images/
 ├── performance/
 ├── security/
 ├── labs/
-└── wca-prep/
+└── wca-nahe-vorbereitung/
 ```
 
 ## Ordnerzuordnung
@@ -139,7 +139,7 @@ docs/assets/images/
 | `performance/` | I/O Graphs, TCP Stream Graphs, Zeitverhalten |
 | `security/` | defensive Beispiele, IOC-Suche, Klartext-Hinweise |
 | `labs/` | lab-spezifische Screenshots |
-| `wca-prep/` | Lernzielmatrix, Quiz-/Prüfungsvorbereitung |
+| `wca-nahe-vorbereitung/` | Kursabdeckungs-Matrix, Quiz-/Selbsttestvorbereitung |
 
 ## Dateinamen
 

@@ -63,8 +63,8 @@ tshark -D
 Kurzer Capture-Test:
 
 ```bash
-tshark -a duration:5 -w /tmp/wwca-test.pcapng
-capinfos /tmp/wwca-test.pcapng
+tshark -a duration:5 -w /tmp/packetlab-test.pcapng
+capinfos /tmp/packetlab-test.pcapng
 ```
 
 ## Kursdokumentation prüfen

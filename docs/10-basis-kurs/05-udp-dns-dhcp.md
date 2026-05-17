@@ -798,7 +798,7 @@ Der Client erhält eine vollständige / unvollständige / fehlerhafte IP-Konfigu
 | DHCP Discover ohne Offer | Server ist aus | VLAN, Relay, Scope, Capture-Punkt prüfen |
 | falsches Gateway per DHCP | Netzwerk kaputt | DHCP-Optionen und Scope prüfen |
 
-## WCA-Bezug
+## Kurskompetenz-Bezug
 
 Dieser Abschnitt übt WCA-nahe Grundlagen:
 
