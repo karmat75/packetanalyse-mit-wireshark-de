@@ -290,7 +290,7 @@ Beispielstruktur:
 
 ## Geplantes CLI-Tool
 
-Später kann ein kleines Tool `packetlab` entstehen.
+Das lokale Tool `packetlab` unterstützt diesen Ansatz.
 
 Beispielbefehle:
 

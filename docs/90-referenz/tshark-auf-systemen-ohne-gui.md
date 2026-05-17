@@ -38,7 +38,7 @@ Dann musst du trotzdem in der Lage sein:
 - einzelne Felder auszugeben
 - Ergebnisse reproduzierbar zu dokumentieren
 
-Für die WCA-Vorbereitung ist das wichtig, weil die Prüfung nicht nur grafische Bedienung abfragt. Sie prüft auch Verständnis für Capture-Methoden, Kommandozeilenwerkzeuge, Filter, Capture-Dateien und Analyseabläufe.
+Für die WCA-nahe Vorbereitung ist das wichtig, weil gute Paket- und Protokollanalyse nicht nur aus grafischer Bedienung besteht. Relevante Kompetenzen sind unter anderem Capture-Methoden, Kommandozeilenwerkzeuge, Filter, Capture-Dateien und nachvollziehbare Analyseabläufe.
 
 ## TShark installieren: Desktop-System
 

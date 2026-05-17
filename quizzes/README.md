@@ -11,7 +11,7 @@ quizzes/
 │   └── basic.yml
 ├── exams/
 │   └── .gitkeep
-└── objectives/
+└── competencies/
     └── .gitkeep
 ```
 
@@ -21,6 +21,6 @@ Die Fragen sind eigene Kursfragen.
 
 Sie sind keine offiziellen Prüfungsfragen, keine nachgestellten Prüfungsfragen und keine Exam Dumps.
 
-## Spätere Nutzung
+## Lokale Nutzung
 
-Geplant ist ein lokales Tool, das diese Fragen ausführt und Fortschritt lokal speichert.
+Das lokale Tool `packetlab` kann Fragen ausführen, Selbsttests starten und Fortschritt lokal speichern.

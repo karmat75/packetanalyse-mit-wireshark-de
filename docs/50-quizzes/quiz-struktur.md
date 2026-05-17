@@ -19,7 +19,7 @@ quizzes/
 │   └── basic.yml
 ├── exams/
 │   └── .gitkeep
-└── objectives/
+└── competencies/
     └── .gitkeep
 ```
 
@@ -70,7 +70,7 @@ Jede Frage sollte enthalten:
 |---|---|
 | `id` | eindeutige Frage-ID |
 | `type` | Fragetyp |
-| `objective` | Lernziel |
+| `objective` | eigenes Kurslernziel oder Kompetenzkennzeichen |
 | `question` | Frage |
 | `answers` | Antwortoptionen bei Auswahlfragen |
 | `explanation` | Erklärung der richtigen Lösung |
@@ -122,7 +122,7 @@ Geplante Befehle:
 ```bash
 packetlab quiz run foundation
 packetlab quiz run basic
-packetlab exam start module-basic
+packetlab exam run module-basic
 packetlab progress
 ```
 

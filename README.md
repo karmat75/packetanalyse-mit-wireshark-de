@@ -264,9 +264,9 @@ Mögliche Funktionen:
 
 ```bash
 packetlab progress
-packetlab quiz run basic-030
+packetlab quiz run basic
 packetlab lab check lab-basic-030-dns-nxdomain
-packetlab exam run analysis-practice-exam-01
+packetlab exam run module-basic
 packetlab progress export ./mein-fortschritt.json
 packetlab progress import ./mein-fortschritt.json
 ```

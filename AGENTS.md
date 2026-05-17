@@ -116,7 +116,7 @@ docs/       Course documentation and learning content
 labs/       Practical exercises
 pcaps/      Packet captures
 docker/     Docker and lab environment resources
-quizzes/    Questions, module tests and independent self-tests
+quizzes/    Questions, module self-tests and practice-oriented checks
 tools/      Helper scripts and local CLI tools
 ```
 
@@ -340,9 +340,9 @@ Example commands:
 
 ```bash
 packetlab progress
-packetlab quiz run basic-030
+packetlab quiz run basic
 packetlab lab check lab-basic-030-dns-nxdomain
-packetlab exam run analysis-practice-exam-01
+packetlab exam run module-basic
 packetlab progress export ./mein-fortschritt.json
 packetlab progress import ./mein-fortschritt.json
 ```

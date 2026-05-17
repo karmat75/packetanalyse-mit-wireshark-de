@@ -12,11 +12,11 @@ Es nutzt dieselbe grundlegende Analysebasis wie Wireshark, arbeitet aber im Term
     TShark ist besonders wichtig auf Systemen ohne grafische Oberfläche.  
     Lies dazu auch die Referenz: [TShark auf Systemen ohne GUI](../90-referenz/tshark-auf-systemen-ohne-gui.md).
 
-## Warum TShark für die WCA-Vorbereitung wichtig ist
+## Warum TShark für die WCA-nahe Vorbereitung wichtig ist
 
-Die WCA-101-Ziele verlangen nicht nur, dass du Pakete in der grafischen Oberfläche untersuchen kannst.
+Für eine faire WCA-nahe Vorbereitung und für echte Analysearbeit ist es wichtig, Pakete nicht nur in der grafischen Oberfläche zu untersuchen.
 
-Zu den Zielen gehört auch, verschiedene Methoden zur Paketerfassung zu verstehen und Traffic mit Kommandozeilenwerkzeugen erfassen zu können.
+Dazu gehören auch verschiedene Methoden zur Paketerfassung und die Fähigkeit, Traffic mit Kommandozeilenwerkzeugen zu erfassen und auszuwerten.
 
 TShark ist dafür das wichtigste Werkzeug aus der Wireshark-Welt.
 
