@@ -2,9 +2,21 @@
 
 ## Project
 
-This repository contains an open-source German self-study course for network analysis with Wireshark. It supports fair preparation for the Wireshark Certified Analyst WCA-101 certification without reproducing official exam content.
+Official project title:
 
-The course is independent and is not an official Wireshark Foundation project.
+```text
+Packetanalyse mit Wireshark
+```
+
+Repository name:
+
+```text
+packetanalyse-mit-wireshark-de
+```
+
+This repository contains an open-source German self-study course for network analysis with Wireshark. It supports fair preparation for the Wireshark Certified Analyst WCA-101 certification without reproducing official exam content, official objectives, proprietary training material or exam dumps.
+
+The course is independent and is not an official Wireshark Foundation project. Use the names Wireshark and WCA only descriptively. Do not imply sponsorship, endorsement, certification partnership or official training status.
 
 ## Language
 
@@ -39,17 +51,43 @@ The course must not assume deep protocol analysis knowledge.
 
 The course should help learners build real packet analysis skills with Wireshark, TShark and reproducible lab environments.
 
-The course should support WCA-101 preparation in a legitimate way.
+The course may support WCA-101 preparation in a legitimate way, but it must remain an independent learning resource.
 
 Do not include:
 
 - real certification exam questions
+- recreated or memorized exam questions
 - exam dumps
+- copied official objectives
 - copied proprietary training material
+- copied external articles, slides or video transcripts
 - private packet captures
 - credentials
 - customer data
 - personal data
+
+## Rights, sources and trademark policy
+
+Use this principle for every contribution:
+
+```text
+Own explanations, own labs, own scenarios, own quiz questions and own screenshots.
+External resources are linked and briefly classified, not copied into the course.
+```
+
+Rules:
+
+- Do not copy text from books, articles, blogs, documentation, slide decks, videos or commercial training material.
+- Do not translate protected external material as a substitute for copying it.
+- Do not mirror or fully reproduce official WCA-101 objectives.
+- Do not add official logos unless there is explicit permission and the license allows it.
+- Do not use Wireshark, WCA or similar marks as if this project were official.
+- Use neutral wording such as "unabhängiger Selbstlernkurs", "WCA-nahe Orientierung" and "Kurskompetenzen".
+- External references should point to the original source and should not replace the original source.
+- Screenshots and images need a documented origin, even when they are created in this repository's own lab environment.
+- External packet captures must have a clear license and must be safe to redistribute.
+
+When in doubt, link to the external source instead of copying, embedding or rephrasing it extensively.
 
 ## Writing style
 
@@ -78,7 +116,7 @@ docs/       Course documentation and learning content
 labs/       Practical exercises
 pcaps/      Packet captures
 docker/     Docker and lab environment resources
-quizzes/    Questions, module tests and practice exams
+quizzes/    Questions, module tests and independent self-tests
 tools/      Helper scripts and local CLI tools
 ```
 
@@ -135,6 +173,7 @@ Every lab should include:
 - Lösung
 - Kurskompetenz-Bezug
 - Weiterführende Ressourcen
+- Quellen- und Rechtehinweise, wenn externe Quellen, Bilder oder PCAPs verwendet werden
 
 ## Lab metadata
 
@@ -165,6 +204,8 @@ outputs:
   - analysis-report
 ```
 
+Prefer `course_competencies` for local course alignment. Do not use metadata fields that imply a local copy of official WCA objectives, such as `wca_objectives`.
+
 ## WCA-related alignment
 
 When adding lessons or labs, include a course competency mapping where applicable.
@@ -174,12 +215,15 @@ The course may reference WCA-101 at a high level, but it must not reproduce offi
 Good:
 
 - "Dieses Lab übt Display Filter, DNS und Paketdetails."
-- "Diese Aufgabe bereitet auf TCP-Troubleshooting-Ziele vor."
+- "Diese Aufgabe trainiert TCP-Troubleshooting-Kompetenzen."
+- "Für die verbindliche Prüfungsbeschreibung bitte die offiziellen WCA-101-Informationen prüfen."
 
 Bad:
 
 - "Diese Frage kommt so in der Prüfung vor."
 - "Originalfrage aus WCA-101."
+- "Die offiziellen WCA-Ziele in deutscher Übersetzung."
+- "Vollständige Objective-Liste für die Prüfung."
 
 ## External resources
 
@@ -198,6 +242,25 @@ Useful external resources may include:
 
 Do not copy external articles, slides, videos or packet captures into the repository unless the license clearly allows it.
 
+When an external source is used for inspiration or factual verification, summarize it in your own words and link to the source. Do not convert it into a local replacement for the original.
+
+## Screenshot and image policy
+
+Preferred sources:
+
+- own screenshots from this repository's lab environment
+- synthetic data created for this course
+- self-created diagrams
+
+Rules:
+
+- Every screenshot or image needs an origin note.
+- External screenshots need a clear license or explicit permission.
+- Avoid product logos unless their use is necessary and legally safe.
+- Do not copy images from books, slide decks, commercial courses, videos or blogs without permission.
+- If a screenshot contains hostnames, user names, IP addresses, tokens, cookies or customer data, do not commit it.
+- If licensing or privacy is unclear, describe the observation in text instead of adding the image.
+
 ## Packet capture policy
 
 Packet captures can contain sensitive data.
@@ -213,6 +276,7 @@ Rules:
 - Prefer synthetic lab traffic.
 - External captures must have a clear license.
 - If licensing is unclear, link to the source instead of committing the file.
+- Document the origin and safety review for every non-empty PCAP/PCAPNG file.
 
 ## Technical baseline
 
@@ -305,9 +369,24 @@ Before accepting changes, check:
 - Does the Markdown render correctly?
 - Are labs structured consistently?
 - Are WCA-related references legitimate, high-level and not copied from protected exam material?
+- Are official WCA objectives referenced externally instead of copied, translated or mirrored locally?
 - Are external resources linked responsibly?
+- Are screenshots, diagrams and images either self-created or clearly licensed and attributed?
+- Are non-empty PCAP/PCAPNG files self-generated or clearly licensed and safe to redistribute?
+- Are Wireshark, WCA and other marks used only descriptively?
 - Are there no private captures, credentials or personal data?
 - Does `mkdocs build` complete successfully?
+- Do the quality scripts and quiz validations pass?
+
+Recommended local checks:
+
+```bash
+python3 tools/quality/check_repo_structure.py
+python3 tools/quality/check_markdown_fences.py
+python3 tools/packetlab/packetlab.py quiz validate
+python3 tools/packetlab/packetlab.py exam validate
+mkdocs build
+```
 
 ## Safety and legality
 

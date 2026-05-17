@@ -182,7 +182,6 @@ Vor einem Pull Request:
 - [ ] Quizfragen und Selbsttests enthalten keine offiziellen Prüfungsfragen und keine Exam-Dump-Inhalte
 - [ ] Wireshark, WCA und andere Marken werden nur beschreibend verwendet
 - [ ] Navigation aktualisiert, falls neue Seiten ergänzt wurden
-- [ ] `PACKAGE_CONTENTS.md` nur verwenden, wenn ein Paket eingespielt wurde
 
 ## PCAP-Regeln
 

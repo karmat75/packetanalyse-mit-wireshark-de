@@ -24,7 +24,6 @@ Priorität A:
 
 Priorität B:
 
-- `PACKAGE_CONTENTS.md` (falls Paket-Workflow genutzt wurde)
 - `tools/README.md`
 - `docs/90-referenz/beitragen-und-review.md`
 - `.github/pull_request_template.md`

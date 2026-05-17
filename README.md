@@ -184,7 +184,6 @@ Aktuelle Struktur des Repositories:
 ├── AGENTS.md
 ├── CONTRIBUTING.md
 ├── mkdocs.yml
-├── PACKAGE_CONTENTS.md
 ├── challenges/
 ├── docs/
 │   ├── index.md
