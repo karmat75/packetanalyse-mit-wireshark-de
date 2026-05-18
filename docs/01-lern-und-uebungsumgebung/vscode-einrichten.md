@@ -74,6 +74,7 @@ Die folgenden Erweiterungen sind für den Kurs sinnvoll:
 | Python | Python-Skripte und Tests |
 | YAML | YAML-Dateien besser bearbeiten |
 | GitHub Pull Requests | Pull Requests aus VSCode bearbeiten |
+| VSCode Icons | Inuitive Darstellung von Ordnern und Dateien |
 
 Installation per Kommandozeile:
 
@@ -85,6 +86,7 @@ code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-python.python
 code --install-extension redhat.vscode-yaml
 code --install-extension GitHub.vscode-pull-request-github
+code --install-extension vscode-icons-team.vscode-icons
 ```
 
 ## Wichtige Tastenkombinationen

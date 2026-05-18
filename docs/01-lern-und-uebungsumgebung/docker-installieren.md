@@ -69,11 +69,50 @@ sudo apt install -y   docker-ce   docker-ce-cli   containerd.io   docker-buildx-
 sudo systemctl status docker --no-pager
 ```
 
-Testcontainer ausführen:
+Die Ausgabe sieht ungefähr so aus:
+
+```text
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sun 2026-05-18 10:00:00 UTC; 1min ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 1234 (dockerd)
+      Tasks: 10
+     Memory: 32.0M
+        CPU: 500ms
+     CGroup: /system.slice/docker.service
+             └─1234 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+```
+
+Worauf du achten solltest:
+
+- **`Active: active (running)`** — der Docker-Dienst läuft. Das ist die wichtigste Zeile.
+- **`Loaded: ... enabled`** — Docker startet automatisch beim Systemstart.
+- Falls statt `active (running)` etwas wie `inactive (dead)` oder `failed` erscheint, ist der Dienst nicht gestartet. In diesem Fall hilft: `sudo systemctl start docker`
+
+### Testcontainer ausführen
 
 ```bash
 sudo docker run hello-world
 ```
+
+Docker lädt dabei ein kleines Testimage herunter und führt es aus. Eine erfolgreiche Ausgabe enthält die Zeile:
+
+```text
+Hello from Docker!
+```
+
+Falls Docker das Image zuerst herunterlädt, erscheint zusätzlich:
+
+```text
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+...
+Status: Downloaded newer image for hello-world:latest
+```
+
+Das ist kein Fehler, sondern normales Verhalten beim ersten Aufruf.
 
 ## Docker ohne `sudo` verwenden
 
