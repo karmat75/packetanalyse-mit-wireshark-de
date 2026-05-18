@@ -98,6 +98,20 @@ tshark -r pcaps/generated/first-contact.pcapng
 
 Das zeigt eine kurze Paketübersicht im Terminal.
 
+!!! warning "Fehlermeldung: \"You don't have permission to read the file\""
+  Auf aktuellen Ubuntu-Systemen kann diese Meldung trotz korrekter Dateirechte durch ein AppArmor-Profil für `tshark` ausgelöst werden.
+
+  Schnell prüfen:
+
+  ```bash
+  capinfos pcaps/generated/first-contact.pcapng
+  ```
+
+  Wenn `capinfos` funktioniert, `tshark -r ...` aber mit Berechtigungsfehler endet, liegt es sehr wahrscheinlich nicht an klassischen Unix-Rechten.
+
+  Eine kompakte Schritt-für-Schritt-Lösung findest du in der Referenz:
+  [TShark-Berechtigungsfehler unter Ubuntu (AppArmor)](../90-referenz/tshark-berechtigungsfehler-ubuntu-apparmor.md).
+
 ## Nur bestimmte Pakete anzeigen
 
 TShark kann Display Filter verwenden.

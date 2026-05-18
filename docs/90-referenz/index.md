@@ -14,6 +14,7 @@ Sie sollen helfen, während einer Analyse schnell die richtige Richtung zu finde
 | [Screenshot-Styleguide](screenshot-styleguide.md) | Regeln für saubere und sichere Screenshots |
 | [OSI-Modell für Wireshark](osi-modell-fuer-wireshark.md) | Einordnung von Schichten und Protokollen |
 | [TShark auf Systemen ohne GUI](tshark-auf-systemen-ohne-gui.md) | Installation und Nutzung von TShark ohne Desktop |
+| [TShark-Berechtigungsfehler unter Ubuntu (AppArmor)](tshark-berechtigungsfehler-ubuntu-apparmor.md) | typische Ursache und Lösungen bei irreführendem Berechtigungsfehler |
 | [Display-Filter-Cheatsheet](display-filter-cheatsheet.md) | kompakte Filterreferenz |
 | [TCP-Analyse-Cheatsheet](tcp-analyse-cheatsheet.md) | TCP-Symptome und sinnvolle Filter |
 | [Interface-Counter-Cheatsheet](interface-counter-cheatsheet.md) | Errors, Discards, Capture-Punkte und Wireshark-Grenzen |
