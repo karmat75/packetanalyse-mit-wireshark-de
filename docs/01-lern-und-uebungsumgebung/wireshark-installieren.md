@@ -124,13 +124,10 @@ Eine erfolgreiche Ausgabe zeigt unter anderem die Anzahl der aufgezeichneten Pak
 
 ## Wireshark starten
 
-Wireshark lässt sich direkt aus dem Terminal starten oder über das Anwendungsmenü aufrufen.
+Wireshark lässt sich direkt aus dem Terminal, über den Befehl `wireshark`, starten oder über das Anwendungsmenü aufrufen.
 
 Das Fenster öffnet sich manchmal recht klein. Einfach maximieren — danach ist die Oberfläche gut erkennbar.
 
-```bash
-wireshark
-```
 
 ### Was dich beim ersten Start erwartet
 
