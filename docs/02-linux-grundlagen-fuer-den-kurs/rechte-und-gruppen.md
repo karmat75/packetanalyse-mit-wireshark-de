@@ -19,7 +19,7 @@ groups
 Beispiel:
 
 ```text
-mkargel adm sudo docker wireshark
+beispieluser adm sudo docker wireshark
 ```
 
 Wichtige Gruppen im Kurs:

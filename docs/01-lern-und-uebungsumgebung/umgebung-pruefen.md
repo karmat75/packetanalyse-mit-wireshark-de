@@ -143,7 +143,7 @@ pwd
 Erwartung:
 
 ```text
-/home/<benutzer>/workspace/packetanalyse-mit-wireshark-de
+/home/beispieluser/workspace/packetanalyse-mit-wireshark-de
 ```
 
 ### `mkdocs: command not found`

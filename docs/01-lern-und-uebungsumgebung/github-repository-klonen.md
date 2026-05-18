@@ -41,7 +41,7 @@ Mit Account kannst du später einfacher Änderungen veröffentlichen (Pull Reque
 Beispiel (Fork klonen):
 
 ```bash
-git clone https://github.com/<dein-username>/packetanalyse-mit-wireshark-de.git
+git clone https://github.com/beispieluser/packetanalyse-mit-wireshark-de.git
 ```
 
 ## Schritt 3: Repository klonen

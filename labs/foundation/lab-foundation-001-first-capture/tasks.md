@@ -5,7 +5,7 @@
 Wechsle in das Repository-Root:
 
 ```bash
-cd /home/mkargel/DailyWorkspace/source/repos/packetanalyse-mit-wireshark-de
+cd ~/workspace/packetanalyse-mit-wireshark-de
 ```
 
 Erzeuge den Ordner für lokal generierte Captures:
