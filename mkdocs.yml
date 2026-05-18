@@ -122,6 +122,8 @@ nav:
       - Ubuntu installieren: 01-lern-und-uebungsumgebung/ubuntu-installieren.md
       - Andere Distributionen: 01-lern-und-uebungsumgebung/pop-os-hinweise.md
       - Benötigte Pakete installieren: 01-lern-und-uebungsumgebung/pakete-installieren.md
+      - GitHub Repository klonen: 01-lern-und-uebungsumgebung/github-repository-klonen.md
+      - Python-Umgebung einrichten: 01-lern-und-uebungsumgebung/python-umgebung-einrichten.md
       - VSCode einrichten: 01-lern-und-uebungsumgebung/vscode-einrichten.md
       - Docker installieren: 01-lern-und-uebungsumgebung/docker-installieren.md
       - Wireshark installieren: 01-lern-und-uebungsumgebung/wireshark-installieren.md
