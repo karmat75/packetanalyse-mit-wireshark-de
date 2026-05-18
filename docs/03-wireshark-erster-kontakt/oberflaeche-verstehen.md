@@ -28,9 +28,23 @@ Wichtig:
 - `en...`, `eth...` oder `eno...` sind häufig kabelgebundene Interfaces.
 - `docker0` und `br-...` gehören meistens zu Docker-Netzwerken.
 
+Wenn du ein Interface auswählst und den Capture startest, sieht das Wireshark-Fenster ungefähr so aus:
+
+![Wireshark-Hauptfenster mit Paketliste, Paketdetails und Paketbytes](../assets/images/wireshark-ui/wireshark-ui-main-window-overview.png){ width="1600" }
+
+<!--
+Bildnachweis: eigener Screenshot aus einem synthetischen Lab-Capture; sensible Daten geprüft.
+-->
+
+In dieser Ansicht erkennst du die drei zentralen Bereiche der Oberfläche an ihrer Position:
+
+- oben: Paketliste
+- unten links: Paketdetails
+- unten rechts: Paketbytes
+
 ## Paketliste
 
-Die Paketliste ist der obere Hauptbereich.
+Die Paketliste ist der obere Bereich.
 
 Hier siehst du eine Zeile pro Paket.
 
@@ -52,7 +66,7 @@ Die Paketliste beantwortet zuerst die Frage:
 
 ## Paketdetails
 
-Der mittlere Bereich zeigt die Details des ausgewählten Pakets.
+Der untere linke Bereich zeigt die Details des ausgewählten Pakets.
 
 Hier findest du die einzelnen Protokollschichten.
 
@@ -80,7 +94,7 @@ Hier siehst du nicht nur, dass ein Paket TCP ist, sondern auch:
 
 ## Paketbytes
 
-Der untere Bereich zeigt die Rohdaten des Pakets.
+Der untere rechte Bereich zeigt die Rohdaten des Pakets.
 
 Am Anfang brauchst du diesen Bereich selten.
 
