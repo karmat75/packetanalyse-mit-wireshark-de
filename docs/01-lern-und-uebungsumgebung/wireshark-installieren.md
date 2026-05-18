@@ -150,7 +150,7 @@ Sobald du möchtest, kannst du direkt einen ersten Mitschnitt machen:
 - Wireshark beginnt sofort mit dem Aufzeichnen
 - Mit dem roten Stopp-Button (`◼`) in der Werkzeugleiste kannst du den Capture beenden
 
-Ausführlich wird das im Kapitel [Wireshark erster Kontakt](../../03-wireshark-erster-kontakt/index.md) behandelt.
+Ausführlich wird das im Kapitel [Wireshark erster Kontakt](../03-wireshark-erster-kontakt/index.md) behandelt.
 
 !!! note "Keine Interfaces sichtbar?"
     Falls die Interface-Liste leer ist oder grau erscheint, fehlen meist noch die Berechtigungen.
