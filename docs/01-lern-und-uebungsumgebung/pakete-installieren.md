@@ -34,6 +34,50 @@ sudo apt install -y   ca-certificates   curl   wget   gnupg   lsb-release   soft
 | `traceroute` | Pfadermittlung im Netzwerk |
 | `whois` | einfache Domain- und IP-Abfragen |
 
+## Repository lokal vorbereiten
+
+Bevor du die Python-Umgebung einrichtest, brauchst du eine lokale Kopie des Kurses auf deinem Rechner.
+
+### 1. Einen Arbeitsordner auswählen
+
+Beispiel: Du legst unter deinem Home-Verzeichnis einen Ordner `workspace` an.
+
+```bash
+mkdir -p ~/workspace
+cd ~/workspace
+```
+
+### 2. Repository klonen
+
+```bash
+git clone https://github.com/mkargel/packetanalyse-mit-wireshark-de.git
+```
+
+### 3. In das Repository wechseln
+
+```bash
+cd packetanalyse-mit-wireshark-de
+```
+
+Falls das Repository bereits lokal vorhanden ist, reicht Schritt 3.
+
+## Schritt zur Absicherung: Standort prüfen und Linux-Basiskommandos nutzen
+
+Dieser Schritt stellt sicher, dass du wirklich im richtigen Verzeichnis arbeitest.
+Gleichzeitig übst du dabei drei wichtige Linux-Basiskommandos: `pwd`, `ls` und `git status`.
+
+```bash
+pwd
+ls
+git status
+```
+
+Erwartung:
+
+- Bei `pwd` endet der Pfad auf `packetanalyse-mit-wireshark-de`.
+- `ls` zeigt unter anderem `README.md`, `mkdocs.yml`, `docs` und `tools`.
+- `git status` zeigt den Zustand des Repositories und keine Meldung wie `not a git repository`.
+
 ## Python-Umgebung für die Kursdokumentation
 
 Im Repository wird eine lokale virtuelle Python-Umgebung verwendet.
