@@ -13,6 +13,21 @@ cat /etc/os-release
 
 ## Basiswerkzeuge
 
+Zuerst ins Repository wechseln und den Standort prüfen:
+
+```bash
+cd ~/workspace/packetanalyse-mit-wireshark-de
+pwd
+```
+
+Danach die virtuelle Umgebung im Repository aktivieren:
+
+```bash
+source .venv/bin/activate
+```
+
+Jetzt die Basiswerkzeuge prüfen:
+
 ```bash
 git --version
 curl --version
@@ -20,12 +35,7 @@ python3 --version
 python -m pip --version
 ```
 
-Wenn `python -m pip --version` nicht funktioniert, zuerst die virtuelle Umgebung aktivieren:
-
-```bash
-source .venv/bin/activate
-python -m pip --version
-```
+Wenn `source .venv/bin/activate` fehlschlägt, bist du meistens nicht im Repository-Root oder die `.venv` wurde noch nicht erstellt.
 
 ## Netzwerkwerkzeuge
 
@@ -69,7 +79,14 @@ capinfos /tmp/packetlab-test.pcapng
 
 ## Kursdokumentation prüfen
 
-Im Root-Verzeichnis des Repositories:
+Zuerst ins Repository wechseln und den Standort prüfen:
+
+```bash
+cd ~/workspace/packetanalyse-mit-wireshark-de
+pwd
+```
+
+Danach im Repository-Root die virtuelle Umgebung aktivieren und den Build ausführen:
 
 ```bash
 source .venv/bin/activate
@@ -116,11 +133,26 @@ Die Umgebung gilt als bereit, wenn folgende Punkte erfüllt sind:
 
 ## Typische Probleme
 
+Bevor du Fehler analysierst, prüfe zuerst das aktuelle Arbeitsverzeichnis.
+Viele Probleme entstehen nur deshalb, weil Befehle außerhalb des Repository-Roots ausgeführt werden.
+
+```bash
+pwd
+```
+
+Erwartung:
+
+```text
+/home/<benutzer>/workspace/packetanalyse-mit-wireshark-de
+```
+
 ### `mkdocs: command not found`
 
 Meistens ist die virtuelle Umgebung nicht aktiviert oder MkDocs wurde noch nicht installiert.
 
 ```bash
+cd ~/workspace/packetanalyse-mit-wireshark-de
+pwd
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 mkdocs build
