@@ -40,6 +40,9 @@ packetanalyse-mit-wireshark-de
 
 Die Standardspalten reichen für den Start aus, aber ein paar zusätzliche Spalten helfen später sehr.
 
+Wichtig: Nicht alle Spalten sind in Wireshark als fertige Auswahl vorhanden.
+`TCP Stream` und `DNS Query` legst du in der Regel als benutzerdefinierte Spalten an.
+
 Empfohlene Spalten:
 
 | Spalte | Zweck |
@@ -59,6 +62,19 @@ Nicht jede Spalte ist in jedem Paket gefüllt.
 
 Das ist normal.
 
+Falls du `TCP Stream` oder `DNS Query` in der Spaltenkonfiguration nicht findest, kannst du sie manuell hinzufügen:
+
+```text
+Edit > Preferences > Appearance > Columns
+```
+
+Dann `+` klicken und als Typ `Custom` wählen.
+
+Beispielwerte für das Feld:
+
+- `TCP Stream`: `tcp.stream`
+- `DNS Query`: `dns.qry.name`
+
 ## Spalte aus einem Feld erzeugen
 
 Du kannst viele Felder direkt als Spalte hinzufügen.
@@ -73,8 +89,8 @@ Beispiel für DNS:
 
 Beispiel für TCP Stream:
 
-1. TCP-Paket auswählen
-2. TCP-Bereich öffnen
+1. TCP-Paket in der Paketliste auswählen
+2. TCP-Bereich in den Paketdetails aufklappen (wird als `Transmission Control Protocol` angezeigt)
 3. Feld `Stream index` suchen
 4. Rechtsklick
 5. `Apply as Column`

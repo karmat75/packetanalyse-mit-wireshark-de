@@ -82,6 +82,14 @@ Hypertext Transfer Protocol
 
 Dieser Bereich ist fachlich besonders wichtig.
 
+Viele Einträge in den Paketdetails lassen sich auf- und zuklappen.
+So kannst du per Drill-down von der Protokollebene bis zu einzelnen Feldern navigieren.
+
+Über Rechtsklick auf ein Feld bekommst du oft zusätzliche Aktionen, zum Beispiel für:
+
+- Anzeigeanpassungen (z. B. als Spalte anzeigen)
+- Filteraktionen (z. B. Filter auf dieses Feld anwenden)
+
 Hier siehst du nicht nur, dass ein Paket TCP ist, sondern auch:
 
 - Ports
