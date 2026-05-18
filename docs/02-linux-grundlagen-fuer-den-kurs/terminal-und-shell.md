@@ -66,6 +66,22 @@ Ctrl + C
 
 Das ist besonders nützlich bei Befehlen wie `ping`, `tcpdump`, `mkdocs serve` oder laufenden Docker-Logs.
 
+## Terminal-Ausgabe leeren
+
+Wenn dein Terminal unübersichtlich geworden ist, kannst du den sichtbaren Inhalt leeren:
+
+```bash
+clear
+```
+
+Schneller geht es oft mit der Tastenkombination:
+
+```text
+Ctrl + L
+```
+
+Hinweis: Dabei wird nur die Anzeige im Terminal geleert. Bereits ausgeführte Befehle bleiben in der Historie (`history`) erhalten.
+
 ## Ausgabe seitenweise lesen
 
 Lange Ausgaben kannst du mit `less` lesbar machen:

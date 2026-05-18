@@ -45,16 +45,6 @@ source .venv/bin/activate
 
 Nach erfolgreicher Aktivierung siehst du `(.venv)` am Anfang deiner Terminal-Zeile.
 
-### Nur wenn nötig: Windows Aktivierung
-
-Falls du Windows nutzt, verwende stattdessen:
-
-```bash
-.venv\Scripts\activate
-```
-
-(Der Kurs ist aber für Ubuntu / Linux ausgelegt.)
-
 ## Schritt 4: pip aktualisieren
 
 ```bash
@@ -86,6 +76,8 @@ mkdocs --version
 ```
 
 Alle Befehle sollten Versionsnummern zeigen ohne Fehler.
+
+Wenn die Terminal-Ausgabe dabei zu lang wird, kannst du sie mit `clear` oder `Ctrl + L` leeren.
 
 ## Häufiger Fehler: `ensurepip is not available`
 
