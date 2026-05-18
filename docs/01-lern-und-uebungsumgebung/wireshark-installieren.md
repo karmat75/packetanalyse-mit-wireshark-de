@@ -85,31 +85,76 @@ Wenn Interfaces angezeigt werden, ist die Grundkonfiguration einsatzbereit.
 
 ## Erster kurzer Capture-Test
 
-Für einen sehr kurzen Test:
+Wir starten einen kurzen Mitschnitt mit TShark und erzeugen währenddessen etwas Netzwerkverkehr.
+Dafür brauchen wir zwei Terminal-Fenster gleichzeitig.
+
+**Was passiert:**
+
+1. Im ersten Terminal startet TShark und zeichnet 30 Sekunden lang Pakete auf. Die Dauer wird mit `-a duration:30` angegeben — den Wert `30` kannst du beliebig anpassen, z. B. `60` für eine Minute.
+2. Im zweiten Terminal rufen wir eine Webseite ab, um etwas Traffic zu erzeugen.
+3. Nachdem TShark fertig ist, prüfen wir die aufgezeichnete Datei im ersten Terminal.
+
+---
+
+**Terminal 1** — Capture starten:
 
 ```bash
-tshark -a duration:5 -w /tmp/packetlab-test.pcapng
+tshark -a duration:30 -w /tmp/packetlab-test.pcapng
 ```
 
-In einem zweiten Terminal währenddessen etwas Traffic erzeugen:
+TShark läuft jetzt 30 Sekunden und hört danach automatisch auf.
+
+---
+
+**Terminal 2** — Während TShark läuft, Traffic erzeugen:
 
 ```bash
 curl -I https://www.wireshark.org/
 ```
 
-Danach prüfen:
+---
+
+**Terminal 1** — Nachdem TShark fertig ist, Ergebnis prüfen:
 
 ```bash
 capinfos /tmp/packetlab-test.pcapng
 ```
 
+Eine erfolgreiche Ausgabe zeigt unter anderem die Anzahl der aufgezeichneten Pakete und die Dauer des Mitschnitts.
+
 ## Wireshark starten
+
+Wireshark lässt sich direkt aus dem Terminal starten oder über das Anwendungsmenü aufrufen.
+
+Das Fenster öffnet sich manchmal recht klein. Einfach maximieren — danach ist die Oberfläche gut erkennbar.
 
 ```bash
 wireshark
 ```
 
-Oder über das Anwendungsmenü.
+### Was dich beim ersten Start erwartet
+
+Nach dem Start zeigt Wireshark den **Willkommensbildschirm** (Welcome Screen).
+
+Dort siehst du eine Liste der verfügbaren Netzwerkschnittstellen (Interfaces), jeweils mit einem kleinen Live-Graphen, der anzeigt ob gerade Datenverkehr auf dem Interface vorhanden ist.
+
+Du musst jetzt noch nichts auswählen oder tun.
+
+Der Willkommensbildschirm ist gleichzeitig der Einstiegspunkt für einen Capture — aber für diesen Schritt reicht es zu wissen, dass Wireshark startet und die Interfaces sichtbar sind.
+
+### Wenn du neugierig bist: ersten Capture starten
+
+Sobald du möchtest, kannst du direkt einen ersten Mitschnitt machen:
+
+- Doppelklicke auf ein Interface mit sichtbarem Traffic (z. B. `eth0` oder `ens...`)
+- Wireshark beginnt sofort mit dem Aufzeichnen
+- Mit dem roten Stopp-Button (`◼`) in der Werkzeugleiste kannst du den Capture beenden
+
+Ausführlich wird das im Kapitel [Wireshark erster Kontakt](../../03-wireshark-erster-kontakt/index.md) behandelt.
+
+!!! note "Keine Interfaces sichtbar?"
+    Falls die Interface-Liste leer ist oder grau erscheint, fehlen meist noch die Berechtigungen.
+    Prüfe den Abschnitt „Berechtigungen prüfen" weiter oben auf dieser Seite.
 
 ## Zielzustand
 
