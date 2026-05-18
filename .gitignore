@@ -19,3 +19,4 @@ Thumbs.db
 !.vscode/settings.json
 
 pcaps/generated/*
+!pcaps/generated/.gitkeep
