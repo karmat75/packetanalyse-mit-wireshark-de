@@ -18,7 +18,7 @@ Für Ubuntu- und Debian-basierte Systeme stellt Microsoft ein `.deb`-Paket berei
 
 Die einfache Variante:
 
-1. VSCode von der offiziellen Download-Seite herunterladen
+1. VSCode von der offiziellen Seite herunterladen: [Visual Studio Code Download](https://code.visualstudio.com/){: target="_blank" rel="nofollow noopener noreferrer" } (extern)
 2. `.deb`-Datei öffnen oder per Terminal installieren
 
 Beispiel im Terminal, wenn die Datei im Download-Ordner liegt:
@@ -39,11 +39,27 @@ code --version
 Im Root-Verzeichnis des Kurses:
 
 ```bash
-cd ~/DailyWorkspace/source/repos/packetanalyse-mit-wireshark-de
+cd ~/workspace/packetanalyse-mit-wireshark-de
 code .
 ```
 
 Der Befehl `code .` öffnet den aktuellen Ordner in VSCode.
+
+## Hinweis zum ersten Start
+
+Beim ersten Öffnen von VSCode kann ein Dialog erscheinen, der eine Anmeldung für zusätzliche Funktionen wie KI-Unterstützung anbietet.
+
+Diese Anmeldung ist optional.
+Du kannst VSCode auch ohne Login normal verwenden und später jederzeit ein Konto hinzufügen.
+
+Wenn du später KI-Funktionen nutzen möchtest, bist du nicht auf einen einzelnen Anbieter festgelegt.
+Über Erweiterungen lassen sich je nach Bedarf unterschiedliche Dienste einbinden.
+
+Für diesen Kurs ist wichtig:
+
+- VSCode funktioniert auch ohne Anmeldung.
+- Ein späterer Login ist jederzeit möglich.
+- Welche Erweiterungen oder KI-Dienste du nutzt, bleibt deine Entscheidung.
 
 ## Empfohlene Erweiterungen
 
