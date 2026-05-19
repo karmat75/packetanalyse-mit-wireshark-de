@@ -82,7 +82,7 @@ Du kannst viele Felder direkt als Spalte hinzufügen.
 Beispiel für DNS:
 
 1. DNS-Paket auswählen
-2. Im mittleren Bereich das Feld `Queries` öffnen
+2. Im Paketdetails-Bereich das Feld `Queries` öffnen
 3. Feld mit dem DNS-Namen suchen
 4. Rechtsklick auf das Feld
 5. `Apply as Column`

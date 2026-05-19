@@ -13,7 +13,7 @@ Ein Display Filter beantwortet eine Frage an die Capture-Datei.
 Beispiele:
 
 | Frage | Display Filter |
-|---|---|
+| --- | --- |
 | Welche DNS-Pakete gibt es? | `dns` |
 | Welche TCP-Pakete gibt es? | `tcp` |
 | Welche Pakete betreffen eine IP-Adresse? | `ip.addr == 1.1.1.1` |
@@ -167,7 +167,7 @@ Du musst nicht jeden Feldnamen auswendig kennen.
 Praktischer Weg:
 
 1. Paket auswählen
-2. im mittleren Bereich ein Feld suchen
+2. im Paketdetails-Bereich ein Feld suchen
 3. Rechtsklick auf das Feld
 4. `Apply as Filter`
 5. passenden Filter auswählen
