@@ -132,6 +132,16 @@ Klammern helfen bei komplexeren Filtern:
 (ip.addr == 1.1.1.1 or ip.addr == 8.8.8.8) and dns
 ```
 
+Praxisbeispiel bei Nebenverkehr:
+
+Wenn auf deinem System gleichzeitig Management-Traffic läuft (zum Beispiel RDP), kannst du ihn gezielt ausblenden:
+
+```text
+dns and not ip.addr == 192.168.1.47
+```
+
+Nutze solche Ausschlüsse bewusst: Ein zu enger `not`-Filter kann auch relevante Pakete verstecken.
+
 ## Enthält Text
 
 DNS-Namen enthalten einen Text:

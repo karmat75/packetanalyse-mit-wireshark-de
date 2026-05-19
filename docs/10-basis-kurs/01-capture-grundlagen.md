@@ -30,7 +30,7 @@ Der Capture-Punkt entscheidet, was du sehen kannst.
 Typische Capture-Punkte:
 
 | Ort | Vorteil | Nachteil |
-|---|---|---|
+| --- | --- | --- |
 | Client | zeigt die Sicht des Benutzers | sieht nicht alles im Netzwerk |
 | Server | zeigt, ob Anfragen ankommen | sieht nicht, was vorher verloren ging |
 | Gateway/Firewall | zeigt Übergänge zwischen Netzen | braucht Zugriff und saubere Filter |
@@ -86,7 +86,7 @@ Wireshark verwendet heute standardmäßig `pcapng`.
 Typische Dateiendungen:
 
 | Endung | Bedeutung |
-|---|---|
+| --- | --- |
 | `.pcapng` | modernes Capture-Format |
 | `.pcap` | klassisches Capture-Format |
 | `.cap` | unspezifisch, oft ebenfalls Capture-Dateien |
@@ -102,7 +102,7 @@ Für den Kurs verwenden wir bevorzugt:
 Es gibt zwei Arbeitsweisen:
 
 | Arbeitsweise | Beispiel |
-|---|---|
+| --- | --- |
 | Live-Capture | direkt auf einem Interface mitschneiden |
 | Datei-Analyse | vorhandene `.pcapng` öffnen und untersuchen |
 
@@ -117,7 +117,7 @@ Für Praxisübungen erzeugen wir auch eigene Captures.
 Das ist einer der wichtigsten Unterschiede.
 
 | Filtertyp | Zeitpunkt | Wirkung |
-|---|---|---|
+| --- | --- | --- |
 | Capture Filter | vor oder während der Aufnahme | entscheidet, was gespeichert wird |
 | Display Filter | nach der Aufnahme | entscheidet, was angezeigt wird |
 
@@ -296,6 +296,8 @@ Erzeuge einen kurzen Capture mit Wireshark oder TShark.
     - `dns` für Query Names und DNS-Antworten
     - `tls` für die HTTPS-Verbindung
     - `http` für unverschlüsselte HTTP-Pakete (falls vorhanden)
+    - Bei viel Nebenverkehr kannst du Filter kombinieren, zum Beispiel `dns and not ip.addr == 192.168.1.47`.
+    - Prüfe bei negierten Filtern immer kurz, ob du nicht versehentlich relevante Pakete ausblendest.
 
 ## Kurskompetenz-Bezug
 
