@@ -1,0 +1,37 @@
+id: lab-basic-040-editcap-split
+title: "Große Captures handhaben"
+track: basic
+level: basic
+estimated_time: 45m
+status: draft
+course_competencies:
+  - capture-management
+  - editcap
+  - capinfos
+  - tshark
+  - display-filters
+  - troubleshooting
+tools:
+  - docker
+  - docker-compose
+  - wireshark
+  - tshark
+  - editcap
+  - capinfos
+requires:
+  - lab-basic-030-tcp-handshake-reset
+  - docs/10-basis-kurs/07-grosse-captures-handhabung.md
+docker_compose:
+  file: docker/compose/lab-basic-dns-http/compose.yml
+generated_files:
+  - pcaps/generated/lab-basic-040-source.pcapng
+  - pcaps/generated/lab-basic-040-fenster-1.pcapng
+  - pcaps/generated/lab-basic-040-fenster-2.pcapng
+  - pcaps/generated/lab-basic-040-dns-fehler.pcapng
+  - pcaps/generated/lab-basic-040-tcp-probleme.pcapng
+  - pcaps/generated/lab-040-splits/
+commit_generated_files: false
+outputs:
+  - local-pcap
+  - filtered-pcaps
+  - split-pcaps

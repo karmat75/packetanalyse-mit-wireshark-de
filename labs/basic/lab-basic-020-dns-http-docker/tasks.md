@@ -37,15 +37,15 @@ Ordner vorbereiten:
 mkdir -p pcaps/generated
 ```
 
-Starte auf dem Host einen Capture.
+Öffne ein Terminal auf dem Host und starte den Capture.
 
 Variante mit TShark:
 
 ```bash
-sudo tshark -i any -f "net 172.28.50.0/24" -w pcaps/generated/lab-basic-020-dns-http-docker.pcapng
+tshark -i any -f "net 172.28.50.0/24" -w pcaps/generated/lab-basic-020-dns-http-docker.pcapng
 ```
 
-Stoppen später mit:
+Wechsle später zurück zum ersten Terminal und stoppe mit:
 
 ```text
 Ctrl + C
@@ -59,7 +59,7 @@ net 172.28.50.0/24
 
 ## Aufgabe 4: Traffic erzeugen
 
-In einem zweiten Terminal:
+Lasse den Mitschnitt laufen und öffne ein zweites Terminal:
 
 ```bash
 docker compose -f docker/compose/lab-basic-dns-http/compose.yml exec lab-client sh -lc '
@@ -73,13 +73,13 @@ curl -I http://web-slow.lab.local
 
 ## Aufgabe 5: Capture stoppen
 
-Stoppe den Capture mit:
+Wechsle zurück zum ersten Terminal und stoppe den Capture mit:
 
 ```text
 Ctrl + C
 ```
 
-Öffne die Datei:
+Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne die Datei:
 
 ```bash
 wireshark pcaps/generated/lab-basic-020-dns-http-docker.pcapng

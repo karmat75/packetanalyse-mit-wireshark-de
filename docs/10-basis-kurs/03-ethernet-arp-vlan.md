@@ -493,8 +493,13 @@ tshark -r capture.pcapng \
 
 Erzeuge einen kleinen Capture auf deinem Lernsystem.
 
-1. Starte Wireshark oder TShark.
-2. Erzeuge etwas lokalen Netzwerkverkehr:
+1. Öffne ein Terminal und starte den Mitschnitt mit TShark.
+
+```bash
+tshark -i any -w pcaps/generated/basic-layer2-01.pcapng
+```
+
+2. Lasse den Mitschnitt laufen, öffne ein weiteres Terminal und erzeuge lokalen Netzwerkverkehr:
 
 ```bash
 ip neigh
@@ -502,13 +507,18 @@ ping -c 4 "$(ip route | awk '/default/ {print $3; exit}')"
 ```
 
 3. Stoppe den Mitschnitt.
-4. Speichere ihn als:
+4. Wechsle zurück zum ersten Terminal und stoppe den Mitschnitt mit `Ctrl+C`.
+5. Öffne ein Terminal und prüfe, dass die Datei vorhanden ist:
+
+```bash
+ls -lh pcaps/generated/basic-layer2-01.pcapng
+```
+
+6. Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne:
 
 ```text
 pcaps/generated/basic-layer2-01.pcapng
 ```
-
-5. Öffne ihn in Wireshark.
 
 Beantworte:
 

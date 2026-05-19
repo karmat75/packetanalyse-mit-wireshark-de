@@ -578,8 +578,13 @@ tshark -r pcaps/generated/basic-capture-01.pcapng \
 
 Erzeuge einen kleinen Capture.
 
-1. Starte Wireshark oder TShark.
-2. Führe aus:
+1. Öffne ein Terminal und starte den Mitschnitt mit TShark.
+
+```bash
+tshark -i any -w pcaps/generated/basic-tcp-01.pcapng
+```
+
+2. Lasse den Mitschnitt laufen, öffne ein weiteres Terminal und führe aus:
 
 ```bash
 curl -I https://example.org
@@ -587,13 +592,18 @@ curl -I http://example.org
 ```
 
 3. Stoppe den Mitschnitt.
-4. Speichere ihn als:
+4. Wechsle zurück zum ersten Terminal und stoppe den Mitschnitt mit `Ctrl+C`.
+5. Öffne ein Terminal und prüfe, dass die Datei vorhanden ist:
+
+```bash
+ls -lh pcaps/generated/basic-tcp-01.pcapng
+```
+
+6. Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne:
 
 ```text
 pcaps/generated/basic-tcp-01.pcapng
 ```
-
-5. Öffne ihn in Wireshark.
 
 Beantworte:
 
@@ -611,7 +621,7 @@ Beantworte:
 
 Diese Aufgabe kann je nach Zielsystem unterschiedlich reagieren.
 
-Teste auf einem ungefährlichen Ziel, zum Beispiel gegen localhost:
+Öffne ein Terminal und teste auf einem ungefährlichen Ziel, zum Beispiel gegen localhost:
 
 ```bash
 curl -v http://127.0.0.1:9

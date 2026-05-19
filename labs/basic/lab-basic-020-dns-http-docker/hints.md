@@ -13,7 +13,7 @@ Prüfe, ob du auf dem Host mitgeschnitten hast und nicht in einem falschen Inter
 Für den Einstieg ist `any` oft am einfachsten:
 
 ```bash
-sudo tshark -i any -f "net 172.28.50.0/24"
+tshark -i any -f "net 172.28.50.0/24"
 ```
 
 ## Hinweis 2: DNS funktioniert nicht

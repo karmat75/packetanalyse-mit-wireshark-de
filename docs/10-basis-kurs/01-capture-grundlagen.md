@@ -37,6 +37,11 @@ Typische Capture-Punkte:
 | Switch Mirror Port | gute Netzwerksicht | muss korrekt konfiguriert sein |
 | TAP | sehr sauberer Mitschnitt | zusätzliche Hardware nötig |
 
+Wenn dir TAP noch nicht geläufig ist: Für den Basis-Kurs reicht die Einordnung aus der Tabelle.
+
+Eine ausführliche Erklärung mit Vergleich zu SPAN/Mirror findest du in der Referenz:
+[TAP vs. SPAN/Mirror-Port](../90-referenz/tap-vs-span-mirror.md).
+
 ## Client- und Server-Sicht
 
 Wenn ein Client sagt: „Die Anwendung ist langsam“, kann ein Client-Capture zeigen:
@@ -245,22 +250,37 @@ Das kommt im erweiterten Kurs genauer.
 
 Erzeuge einen kurzen Capture mit Wireshark oder TShark.
 
-1. Starte einen Mitschnitt.
-2. Führe aus:
+1. Öffne ein Terminal und starte den Mitschnitt mit TShark.
+
+    Beispiel mit TShark (Terminal):
+
+    ```bash
+    tshark -i any -w pcaps/generated/basic-capture-01.pcapng
+    ```
+
+    Kurz erklärt:
+
+    - `-i any` schneidet auf allen lokalen Interfaces mit.
+    - `-w ...` schreibt den Mitschnitt direkt in die Datei.
+    - Beende den laufenden Mitschnitt mit `Ctrl+C`.
+
+2. Lasse den Mitschnitt laufen, öffne ein weiteres Terminal und führe aus:
 
 ```bash
 dig example.org
 curl -I https://example.org
 ```
 
-3. Stoppe den Mitschnitt.
-4. Speichere ihn als:
+3. Wechsle zurück zum ersten Terminal und stoppe den Mitschnitt mit `Ctrl+C`.
+4. Öffne ein Terminal und prüfe, dass die Datei vorhanden ist:
 
-```text
-pcaps/generated/basic-capture-01.pcapng
+```bash
+ls -lh pcaps/generated/basic-capture-01.pcapng
 ```
 
-5. Öffne ihn in Wireshark.
+    Wenn die Datei angezeigt wird, war der Mitschnitt erfolgreich.
+
+5. Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne den Mitschnitt.
 6. Beantworte:
 
 - Welche DNS-Anfragen siehst du?

@@ -297,13 +297,19 @@ Aber diese Reihenfolge hilft, vom Groben zum Konkreten zu kommen.
 
 ## Mini-Aufgabe
 
-Öffne deinen Capture aus dem vorherigen Abschnitt:
+1. Öffne ein Terminal und prüfe, dass dein Capture aus dem vorherigen Abschnitt vorhanden ist:
+
+```bash
+ls -lh pcaps/generated/basic-capture-01.pcapng
+```
+
+2. Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne:
 
 ```text
 pcaps/generated/basic-capture-01.pcapng
 ```
 
-Teste diese Filter:
+3. Teste in Wireshark nacheinander diese Display Filter:
 
 ```text
 dns
@@ -325,7 +331,7 @@ icmp
 ip.addr == <deine-client-ip>
 ```
 
-Beantworte:
+4. Beantworte:
 
 1. Welche Filter zeigen Pakete?
 2. Welche Filter zeigen keine Pakete?

@@ -152,6 +152,7 @@ nav:
       - IPv4, IPv6 und ICMP: 10-basis-kurs/04-ipv4-ipv6-icmp.md
       - UDP, DNS und DHCP: 10-basis-kurs/05-udp-dns-dhcp.md
       - TCP-Grundlagen: 10-basis-kurs/06-tcp-grundlagen.md
+      - Große Captures handhaben: 10-basis-kurs/07-grosse-captures-handhabung.md
 
   - Erweiterter Kurs:
       - Überblick: 20-advanced-kurs/index.md
@@ -214,6 +215,7 @@ nav:
       - Display-Filter-Cheatsheet: 90-referenz/display-filter-cheatsheet.md
       - TCP-Analyse-Cheatsheet: 90-referenz/tcp-analyse-cheatsheet.md
       - Interface-Counter-Cheatsheet: 90-referenz/interface-counter-cheatsheet.md
+      - TAP vs. SPAN/Mirror-Port: 90-referenz/tap-vs-span-mirror.md
       - TShark-Cheatsheet: 90-referenz/tshark-cheatsheet.md
       - Analysebericht-Vorlage: 90-referenz/analysebericht-vorlage.md
       - Qualitätssicherung und CI: 90-referenz/qualitaetssicherung-und-ci.md

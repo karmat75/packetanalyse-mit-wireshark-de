@@ -18,6 +18,7 @@ Sie sollen helfen, während einer Analyse schnell die richtige Richtung zu finde
 | [Display-Filter-Cheatsheet](display-filter-cheatsheet.md) | kompakte Filterreferenz |
 | [TCP-Analyse-Cheatsheet](tcp-analyse-cheatsheet.md) | TCP-Symptome und sinnvolle Filter |
 | [Interface-Counter-Cheatsheet](interface-counter-cheatsheet.md) | Errors, Discards, Capture-Punkte und Wireshark-Grenzen |
+| [TAP vs. SPAN/Mirror-Port](tap-vs-span-mirror.md) | Einordnung, Unterschiede und Einsatzempfehlungen |
 | [TShark-Cheatsheet](tshark-cheatsheet.md) | wiederverwendbare TShark-Befehle |
 | [Analysebericht-Vorlage](analysebericht-vorlage.md) | Struktur für nachvollziehbare Analyseberichte |
 | [Qualitätssicherung und CI](qualitaetssicherung-und-ci.md) | lokale Checks und GitHub Actions Workflow |

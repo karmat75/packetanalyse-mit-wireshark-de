@@ -28,14 +28,16 @@ Ordner vorbereiten:
 mkdir -p pcaps/generated
 ```
 
+Öffne ein Terminal auf dem Host.
+
 Capture starten:
 
 ```bash
-sudo tshark -i any -f "net 172.28.70.0/24" \
+tshark -i any -f "net 172.28.70.0/24" \
   -w pcaps/generated/lab-advanced-020-http-tls.pcapng
 ```
 
-Stoppen später mit:
+Wechsle später zurück zum ersten Terminal und stoppe mit:
 
 ```text
 Ctrl + C
@@ -49,7 +51,7 @@ net 172.28.70.0/24
 
 ## Aufgabe 3: HTTP im Klartext erzeugen
 
-In einem zweiten Terminal:
+Lasse den Mitschnitt laufen und öffne ein zweites Terminal:
 
 ```bash
 docker compose -f docker/compose/lab-advanced-http-tls/compose.yml exec lab-client sh -lc '
@@ -79,13 +81,13 @@ curl --noproxy "*" --connect-timeout 3 --max-time 5 --resolve secure.lab.local:4
 
 ## Aufgabe 6: Capture stoppen
 
-Stoppe TShark mit:
+Wechsle zurück zum ersten Terminal und stoppe TShark mit:
 
 ```text
 Ctrl + C
 ```
 
-Öffne die Datei:
+Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne die Datei:
 
 ```bash
 wireshark pcaps/generated/lab-advanced-020-http-tls.pcapng

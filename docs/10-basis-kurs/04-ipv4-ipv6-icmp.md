@@ -691,8 +691,13 @@ tshark -r capture.pcapng \
 
 Erzeuge einen kleinen Capture.
 
-1. Starte Wireshark oder TShark.
-2. Erzeuge Traffic:
+1. Öffne ein Terminal und starte den Mitschnitt mit TShark.
+
+```bash
+tshark -i any -w pcaps/generated/basic-layer3-01.pcapng
+```
+
+2. Lasse den Mitschnitt laufen, öffne ein weiteres Terminal und erzeuge Traffic:
 
 ```bash
 ping -c 4 example.org
@@ -707,13 +712,18 @@ sudo apt install -y traceroute
 ```
 
 3. Stoppe den Mitschnitt.
-4. Speichere ihn als:
+4. Wechsle zurück zum ersten Terminal und stoppe den Mitschnitt mit `Ctrl+C`.
+5. Öffne ein Terminal und prüfe, dass die Datei vorhanden ist:
+
+```bash
+ls -lh pcaps/generated/basic-layer3-01.pcapng
+```
+
+6. Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne:
 
 ```text
 pcaps/generated/basic-layer3-01.pcapng
 ```
-
-5. Öffne ihn in Wireshark.
 
 Beantworte:
 

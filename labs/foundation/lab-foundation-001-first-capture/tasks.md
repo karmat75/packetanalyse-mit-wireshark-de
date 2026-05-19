@@ -34,15 +34,15 @@ In diesem Beispiel wäre `wlp2s0` das interessante Interface.
 
 ## Aufgabe 3: Capture starten
 
-Starte Wireshark und beginne einen Capture auf dem passenden Interface.
-
-Alternativ kannst du TShark verwenden:
+Öffne ein Terminal und starte den Mitschnitt mit TShark:
 
 ```bash
 tshark -i <interface> -w pcaps/generated/lab-foundation-001-first-capture.pcapng
 ```
 
-Wenn du TShark verwendest, stoppe den Capture später mit:
+Alternativ kannst du Wireshark verwenden und den Mitschnitt auf dem passenden Interface starten.
+
+Wenn du mit TShark mitschneidest, wechsle später zurück in dieses Terminal und stoppe mit:
 
 ```text
 Ctrl + C
@@ -50,7 +50,7 @@ Ctrl + C
 
 ## Aufgabe 4: Traffic erzeugen
 
-Führe in einem zweiten Terminal aus:
+Lasse den Mitschnitt laufen, öffne ein zweites Terminal und führe aus:
 
 ```bash
 dig example.org
@@ -76,7 +76,7 @@ Wenn du TShark verwendet hast, wurde die Datei bereits geschrieben.
 
 ## Aufgabe 6: Capture öffnen
 
-Öffne die Datei in Wireshark:
+Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne die Datei:
 
 ```bash
 wireshark pcaps/generated/lab-foundation-001-first-capture.pcapng

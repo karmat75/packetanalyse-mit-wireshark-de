@@ -23,16 +23,18 @@ Ordner vorbereiten:
 mkdir -p pcaps/generated
 ```
 
+Öffne ein Terminal auf dem Host.
+
 Capture starten:
 
 ```bash
-sudo tshark -i any -f "net 172.28.60.0/24" \
+tshark -i any -f "net 172.28.60.0/24" \
   -w pcaps/generated/challenge-003-tcp-retransmission-triage.pcapng
 ```
 
 ## Aufgabe 3: Download erzeugen
 
-In einem zweiten Terminal:
+Lasse den Mitschnitt laufen und öffne ein zweites Terminal:
 
 ```bash
 docker compose -f docker/compose/lab-advanced-tcp-loss/compose.yml exec lab-client sh -lc '
@@ -46,13 +48,13 @@ Falls der Download zu schnell war oder später keine Analysehinweise sichtbar si
 
 ## Aufgabe 4: Capture stoppen
 
-Stoppe TShark mit:
+Wechsle zurück zum ersten Terminal und stoppe TShark mit:
 
 ```text
 Ctrl + C
 ```
 
-Öffne den Capture:
+Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne den Capture:
 
 ```bash
 wireshark pcaps/generated/challenge-003-tcp-retransmission-triage.pcapng

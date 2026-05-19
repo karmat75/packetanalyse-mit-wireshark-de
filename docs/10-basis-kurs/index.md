@@ -29,6 +29,7 @@ Zuerst brauchst du ein sauberes Fundament:
 4. IPv4, IPv6 und ICMP
 5. UDP, DNS und DHCP
 6. TCP-Grundlagen
+7. Große Captures handhaben
 
 ## Arbeitsweise
 

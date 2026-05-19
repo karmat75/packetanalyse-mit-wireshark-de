@@ -305,7 +305,7 @@ sudo apt install -y tshark
 Dieser Befehl funktioniert oft:
 
 ```bash
-sudo tshark -i any
+tshark -i any
 ```
 
 Aber er ist nicht unser Standardweg.

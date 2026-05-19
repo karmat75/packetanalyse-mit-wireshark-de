@@ -675,8 +675,13 @@ tshark -r capture.pcapng   -Y "dhcp or bootp"   -T fields   -e frame.number   -e
 
 Erzeuge einen Capture.
 
-1. Starte Wireshark oder TShark.
-2. Führe aus:
+1. Öffne ein Terminal und starte den Mitschnitt mit TShark.
+
+```bash
+tshark -i any -w pcaps/generated/basic-udp-dns-01.pcapng
+```
+
+2. Lasse den Mitschnitt laufen, öffne ein weiteres Terminal und führe aus:
 
 ```bash
 dig example.org
@@ -686,13 +691,18 @@ curl -I https://example.org
 ```
 
 3. Stoppe den Mitschnitt.
-4. Speichere ihn als:
+4. Wechsle zurück zum ersten Terminal und stoppe den Mitschnitt mit `Ctrl+C`.
+5. Öffne ein Terminal und prüfe, dass die Datei vorhanden ist:
+
+```bash
+ls -lh pcaps/generated/basic-udp-dns-01.pcapng
+```
+
+6. Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne:
 
 ```text
 pcaps/generated/basic-udp-dns-01.pcapng
 ```
-
-5. Öffne ihn in Wireshark.
 
 Beantworte:
 
