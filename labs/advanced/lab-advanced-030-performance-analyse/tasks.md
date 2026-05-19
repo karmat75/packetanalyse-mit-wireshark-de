@@ -22,19 +22,12 @@ Ordner vorbereiten:
 mkdir -p pcaps/generated
 ```
 
-Öffne ein Terminal auf dem Host.
-
 Capture starten:
 
 ```bash
+# Terminal 1 – Capture starten
 tshark -i any -f "net 172.28.50.0/24" \
   -w pcaps/generated/lab-advanced-030-performance-analyse.pcapng
-```
-
-Wechsle später zurück zum ersten Terminal und stoppe mit:
-
-```text
-Ctrl + C
 ```
 
 Alternativ kannst du Wireshark verwenden und als Capture Filter setzen:
@@ -45,9 +38,10 @@ net 172.28.50.0/24
 
 ## Aufgabe 3: Testtraffic erzeugen
 
-Lasse den Mitschnitt laufen und öffne ein zweites Terminal:
+Traffic erzeugen:
 
 ```bash
+# Terminal 2 – Traffic erzeugen
 docker compose -f docker/compose/lab-basic-dns-http/compose.yml exec lab-client sh -lc '
 dig web-ok.lab.local
 curl -I http://web-ok.lab.local
@@ -60,13 +54,7 @@ Wiederhole den Block optional ein zweites Mal, damit im Capture mehrere Vergleic
 
 ## Aufgabe 4: Capture stoppen
 
-Wechsle zurück zum ersten Terminal und stoppe den Capture mit:
-
-```text
-Ctrl + C
-```
-
-Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne die Datei:
+Mitschnitt in Terminal 1 mit `Ctrl+C` stoppen, dann öffnen:
 
 ```bash
 wireshark pcaps/generated/lab-advanced-030-performance-analyse.pcapng

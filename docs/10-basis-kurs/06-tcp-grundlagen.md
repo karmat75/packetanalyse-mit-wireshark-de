@@ -578,31 +578,33 @@ tshark -r pcaps/generated/basic-capture-01.pcapng \
 
 Erzeuge einen kleinen Capture.
 
-1. Öffne ein Terminal und starte den Mitschnitt mit TShark.
+1. Mitschnitt starten:
 
 ```bash
+# Terminal 1 – Mitschnitt starten
 tshark -i any -w pcaps/generated/basic-tcp-01.pcapng
 ```
 
-2. Lasse den Mitschnitt laufen, öffne ein weiteres Terminal und führe aus:
+2. Traffic erzeugen:
 
 ```bash
+# Terminal 2 – Traffic erzeugen
 curl -I https://example.org
 curl -I http://example.org
 ```
 
-3. Stoppe den Mitschnitt.
-4. Wechsle zurück zum ersten Terminal und stoppe den Mitschnitt mit `Ctrl+C`.
-5. Öffne ein Terminal und prüfe, dass die Datei vorhanden ist:
+3. Mitschnitt in Terminal 1 mit `Ctrl+C` stoppen.
+
+4. Datei prüfen:
 
 ```bash
 ls -lh pcaps/generated/basic-tcp-01.pcapng
 ```
 
-6. Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne:
+5. Mitschnitt öffnen:
 
-```text
-pcaps/generated/basic-tcp-01.pcapng
+```bash
+wireshark pcaps/generated/basic-tcp-01.pcapng
 ```
 
 Beantworte:
@@ -621,7 +623,7 @@ Beantworte:
 
 Diese Aufgabe kann je nach Zielsystem unterschiedlich reagieren.
 
-Öffne ein Terminal und teste auf einem ungefährlichen Ziel, zum Beispiel gegen localhost:
+Teste auf einem ungefährlichen Ziel, zum Beispiel gegen localhost:
 
 ```bash
 curl -v http://127.0.0.1:9

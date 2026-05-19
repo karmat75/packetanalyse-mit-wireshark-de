@@ -1,0 +1,42 @@
+# Auto normalize line endings to LF
+# https://help.github.com/en/github/using-git/configuring-git-to-handle-line-endings
+
+# Text files - normalize to LF
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.sh text eol=lf
+*.bash text eol=lf
+*.py text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+Dockerfile* text eol=lf
+*.compose.yml text eol=lf
+docker-compose*.yml text eol=lf
+.gitignore text eol=lf
+.editorconfig text eol=lf
+*.sql text eol=lf
+
+# Binary files
+*.pcapng binary
+*.pcap binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.tgz binary
+*.7z binary
+
+# Git files
+.gitattributes text eol=lf
+.gitignore text eol=lf

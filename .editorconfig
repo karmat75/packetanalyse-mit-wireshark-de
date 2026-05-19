@@ -1,0 +1,56 @@
+# EditorConfig helps maintain consistent coding styles across different editors and IDEs
+# https://editorconfig.org
+
+root = true
+
+# All files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Markdown files
+[*.md]
+indent_style = space
+indent_size = 2
+max_line_length = off
+
+# YAML files
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# JSON files
+[*.json]
+indent_style = space
+indent_size = 2
+
+# Python files
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Bash/Shell scripts
+[*.{sh,bash}]
+indent_style = space
+indent_size = 2
+
+# Dockerfile
+[Dockerfile*]
+indent_style = space
+indent_size = 2
+
+# Docker Compose
+[docker-compose*.yml]
+indent_style = space
+indent_size = 2
+
+# Makefile (tabs required)
+[Makefile]
+indent_style = tab
+
+# Binary files (no line ending normalization)
+[*.{png,jpg,jpeg,gif,pcapng,pcap,zip,tar,gz}]
+insert_final_newline = false
+trim_trailing_whitespace = false

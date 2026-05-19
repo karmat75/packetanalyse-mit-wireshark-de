@@ -22,19 +22,19 @@ Ordner vorbereiten:
 mkdir -p pcaps/generated
 ```
 
-Öffne ein Terminal auf dem Host.
-
 Capture starten:
 
 ```bash
+# Terminal 1 – Capture starten
 tshark -i any -f "net 172.28.50.0/24" -w pcaps/generated/challenge-001-dns-http-triage.pcapng
 ```
 
 ## Aufgabe 3: Testtraffic erzeugen
 
-Lasse den Mitschnitt laufen und öffne ein zweites Terminal:
+Traffic erzeugen:
 
 ```bash
+# Terminal 2 – Traffic erzeugen
 docker compose -f docker/compose/lab-basic-dns-http/compose.yml exec lab-client sh -lc '
 dig web-ok.lab.local
 dig web-slow.lab.local
@@ -46,13 +46,7 @@ curl -I http://web-slow.lab.local
 
 ## Aufgabe 4: Capture stoppen
 
-Wechsle zurück zum ersten Terminal und stoppe TShark mit:
-
-```text
-Ctrl + C
-```
-
-Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne den Capture:
+Mitschnitt in Terminal 1 mit `Ctrl+C` stoppen, dann öffnen:
 
 ```bash
 wireshark pcaps/generated/challenge-001-dns-http-triage.pcapng

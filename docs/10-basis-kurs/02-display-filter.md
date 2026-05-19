@@ -297,16 +297,16 @@ Aber diese Reihenfolge hilft, vom Groben zum Konkreten zu kommen.
 
 ## Mini-Aufgabe
 
-1. Öffne ein Terminal und prüfe, dass dein Capture aus dem vorherigen Abschnitt vorhanden ist:
+1. Capture aus dem vorherigen Abschnitt prüfen:
 
 ```bash
 ls -lh pcaps/generated/basic-capture-01.pcapng
 ```
 
-2. Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne:
+2. In Wireshark öffnen:
 
-```text
-pcaps/generated/basic-capture-01.pcapng
+```bash
+wireshark pcaps/generated/basic-capture-01.pcapng
 ```
 
 3. Teste in Wireshark nacheinander diese Display Filter:

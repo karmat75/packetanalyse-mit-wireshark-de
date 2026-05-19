@@ -25,13 +25,8 @@ mkdir -p pcaps/generated
 Starte auf dem Host einen Capture:
 
 ```bash
+# Terminal 1 – Capture starten
 tshark -i any -f "net 172.28.50.0/24" -w pcaps/generated/lab-basic-030-tcp-handshake-reset.pcapng
-```
-
-Wechsle später zurück zum ersten Terminal und stoppe mit:
-
-```text
-Ctrl + C
 ```
 
 Alternativ kannst du Wireshark verwenden und als Capture Filter setzen:
@@ -42,9 +37,10 @@ net 172.28.50.0/24
 
 ## Aufgabe 3: erfolgreichen TCP/HTTP-Traffic erzeugen
 
-Lasse den Mitschnitt laufen und öffne ein zweites Terminal:
+Traffic erzeugen:
 
 ```bash
+# Terminal 2 – Traffic erzeugen
 docker compose -f docker/compose/lab-basic-dns-http/compose.yml exec lab-client sh -lc '
 curl -I http://web-ok.lab.local
 '
@@ -62,13 +58,7 @@ curl -v --connect-timeout 3 --max-time 5 http://172.28.50.10:81 || true
 
 ## Aufgabe 5: Capture stoppen
 
-Wechsle zurück zum ersten Terminal und stoppe TShark mit:
-
-```text
-Ctrl + C
-```
-
-Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne den Capture:
+Mitschnitt in Terminal 1 mit `Ctrl+C` stoppen, dann öffnen:
 
 ```bash
 wireshark pcaps/generated/lab-basic-030-tcp-handshake-reset.pcapng

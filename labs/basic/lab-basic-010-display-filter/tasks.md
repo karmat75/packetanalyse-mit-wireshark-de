@@ -18,20 +18,20 @@ Docker-Lab starten:
 docker compose -f docker/compose/lab-basic-dns-http/compose.yml up -d
 ```
 
-Öffne ein Terminal auf dem Host.
-
 Capture starten:
 
 ```bash
+# Terminal 1 – Capture starten
 mkdir -p pcaps/generated
 
 tshark -i any -f "net 172.28.50.0/24" \
   -w pcaps/generated/lab-basic-010-display-filter.pcapng
 ```
 
-Lasse den Mitschnitt laufen, öffne ein zweites Terminal und erzeuge Traffic:
+Traffic erzeugen:
 
 ```bash
+# Terminal 2 – Traffic erzeugen
 docker compose -f docker/compose/lab-basic-dns-http/compose.yml exec lab-client sh -lc '
 dig web-ok.lab.local
 dig web-slow.lab.local
@@ -41,7 +41,7 @@ curl -I http://web-slow.lab.local
 '
 ```
 
-Wechsle zurück zum ersten Terminal und stoppe den Mitschnitt mit `Ctrl + C`.
+Mitschnitt in Terminal 1 mit `Ctrl+C` stoppen.
 
 Lab stoppen:
 

@@ -22,19 +22,12 @@ Ordner vorbereiten:
 mkdir -p pcaps/generated
 ```
 
-Öffne ein Terminal auf dem Host.
-
 Capture starten:
 
 ```bash
+# Terminal 1 – Capture starten
 tshark -i any -f "net 172.28.80.0/24" \
   -w pcaps/generated/lab-advanced-040-security-basics.pcapng
-```
-
-Wechsle später zurück zum ersten Terminal und stoppe mit:
-
-```text
-Ctrl + C
 ```
 
 Alternativ kannst du Wireshark verwenden und als Capture Filter setzen:
@@ -45,9 +38,10 @@ net 172.28.80.0/24
 
 ## Aufgabe 3: Testtraffic erzeugen
 
-Lasse den Mitschnitt laufen und öffne ein zweites Terminal:
+Traffic erzeugen:
 
 ```bash
+# Terminal 2 – Traffic erzeugen
 docker compose -f docker/compose/lab-advanced-security-basics/compose.yml exec lab-client sh -lc '
 curl --noproxy "*" -A "PacketLab-LabClient/1.0" http://172.28.80.10/
 curl --noproxy "*" -u labuser:LabPassword123 http://172.28.80.10/basic
@@ -61,13 +55,7 @@ done
 
 ## Aufgabe 4: Capture stoppen
 
-Wechsle zurück zum ersten Terminal und stoppe den Capture mit:
-
-```text
-Ctrl + C
-```
-
-Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne die Datei:
+Mitschnitt in Terminal 1 mit `Ctrl+C` stoppen, dann öffnen:
 
 ```bash
 wireshark pcaps/generated/lab-advanced-040-security-basics.pcapng

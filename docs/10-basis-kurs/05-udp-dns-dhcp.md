@@ -675,33 +675,35 @@ tshark -r capture.pcapng   -Y "dhcp or bootp"   -T fields   -e frame.number   -e
 
 Erzeuge einen Capture.
 
-1. Öffne ein Terminal und starte den Mitschnitt mit TShark.
+1. Mitschnitt starten:
 
 ```bash
+# Terminal 1 – Mitschnitt starten
 tshark -i any -w pcaps/generated/basic-udp-dns-01.pcapng
 ```
 
-2. Lasse den Mitschnitt laufen, öffne ein weiteres Terminal und führe aus:
+2. Traffic erzeugen:
 
 ```bash
+# Terminal 2 – Traffic erzeugen
 dig example.org
 dig does-not-exist.example.org
 dig AAAA example.org
 curl -I https://example.org
 ```
 
-3. Stoppe den Mitschnitt.
-4. Wechsle zurück zum ersten Terminal und stoppe den Mitschnitt mit `Ctrl+C`.
-5. Öffne ein Terminal und prüfe, dass die Datei vorhanden ist:
+3. Mitschnitt in Terminal 1 mit `Ctrl+C` stoppen.
+
+4. Datei prüfen:
 
 ```bash
 ls -lh pcaps/generated/basic-udp-dns-01.pcapng
 ```
 
-6. Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne:
+5. Mitschnitt öffnen:
 
-```text
-pcaps/generated/basic-udp-dns-01.pcapng
+```bash
+wireshark pcaps/generated/basic-udp-dns-01.pcapng
 ```
 
 Beantworte:

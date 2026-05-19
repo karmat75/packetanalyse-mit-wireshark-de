@@ -6,7 +6,7 @@ Damit prüfst du gleichzeitig, ob Wireshark auf deinem System grundsätzlich fun
 
 ## Vorbereitung
 
-Öffne ein Terminal und prüfe, ob grundlegende Netzwerkbefehle verfügbar sind:
+Netzwerkbefehle prüfen:
 
 ```bash
 ping -c 1 example.org
@@ -22,8 +22,6 @@ sudo apt install -y curl dnsutils iputils-ping
 ```
 
 ## Wireshark starten
-
-Starte Wireshark über das Anwendungsmenü oder im Terminal:
 
 ```bash
 wireshark

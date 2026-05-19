@@ -250,43 +250,46 @@ Das kommt im erweiterten Kurs genauer.
 
 Erzeuge einen kurzen Capture mit Wireshark oder TShark.
 
-1. Öffne ein Terminal und starte den Mitschnitt mit TShark.
-
-    Beispiel mit TShark (Terminal):
+1. Mitschnitt starten:
 
     ```bash
+    # Terminal 1 – Mitschnitt starten
     tshark -i any -w pcaps/generated/basic-capture-01.pcapng
     ```
 
     Kurz erklärt:
 
-    - `-i any` schneidet auf allen lokalen Interfaces mit.
+    - `-i any` schneidet auf allen lokalen Interfaces mit. Mit `tshark -D` kannst du dir die verfügbaren Interfaces anzeigen lassen. Je nach Situation und Fragestellung ist es oft sinnvoll, gezielt nur ein passendes Interface zu wählen.
     - `-w ...` schreibt den Mitschnitt direkt in die Datei.
-    - Beende den laufenden Mitschnitt mit `Ctrl+C`.
 
-2. Lasse den Mitschnitt laufen, öffne ein weiteres Terminal und führe aus:
+2. Traffic erzeugen:
 
-```bash
-dig example.org
-curl -I https://example.org
-```
+    ```bash
+    # Terminal 2 – Traffic erzeugen
+    dig example.org
+    curl -I https://example.org
+    ```
 
-3. Wechsle zurück zum ersten Terminal und stoppe den Mitschnitt mit `Ctrl+C`.
-4. Öffne ein Terminal und prüfe, dass die Datei vorhanden ist:
+3. Mitschnitt in Terminal 1 mit `Ctrl+C` stoppen.
 
-```bash
-ls -lh pcaps/generated/basic-capture-01.pcapng
-```
+4. Datei prüfen:
 
-    Wenn die Datei angezeigt wird, war der Mitschnitt erfolgreich.
+    ```bash
+    ls -lh pcaps/generated/basic-capture-01.pcapng
+    ```
 
-5. Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne den Mitschnitt.
-6. Beantworte:
+5. Mitschnitt öffnen:
 
-- Welche DNS-Anfragen siehst du?
-- Welche IP-Adressen tauchen auf?
-- Welche TCP-Verbindungen siehst du?
-- Wie viele Pakete enthält der Mitschnitt?
+    ```bash
+    wireshark pcaps/generated/basic-capture-01.pcapng
+    ```
+
+6. Beantworte die folgenden Fragen:
+
+    - Welche DNS-Anfragen siehst du?
+    - Welche IP-Adressen tauchen auf?
+    - Welche TCP-Verbindungen siehst du?
+    - Wie viele Pakete enthält der Mitschnitt?
 
 ## Kurskompetenz-Bezug
 

@@ -30,19 +30,12 @@ Ordner vorbereiten:
 mkdir -p pcaps/generated
 ```
 
-Öffne ein Terminal auf dem Host.
-
 Capture starten:
 
 ```bash
+# Terminal 1 – Capture starten
 tshark -i any -f "net 172.28.60.0/24" \
   -w pcaps/generated/lab-advanced-010-tcp-retransmission.pcapng
-```
-
-Wechsle später zurück zum ersten Terminal und stoppe mit:
-
-```text
-Ctrl + C
 ```
 
 Alternativ kannst du Wireshark verwenden und als Capture Filter setzen:
@@ -53,9 +46,10 @@ net 172.28.60.0/24
 
 ## Aufgabe 3: Download erzeugen
 
-Lasse den Mitschnitt laufen und öffne ein zweites Terminal:
+Traffic erzeugen:
 
 ```bash
+# Terminal 2 – Traffic erzeugen
 docker compose -f docker/compose/lab-advanced-tcp-loss/compose.yml exec lab-client sh -lc '
 rm -f /tmp/bigfile.bin
 curl -o /tmp/bigfile.bin http://172.28.60.10/bigfile.bin
@@ -67,13 +61,7 @@ Falls der Download sehr schnell war und keine Retransmissions sichtbar werden, w
 
 ## Aufgabe 4: Capture stoppen
 
-Wechsle zurück zum ersten Terminal und stoppe den Capture mit:
-
-```text
-Ctrl + C
-```
-
-Starte Wireshark über das Anwendungsmenü oder im Terminal (`wireshark`) und öffne die Datei:
+Mitschnitt in Terminal 1 mit `Ctrl+C` stoppen, dann öffnen:
 
 ```bash
 wireshark pcaps/generated/lab-advanced-010-tcp-retransmission.pcapng
