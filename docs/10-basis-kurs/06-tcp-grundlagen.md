@@ -124,7 +124,7 @@ Hier ist:
 
 AHA:
 
-> Der Serverport beschreibt meist den Dienst.  
+> Der Serverport beschreibt meist den Dienst.
 > Der Clientport ist oft nur ein temporärer, dynamischer Port.
 
 ## TCP Flags
@@ -355,7 +355,7 @@ Seq=1 Ack=1
 Die echten Werte sind viel größer, aber für die Analyse ist die relative Darstellung meist einfacher.
 
 !!! note "Relative Sequenznummern"
-    Wireshark zeigt standardmäßig relative Sequence Numbers.  
+    Wireshark zeigt standardmäßig relative Sequence Numbers.
     Das ist gewollt und erleichtert die Analyse. Die echten Nummern sind weiterhin im Paket ableitbar.
 
 ## TCP Stream
@@ -524,7 +524,7 @@ tcp.analysis.flags
 ```
 
 !!! note "tcp.analysis.flags"
-    Dieser Filter zeigt Pakete, bei denen Wireshark Analysehinweise setzt.  
+    Dieser Filter zeigt Pakete, bei denen Wireshark Analysehinweise setzt.
     Das ist hilfreich, aber nicht jede Analysemarkierung ist automatisch ein Fehler. Kontext bleibt wichtig.
 
 ## TShark-Beispiele
@@ -618,6 +618,14 @@ Beantworte:
 - Welche `tcp.stream`-Nummern gehören zu den Verbindungen?
 - Kannst du bei HTTP einen TCP Stream folgen?
 - Was siehst du bei HTTPS im Stream?
+
+Hinweis für die Auswertung:
+
+- `tcp` für den Verbindungsüberblick
+- `tcp.flags.syn == 1 and tcp.flags.ack == 0` für SYN
+- `tcp.flags.syn == 1 and tcp.flags.ack == 1` für SYN/ACK
+- `tcp.flags.reset == 1` für RST
+- `tcp.stream == <nummer>` für eine einzelne Verbindung
 
 ## Mini-Aufgabe: geschlossener Port
 
@@ -715,5 +723,5 @@ Dieser Abschnitt übt WCA-nahe Grundlagen:
 
 ## Merksatz
 
-> TCP sagt dir nicht nur, dass zwei Systeme miteinander sprechen.  
+> TCP sagt dir nicht nur, dass zwei Systeme miteinander sprechen.
 > TCP zeigt dir, ob sie eine Verbindung aufbauen, bestätigen, schließen, abbrechen oder auf Antwort warten.

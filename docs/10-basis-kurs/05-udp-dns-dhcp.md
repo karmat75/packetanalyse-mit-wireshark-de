@@ -207,7 +207,7 @@ Wichtige Response Codes:
 | `NoData` | Name existiert, aber nicht für diesen Typ | z. B. A gefragt, aber kein A-Record |
 
 !!! note "NoError bedeutet nicht immer: passende IP gefunden"
-    `NoError` bedeutet nur, dass die DNS-Anfrage erfolgreich verarbeitet wurde.  
+    `NoError` bedeutet nur, dass die DNS-Anfrage erfolgreich verarbeitet wurde.
     Es kann trotzdem sein, dass keine Antwortdaten für den angefragten Typ enthalten sind.
 
 ## Wichtige DNS-Filter
@@ -403,7 +403,7 @@ bootp
 ```
 
 !!! note "DHCP oder BOOTP?"
-    In Wireshark kann DHCP je nach Version und Kontext als `dhcp` oder historisch als `bootp` gefiltert werden.  
+    In Wireshark kann DHCP je nach Version und Kontext als `dhcp` oder historisch als `bootp` gefiltert werden.
     Wenn `dhcp` keine Pakete zeigt, teste `bootp`.
 
 ## DHCP DORA
@@ -715,6 +715,13 @@ Beantworte:
 - Wird nach der DNS-Antwort eine TCP-Verbindung zur zurückgegebenen IP aufgebaut?
 - Siehst du DNS nur über UDP oder auch über TCP?
 
+Hinweis für die Auswertung:
+
+- `dns` für Query Names und Antworten
+- `dns.flags.rcode == 3` für NXDOMAIN
+- `dns and tcp.port == 53` für DNS über TCP
+- `tcp and ip.addr == <antwort-ip>` für die Verknüpfung DNS zu Verbindungsaufbau
+
 ## Mini-Aufgabe: DHCP beobachten
 
 Diese Aufgabe hängt von deinem System und Netzwerk ab.
@@ -729,7 +736,7 @@ Mögliche Wege:
 - auf einem Testnetz arbeiten
 
 !!! warning "Vorsicht im produktiven Netz"
-    DHCP-Tests können die Netzwerkverbindung beeinflussen.  
+    DHCP-Tests können die Netzwerkverbindung beeinflussen.
     Führe solche Tests nicht unüberlegt auf einem produktiven Arbeitsgerät aus.
 
 Auf Linux kann je nach Netzwerkmanager und Umgebung hilfreich sein:
@@ -824,6 +831,6 @@ Dieser Abschnitt übt WCA-nahe Grundlagen:
 
 ## Merksatz
 
-> DNS sagt dir, wohin ein Name zeigt.  
-> DHCP sagt dir, wie ein Client seine Netzwerkkonfiguration bekommt.  
+> DNS sagt dir, wohin ein Name zeigt.
+> DHCP sagt dir, wie ein Client seine Netzwerkkonfiguration bekommt.
 > UDP transportiert beides schnell und schlank — aber ohne die Sicherheiten von TCP.

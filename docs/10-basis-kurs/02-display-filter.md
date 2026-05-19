@@ -147,7 +147,7 @@ http.host contains "example"
 ```
 
 !!! note "Groß-/Kleinschreibung"
-    Einige Vergleiche sind abhängig vom Feldtyp und der verwendeten Funktion.  
+    Einige Vergleiche sind abhängig vom Feldtyp und der verwendeten Funktion.
     Prüfe bei unerwarteten Ergebnissen den Filter und das Feld genau.
 
 ## Filter aus Paketdetails erzeugen
@@ -333,11 +333,17 @@ ip.addr == <deine-client-ip>
 
 4. Beantworte:
 
-1. Welche Filter zeigen Pakete?
-2. Welche Filter zeigen keine Pakete?
-3. Welche DNS-Namen findest du?
-4. Welche TCP-Ports tauchen auf?
-5. Welche Filter würdest du in einem Analysebericht dokumentieren?
+  - Welche Filter zeigen Pakete?
+  - Welche Filter zeigen keine Pakete?
+  - Welche DNS-Namen findest du?
+  - Welche TCP-Ports tauchen auf?
+  - Welche Filter würdest du in einem Analysebericht dokumentieren?
+
+  Hinweis für die Auswertung:
+
+  - `dns`, `tcp`, `udp`, `icmp` für den Protokoll-Überblick
+  - `ip.addr == <deine-client-ip>` für die Host-Sicht
+  - `tcp.port` und `udp.port` für Port-Bezüge
 
 ## Kurskompetenz-Bezug
 

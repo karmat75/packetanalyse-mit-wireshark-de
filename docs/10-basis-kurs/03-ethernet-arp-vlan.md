@@ -47,7 +47,7 @@ Ethernet II
 
 Wichtig:
 
-> Ethernet-Adressen gelten nur im lokalen Layer-2-Segment.  
+> Ethernet-Adressen gelten nur im lokalen Layer-2-Segment.
 > Über Router hinweg ändern sich die MAC-Adressen.
 
 ## MAC-Adressen verstehen
@@ -63,7 +63,7 @@ Sie besteht aus 48 Bit und wird meistens hexadezimal dargestellt.
 Die ersten Bytes können auf den Hersteller oder die Organisation hinweisen. Wireshark kann dafür Namen anzeigen, wenn die Namensauflösung aktiv ist.
 
 !!! note "Namensauflösung kann helfen, aber auch ablenken"
-    Wenn Wireshark statt `08:00:27:aa:bb:cc` einen Hersteller oder Namen anzeigt, kann das nützlich sein.  
+    Wenn Wireshark statt `08:00:27:aa:bb:cc` einen Hersteller oder Namen anzeigt, kann das nützlich sein.
     Für saubere Analysen solltest du aber verstehen, dass im Paket die MAC-Adresse steht, nicht der angezeigte Name.
 
 ## Broadcast
@@ -114,7 +114,7 @@ Beispiele für Multicast-nahe Adressen:
 
 Für den Einstieg reicht:
 
-> Broadcast ist an alle.  
+> Broadcast ist an alle.
 > Multicast ist an eine Gruppe.
 
 ## EtherType
@@ -316,7 +316,7 @@ Gründe:
 - du siehst nur Traffic innerhalb eines bereits enttaggten Interfaces
 
 !!! important "AHA!"
-    Wenn du keine VLAN-Tags siehst, bedeutet das nicht automatisch, dass keine VLANs im Spiel sind.  
+    Wenn du keine VLAN-Tags siehst, bedeutet das nicht automatisch, dass keine VLANs im Spiel sind.
     Es bedeutet nur, dass an deinem Capture-Punkt keine VLAN-Tags sichtbar sind.
 
 ## Access-Port und Trunk-Port
@@ -348,7 +348,7 @@ Auf einem modernen Switch bekommst du normalerweise trotzdem nur:
 - eventuell gespiegelten Traffic, wenn ein Mirror-Port eingerichtet ist
 
 !!! warning "Promiscuous Mode ist kein Zaubertrick"
-    Auf einem geswitchten Netzwerk sieht ein normaler Client nicht automatisch den Verkehr anderer Geräte.  
+    Auf einem geswitchten Netzwerk sieht ein normaler Client nicht automatisch den Verkehr anderer Geräte.
     Dafür brauchst du einen geeigneten Capture-Punkt, zum Beispiel Mirror-Port, TAP oder Capture auf dem Zielsystem.
 
 ## Typische Layer-2-Beobachtungen
@@ -531,6 +531,13 @@ Beantworte:
 - Falls nicht: warum ist das nicht automatisch ein Fehler?
 - Welche Display Filter hast du verwendet?
 
+Hinweis für die Auswertung:
+
+- `arp` für ARP-Pakete
+- `eth.dst == ff:ff:ff:ff:ff:ff` für Broadcasts
+- `vlan` für VLAN-Tags
+- `eth.addr == <gateway-mac>` für Gateway-bezogene Frames
+
 ## Analysebericht: kleine Vorlage
 
 ```markdown
@@ -545,7 +552,7 @@ Im Capture wurden ARP-Pakete zwischen `<client-ip>` und `<gateway-ip>` gefunden.
 
 ## Bewertung
 
-Der Client konnte die MAC-Adresse des Gateways ermitteln.  
+Der Client konnte die MAC-Adresse des Gateways ermitteln.
 Layer-2-Kommunikation zum Gateway ist damit grundsätzlich sichtbar.
 
 ## Verwendete Filter

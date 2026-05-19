@@ -134,7 +134,7 @@ ip.addr == 1.1.1.1
 ```
 
 !!! warning "Wichtig"
-    Ein Capture Filter kann Pakete dauerhaft ausschließen.  
+    Ein Capture Filter kann Pakete dauerhaft ausschließen.
     Was nicht mitgeschnitten wurde, kann später nicht analysiert werden.
 
 Für den Anfang verwenden wir bevorzugt Display Filter.
@@ -259,7 +259,9 @@ Erzeuge einen kurzen Capture mit Wireshark oder TShark.
 
     Kurz erklärt:
 
-    - `-i any` schneidet auf allen lokalen Interfaces mit. Mit `tshark -D` kannst du dir die verfügbaren Interfaces anzeigen lassen. Je nach Situation und Fragestellung ist es oft sinnvoll, gezielt nur ein passendes Interface zu wählen.
+    - `-i any` schneidet auf allen lokalen Interfaces mit.
+      Mit `tshark -D` kannst du dir die verfügbaren Interfaces anzeigen lassen.
+      Je nach Situation und Fragestellung ist es oft sinnvoll, gezielt nur ein passendes Interface zu wählen.
     - `-w ...` schreibt den Mitschnitt direkt in die Datei.
 
 2. Traffic erzeugen:
@@ -271,7 +273,6 @@ Erzeuge einen kurzen Capture mit Wireshark oder TShark.
     ```
 
 3. Mitschnitt in Terminal 1 mit `Ctrl+C` stoppen.
-
 4. Datei prüfen:
 
     ```bash
@@ -286,10 +287,15 @@ Erzeuge einen kurzen Capture mit Wireshark oder TShark.
 
 6. Beantworte die folgenden Fragen:
 
-    - Welche DNS-Anfragen siehst du?
-    - Welche IP-Adressen tauchen auf?
-    - Welche TCP-Verbindungen siehst du?
-    - Wie viele Pakete enthält der Mitschnitt?
+    - Welche DNS Query Names siehst du und welche IP-Adressen liefert der DNS-Server als Antwort?
+    - Zu welcher IP-Adresse und zu welchem Port baut der Client die HTTPS-Verbindung auf?
+    - Welche Protokolle siehst du im Mitschnitt neben DNS (zum Beispiel TCP, TLS oder HTTP)?
+
+    Hinweis für die Auswertung:
+
+    - `dns` für Query Names und DNS-Antworten
+    - `tls` für die HTTPS-Verbindung
+    - `http` für unverschlüsselte HTTP-Pakete (falls vorhanden)
 
 ## Kurskompetenz-Bezug
 

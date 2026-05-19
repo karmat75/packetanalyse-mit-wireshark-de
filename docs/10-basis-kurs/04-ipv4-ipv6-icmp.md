@@ -35,7 +35,7 @@ Layer 3 arbeitet mit IP-Adressen über Netzgrenzen hinweg.
 
 AHA:
 
-> Die MAC-Adresse bringt ein Paket zum nächsten Hop.  
+> Die MAC-Adresse bringt ein Paket zum nächsten Hop.
 > Die IP-Adresse beschreibt das eigentliche logische Ziel.
 
 Wenn ein Client einen Server in einem anderen Subnetz anspricht, sieht man im Client-Capture typischerweise:
@@ -327,7 +327,7 @@ ip.flags.mf == 1 or ip.frag_offset > 0
 ```
 
 !!! note "Fragmentierung ist nicht automatisch ein Fehler"
-    Fragmentierung kann normal sein, ist aber oft ein Hinweis, genauer hinzuschauen.  
+    Fragmentierung kann normal sein, ist aber oft ein Hinweis, genauer hinzuschauen.
     Besonders bei Performanceproblemen, VPNs oder ungewöhnlichen MTU-Werten ist sie interessant.
 
 ## Don't Fragment
@@ -737,6 +737,13 @@ Beantworte:
 - Gibt es fragmentierte IPv4-Pakete?
 - Welche Display Filter hast du verwendet?
 
+Hinweis für die Auswertung:
+
+- `icmp` für Echo und Time Exceeded
+- `ipv6` für IPv6-Pakete
+- `ip.addr == <ziel-ip>` für Zielbezug
+- `ip.flags.mf == 1 or ip.frag_offset > 0` für IPv4-Fragmentierung
+
 ## Analysebericht: kleine Vorlage
 
 Nutze diese Struktur für deine Notizen:
@@ -782,5 +789,5 @@ Dieser Abschnitt übt WCA-nahe Grundlagen:
 
 ## Merksatz
 
-> Layer 3 zeigt dir, wohin ein Paket logisch gehen soll.  
+> Layer 3 zeigt dir, wohin ein Paket logisch gehen soll.
 > Ob es dort ankommt, hängt vom Weg, vom Routing, von Filtern, von NAT und vom Capture-Punkt ab.
